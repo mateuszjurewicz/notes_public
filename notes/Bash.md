@@ -1,7 +1,9 @@
 ---
+favorited: true
+tags: [Notebooks/Unix, Unix]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2021-11-18T11:00:49.636Z'
+modified: '2021-11-18T11:59:34.237Z'
 ---
 
 # Bash
@@ -15,13 +17,13 @@ sign always refers to the home directory.
 (root) sign refers to where every other directory is on a linux / unix machine.	
 * `ls`
 tells you what is in your current directory							
-* `ls –a`
+* `ls -a`
 shows hidden (all) documents and directories							
-* `ls –l`
+* `ls -l`
 shows a long list of information about non-hidden contents of pwd, e.g. size, date, permission							
 * `pwd`
 tells you what your present working directory / folder is (same thing on unix).							
-* `ls –lh`
+* `ls -lh`
 shows more info in human readable format (combined flags)							
 
 
@@ -65,11 +67,8 @@ goes up in the order of execution of previous commands
 
 * `history`	
 prints a list of 1 thousand executed commands							
-								
-### Manual info about commands								
 * `man some_command` 
 gives full manual info about a command, including flags requires pressing :q to exit the manual (I think it opened vim)
-
 * `whatis some_command`
 gives a short manual about a command breaks a bit if multiple similar commands are available							
 * `apropos` 
@@ -91,7 +90,11 @@ removes a file
 * `rm -r dir1`
 removes recursively the directory and its contents							
 * `rmdir dir1 dir2`
-removes only empy directories from given list	you can use it with * to clean things safely (only empty directories) matching some name pattern							
+removes only empy directories from given list	you can use it with * to clean things safely (only empty directories) matching some name pattern
+* `head file1`
+shows first 10 lines of a file.
+* `head -20 file1`
+shows first 20 lines.
 * `cat file1`
 prints the entire contents of a file							
 * `cat >> file2` 
