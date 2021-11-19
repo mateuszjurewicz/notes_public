@@ -2,12 +2,14 @@
 tags: [PyCharm]
 title: PyCharm
 created: '2021-11-19T12:30:15.889Z'
-modified: '2021-11-19T12:45:38.680Z'
+modified: '2021-11-19T12:48:37.699Z'
 ---
 
 # PyCharm
 
 ### PyCharm via ssh
+
+- Video instruction requiring professional pycharm licence: https://www.youtube.com/watch?v=kuowBMqM1Ow&ab_channel=ArdianUmam
 
 <span style="color:red">**UNTESTED IDEA**</span>
 
