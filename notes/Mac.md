@@ -2,10 +2,12 @@
 tags: [Mac]
 title: Mac
 created: '2021-11-19T12:14:12.323Z'
-modified: '2021-11-19T12:18:15.963Z'
+modified: '2021-11-19T14:09:07.626Z'
 ---
 
 # Mac
+
+- `ctrl + cmd + q` - lock screen
 
 ### Two displays & full-screen
 - `ctrl + left/right arrow` 
