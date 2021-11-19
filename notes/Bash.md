@@ -1,9 +1,8 @@
 ---
-favorited: true
 tags: [Notebooks/Unix, Unix]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2021-11-18T15:34:37.290Z'
+modified: '2021-11-19T16:04:15.172Z'
 ---
 
 # Bash
