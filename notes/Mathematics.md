@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks/Skills/Tech]
 title: Mathematics
 created: '2021-11-19T15:01:38.887Z'
-modified: '2021-11-20T14:49:41.281Z'
+modified: '2021-11-20T15:59:31.492Z'
 ---
 
 # Mathematics
