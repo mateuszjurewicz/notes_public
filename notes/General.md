@@ -2,7 +2,7 @@
 pinned: true
 title: General
 created: '2021-11-18T10:44:17.779Z'
-modified: '2021-11-20T14:49:04.358Z'
+modified: '2021-11-20T14:51:15.273Z'
 ---
 
 # General
@@ -18,5 +18,5 @@ switches back and forth between a split view of rendered markdown and the editor
 - **colour text** 
 that gets included when exported to pdf: <span style="color:green">Color HTML via **span**</span>
 - **nested tags**
-just use `Notebooks/Skills/Tech/`
+just use forward slash: `Notebooks/Skills/Tech/`, nesting is allowed
 
