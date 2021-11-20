@@ -1,8 +1,8 @@
 ---
-tags: [Mac]
+tags: [Notebooks/Skills/Tech]
 title: Mac
 created: '2021-11-19T12:14:12.323Z'
-modified: '2021-11-19T14:09:07.626Z'
+modified: '2021-11-20T14:49:16.602Z'
 ---
 
 # Mac

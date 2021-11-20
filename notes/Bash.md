@@ -1,8 +1,8 @@
 ---
-tags: [Notebooks/Unix, Unix]
+tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2021-11-19T16:04:15.172Z'
+modified: '2021-11-20T14:49:11.771Z'
 ---
 
 # Bash

@@ -1,8 +1,8 @@
 ---
-tags: [Tmux]
+tags: [Notebooks/Skills/Tech]
 title: Tmux
 created: '2021-11-19T14:03:50.392Z'
-modified: '2021-11-19T14:05:34.553Z'
+modified: '2021-11-20T14:49:26.229Z'
 ---
 
 # Tmux

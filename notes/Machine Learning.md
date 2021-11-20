@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks/Skills/Tech]
 title: Machine Learning
 created: '2021-11-19T16:02:40.897Z'
-modified: '2021-11-19T16:21:18.350Z'
+modified: '2021-11-20T14:49:20.662Z'
 ---
 
 # Machine Learning

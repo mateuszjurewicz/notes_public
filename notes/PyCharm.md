@@ -1,8 +1,8 @@
 ---
-tags: [PyCharm]
+tags: [Notebooks/Skills/Tech]
 title: PyCharm
 created: '2021-11-19T12:30:15.889Z'
-modified: '2021-11-19T12:48:37.699Z'
+modified: '2021-11-20T14:49:24.389Z'
 ---
 
 # PyCharm
