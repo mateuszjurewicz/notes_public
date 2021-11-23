@@ -2,12 +2,14 @@
 tags: [Notebooks/Skills/Tech]
 title: Mac
 created: '2021-11-19T12:14:12.323Z'
-modified: '2021-11-20T14:49:16.602Z'
+modified: '2021-11-23T13:14:38.605Z'
 ---
 
 # Mac
 
 - `ctrl + cmd + q` - lock screen
+- `cmd + m` - minimize the current active window (to dock)
+- `cmd + tab + down_arrow + enter` - select minimized window and bring it back up (have to navigate to the app via `cmd + tab` and whilst holding it, use arrow keys to select and then press enter)
 
 ### Two displays & full-screen
 - `ctrl + left/right arrow` 

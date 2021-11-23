@@ -2,10 +2,15 @@
 tags: [Notebooks/Skills/Tech]
 title: PyCharm
 created: '2021-11-19T12:30:15.889Z'
-modified: '2021-11-20T14:55:05.313Z'
+modified: '2021-11-23T11:35:59.164Z'
 ---
 
 # PyCharm
+
+### General
+
+- `cmd + alt + l`
+reformats current active .py file according to Code Style settings. Mostly hard-wraps and alignments by default.
 
 ### PyCharm via ssh
 
