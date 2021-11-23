@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Mathematics
 created: '2021-11-19T15:01:38.887Z'
-modified: '2021-11-20T15:59:31.492Z'
+modified: '2021-11-23T15:05:41.210Z'
 ---
 
 # Mathematics
@@ -20,6 +20,11 @@ Is a symbol for _defined as_. Or more precisely _equal by definition_. As oppose
 - $\coloneqq$
 symbol of _defined as_.
 
+- $\sim$
+the long tilde is used to mean _equivalence_.
+
 ### Greek alphabet
 - $\tau, \Tau$ - tau
 - $\theta, \Theta$ - theta, often denotes learnable parameters
+- $\mu, \Mu$ - pronounced _mju_, usually used to mean the mean (average)
+- $\sigma, \Sigma$ - pronunciation _sigma_, lowercase is standard deviation, uppercase is sum.
