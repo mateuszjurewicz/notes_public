@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Machine Learning
 created: '2021-11-19T16:02:40.897Z'
-modified: '2021-11-24T18:38:12.275Z'
+modified: '2021-11-25T14:18:53.984Z'
 ---
 
 # Machine Learning
@@ -32,8 +32,9 @@ A Yannic Kilcher video explaining the paper:
 https://www.youtube.com/watch?v=nQDZmf2Yb9k
 
 A good code implementation via github:
-https://nn.labml.ai/adaptive_computation/ponder_net/index.html
-(from https://github.com/labmlai/annotated_deep_learning_paper_implementations)
+- https://nn.labml.ai/adaptive_computation/ponder_net/index.html
+  - from https://github.com/labmlai/annotated_deep_learning_paper_implementations
+- https://github.com/lucidrains/ponder-transformer
 
 
 ### Reparametrization trick

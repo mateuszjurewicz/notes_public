@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: PyCharm
 created: '2021-11-19T12:30:15.889Z'
-modified: '2021-11-23T11:35:59.164Z'
+modified: '2021-11-25T12:40:06.071Z'
 ---
 
 # PyCharm
@@ -11,6 +11,12 @@ modified: '2021-11-23T11:35:59.164Z'
 
 - `cmd + alt + l`
 reformats current active .py file according to Code Style settings. Mostly hard-wraps and alignments by default.
+- `Zen Mode`
+had to map this one manually via the preferences -> keymap, to `cmd + shift + 6`.
+- `alt + tab`
+toggle between opened split panes in pycharm. Needed in Zen mode.
+- `ctrl + tab`
+similar, hold ctrl and press tab and then navigate between open files seeing their names. Allows to go to other files opened in the same pane.
 
 ### PyCharm via ssh
 
