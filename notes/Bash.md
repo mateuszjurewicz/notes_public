@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2021-11-20T14:49:11.771Z'
+modified: '2021-11-27T12:36:55.087Z'
 ---
 
 # Bash
@@ -38,9 +38,9 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 								
 ### Finding things				
 
-* `locate sth` uses a database and shows every file / folder with sth in its name, from pwd. Sometimes requires creation of this database first (updated once a day)						
+* `locate sth` uses a database and shows every file / folder with sth in its name, **from pwd**. Sometimes requires creation of this database first (updated once a day)						
 * `sudo updatedb` manually start an update to the locate database (requires root privileges)
-* `find . -name *sth*` looks for anything that fits the pattern *sth* in the . directory.						
+* `find . -iname *sth*` looks for anything that fits the pattern *sth* in the . directory. The `-name` or `-iname` flag specifies to look for the string pattern in the name of the file in a case sensitive or insensitive way. Otherwise it will look for the pattern also in the contents of files.			
 * `which sth` tells you if and where sth (some command, like ls) is installed on the system
 * `tree` gives you a easy-to-read tree of things in pwd							
 								
