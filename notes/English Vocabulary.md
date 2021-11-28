@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/English]
 title: English Vocabulary
 created: '2021-11-23T17:30:16.516Z'
-modified: '2021-11-27T12:40:49.957Z'
+modified: '2021-11-28T11:39:27.835Z'
 ---
 
 # English Vocabulary
@@ -23,6 +23,8 @@ a technical medical term for gums (in the mouth). Pronounced either 'gíngiwa' o
 information that could cause harm to someone's reputation (compromising material, from Russian). Relates to the Pegasus spyware.
 - `mother lode`
 the main vein of ore in a region, often misspelled as "load".
+- `percursory` == `cursory`
+performed with haste and scant attention.
 - `palmistry`
 palm reading, aka `chiromancy`
 - `plaque` (dental)
