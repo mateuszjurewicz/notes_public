@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/English]
 title: English Vocabulary
 created: '2021-11-23T17:30:16.516Z'
-modified: '2021-11-28T11:39:27.835Z'
+modified: '2021-11-29T06:18:25.280Z'
 ---
 
 # English Vocabulary
@@ -29,10 +29,14 @@ performed with haste and scant attention.
 palm reading, aka `chiromancy`
 - `plaque` (dental)
 the built up of calcified minerals around teeth, also known as `tartar` or, strangely, `calculus`.
+- `poindexter`
+a highly intelligent, bookish person but often socially inept. It's `poin` not point. From a 60s animated show Felix the Cats.
 - `recuse sb / oneself`
 of a judge -> to remove themselves from a case because of potential conflict of interest / lack of impartiality. A lawyer can ask for the judge to be recused.
 - `sashay`
 to walk in an ostentatious manner, often with exaggerated hip and shoulder movements.
+- `shofar`
+an ancient musical instrument, often in the form of a ram's horn, used for ancient Jewish religious purposes. Learned form the musical Godspell.
 - `whet sb's appetite`
 to increase sb's appetite, from `whet` as "to sharpen", as in a whetstone.
 
