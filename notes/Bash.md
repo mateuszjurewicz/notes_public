@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2021-11-27T12:36:55.087Z'
+modified: '2021-11-30T16:02:54.575Z'
 ---
 
 # Bash
@@ -119,5 +119,20 @@ You want to sometimes monitor or kill processes.
 * `ctrl + c` kills the current command
 * `killall app_name` kills the application / processes with given name
 
+### Bash Script
+
+How to write shell scripts for bash.
+
+- `!#/bin/bash`
+Has to be put up top in the script, it tells the system what program to use to execute this script (and that it is a script to begin with, via the hash-bang aka shebang: `!#`).
+- `.sh` extension
+is not strictly necessary, but good practice when naming bash script files. `sh` refers to a wider, more universal verson of the scripting language that bash is built on top of.
+- `chmod 700 first.sh`
+you may need to change the permission to make the file executable first, which will often show it in a different color in the console. However, I was able to run the file prior to this via `bash first.sh`. This however, enables running it via `./first.sh`.
+- `!#/bin/bash -x`
+this will run your script in debug mode, with more print-outs as to what's going on.
+- `~/username/bin` or `/usr/local/bin` is where you would usually put your .sh scripts so that you don't have to point to them via relative positioning (`./first.sh`), and then just use `first.sh` - but it doesn't quite work on a Mac, cause presumably that dir is not in the path variable.
+- `echo $PATH`
+will print out exactly what's in the current path, which is where the system will look for executable commands (as .sh scripts). This is often set / adjusted based on the contents of `.bashrc` or `.bash_profile` (on Mac, possibly just `.profile` on a linux). 
 
 
