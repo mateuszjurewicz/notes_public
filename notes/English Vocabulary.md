@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/English]
 title: English Vocabulary
 created: '2021-11-23T17:30:16.516Z'
-modified: '2021-11-29T20:15:42.553Z'
+modified: '2021-11-30T20:34:00.342Z'
 ---
 
 # English Vocabulary
@@ -39,6 +39,8 @@ to walk in an ostentatious manner, often with exaggerated hip and shoulder movem
 calm and having a self-assured command of one's faculties, feelings and behavior.
 - `shofar`
 an ancient musical instrument, often in the form of a ram's horn, used for ancient Jewish religious purposes. Learned form the musical Godspell.
+- `wallah`
+an arabic expression meaning "I swear by God" but also as a noun, from Hindi, it means a person employed in a particular activity (e.g. a kitchen wallah, rickshaw wallah) or an important person within a field (e.g. a Republican wallah).
 - `whet sb's appetite`
 to increase sb's appetite, from `whet` as "to sharpen", as in a whetstone.
 
