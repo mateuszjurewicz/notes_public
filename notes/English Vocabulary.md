@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/English]
 title: English Vocabulary
 created: '2021-11-23T17:30:16.516Z'
-modified: '2021-11-29T06:18:25.280Z'
+modified: '2021-11-29T20:15:42.553Z'
 ---
 
 # English Vocabulary
@@ -35,6 +35,8 @@ a highly intelligent, bookish person but often socially inept. It's `poin` not p
 of a judge -> to remove themselves from a case because of potential conflict of interest / lack of impartiality. A lawyer can ask for the judge to be recused.
 - `sashay`
 to walk in an ostentatious manner, often with exaggerated hip and shoulder movements.
+- `self-possessed`
+calm and having a self-assured command of one's faculties, feelings and behavior.
 - `shofar`
 an ancient musical instrument, often in the form of a ram's horn, used for ancient Jewish religious purposes. Learned form the musical Godspell.
 - `whet sb's appetite`
