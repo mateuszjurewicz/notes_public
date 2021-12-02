@@ -1,7 +1,7 @@
 ---
 title: PyTorch
 created: '2021-11-25T14:14:41.382Z'
-modified: '2021-12-02T10:40:09.096Z'
+modified: '2021-12-02T13:52:23.694Z'
 ---
 
 # PyTorch
@@ -21,3 +21,22 @@ def my_loss(output, target):
     loss = torch.mean((output - target)**2)
     return loss
 ```
+
+### Freezing Layers
+
+E.g. in a sentence ordering model, if I need to freeze the BERT layers (to avoid having to adjust an insane amount of params), I can make those layers' parameters not require gradient and also tell the optimizer to only touch the parameters that require grads:
+
+```
+for param in model.language_model.parameters():
+  param.requires_grad = False
+
+(...)
+
+optimizer = optim.AdamW(
+  filter(lambda p: p.requires_grad, model.parameters()),
+  lr=0.001)
+)
+```
+There may however be some nuance about batch normalization to look out for.
+
+Source: https://androidkt.com/pytorch-freeze-layer-fixed-feature-extractor-transfer-learning/
