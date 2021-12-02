@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Machine Learning
 created: '2021-11-19T16:02:40.897Z'
-modified: '2021-11-25T14:18:53.984Z'
+modified: '2021-12-02T10:37:55.243Z'
 ---
 
 # Machine Learning
@@ -50,3 +50,23 @@ https://youtu.be/EeMhj0sPrhE?t=1178
 
 And very simple VAE in code:
 https://github.com/pytorch/examples/blob/master/vae/main.py 
+
+### Activation functions
+
+Nonlinear functions often applied as the last tranformation in a neural network layer, giving them greater representation power than just a linear transform. In terms of biological inspiration, they are supposed to mimic the action potential of neurons (i.e. fire or don't fire, past a threshold). They usually have to be differentiable to allow for gradient-based learning.
+
+Common activation functions:
+- `ReLU` - rectified linear activation unit. Everything below zero gets turned to zero, everything above stays itself.
+$\textrm{ReLU}(x) = \textrm{max}(0.0, x)$
+
+- `Sigmoid` - aka `Logistic`, everything gets pushed between 0 and 1, with a hyperbolic-like curve in the middle. Most things below -5 and above 5 get pushed to almost -1 and almost 1. Recommended to use the Xavier Glorot's `Xavier Uniform` weight initialization and scale input data to 0-1 when using sigmoid.
+$\textrm{Sigmoid}(x) = 1.0~/~(1.0 + e^{-x})$
+
+- `TanH` - aka `hyperbolic tangent` function. Same shape as Sigmoid, but it has the range between -1 and 1.
+$\textrm{TanH}(x) = (e^x – e^{-x})~/~(e^x + e^{-x})$
+
+- `Softmax` - pushes a single value to be high whilst everything else in the input becomes lower and turns them into a proper probability vector (summing to 1).
+$\textrm{Softmax}(x) = e^x / \textrm{sum}(e^x)$
+
+- `Swish` - less known, developed by google, supposed to be good for deeper models. Graph looks much like ReLU but the formula is like Sigmoid, values range from slightly negative to infinity.
+$\textrm{Sigmoid}(x) = x~/~(1.0 + e^{-x}) = x * \textrm{Sigmoid}(x)$
