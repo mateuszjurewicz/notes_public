@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/English]
 title: English Vocabulary
 created: '2021-11-23T17:30:16.516Z'
-modified: '2021-11-30T20:34:00.342Z'
+modified: '2021-12-01T20:19:36.930Z'
 ---
 
 # English Vocabulary
@@ -11,6 +11,8 @@ Meant to be an alphabetized list of interesting words or phrases to improve my a
 
 - `adage`
 a saying, proverb.
+- `argot`
+a language used by a group to prevent outsiders from understanding, a slang, a jargon. Not be confused with `ergot`, which is th fungus that grows in wheat and causes hallucination (`Sporysz` in Polish).
 - `Bian Lian`
 the quick-face-mask-change art popular in Sichuan operas.
 - `bury the lede`
@@ -31,6 +33,8 @@ palm reading, aka `chiromancy`
 the built up of calcified minerals around teeth, also known as `tartar` or, strangely, `calculus`.
 - `poindexter`
 a highly intelligent, bookish person but often socially inept. It's `poin` not point. From a 60s animated show Felix the Cats.
+- `pugnacious`
+eager or quick to argue, quarrel or fight. Connect with `pugilist` (a boxer).
 - `recuse sb / oneself`
 of a judge -> to remove themselves from a case because of potential conflict of interest / lack of impartiality. A lawyer can ask for the judge to be recused.
 - `sashay`
@@ -39,6 +43,8 @@ to walk in an ostentatious manner, often with exaggerated hip and shoulder movem
 calm and having a self-assured command of one's faculties, feelings and behavior.
 - `shofar`
 an ancient musical instrument, often in the form of a ram's horn, used for ancient Jewish religious purposes. Learned form the musical Godspell.
+- `specious`
+plausible but false, deceptively pleasing but based on false pretense.
 - `wallah`
 an arabic expression meaning "I swear by God" but also as a noun, from Hindi, it means a person employed in a particular activity (e.g. a kitchen wallah, rickshaw wallah) or an important person within a field (e.g. a Republican wallah).
 - `whet sb's appetite`
