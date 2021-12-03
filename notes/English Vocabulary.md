@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/English]
 title: English Vocabulary
 created: '2021-11-23T17:30:16.516Z'
-modified: '2021-12-01T20:19:36.930Z'
+modified: '2021-12-03T06:16:37.411Z'
 ---
 
 # English Vocabulary
@@ -17,10 +17,14 @@ a language used by a group to prevent outsiders from understanding, a slang, a j
 the quick-face-mask-change art popular in Sichuan operas.
 - `bury the lede`
 to hide the more important piece of news among less important details. `Lede` is the introductory portion of a news story, commonly the first sentence.  Often confused with "lead", originates from print journalism, where "lead" also means the strip of metal separating lines of type.
+- `cabbage vs lettuce`
+kapusta & sałata
 - `dotage`
 old age, a period when a person is old andd weak. "In my dotage".
 - `gingiva`
 a technical medical term for gums (in the mouth). Pronounced either 'gíngiwa' or 'dżíndżiwa`.
+- `harrow`
+(pronunciation: _haroł_), it's both the farming implement not unlike a plow (po polsku _brona_), which has teeth and is dragged across the field to upturn it. Not literally, `to harrow` means "to cause distress". See `Harrowing of Hell` - which is the apocryphal story of Christ descending to Hell between crucifixion and resurrection, supposedly freeing some souls from eternal damnation, which would be quite an exception about the concept of hell. The idea that Christ harrows Hell is considered an early Church invention, with Byzantine art pioneering its depictions. Sometimes they distinguish that he descended into Sheol or Limbo, not true Hell. The doctrine that he descended is accepted in Catholicism, Lutheranism and the Orthodox church.
 - `kompromat`
 information that could cause harm to someone's reputation (compromising material, from Russian). Relates to the Pegasus spyware.
 - `mother lode`
