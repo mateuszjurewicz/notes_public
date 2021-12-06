@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/English]
 title: English Vocabulary
 created: '2021-11-23T17:30:16.516Z'
-modified: '2021-12-04T10:54:55.829Z'
+modified: '2021-12-04T15:24:37.947Z'
 ---
 
 # English Vocabulary
@@ -40,7 +40,7 @@ extreme povertty
 - `plaque` (dental)
 the built up of calcified minerals around teeth, also known as `tartar` or, strangely, `calculus`.
 - `poindexter`
-a highly intelligent, bookish person but often socially inept. It's `poin` not point. From a 60s animated show Felix the Cats.
+a highly intelligent, bookish person but often socially inept. It's `poin` not point. From a 60s animated show Felix the Cat.
 - `pugnacious`
 eager or quick to argue, quarrel or fight. Connect with `pugilist` (a boxer).
 - `recuse sb / oneself`
