@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2021-12-06T12:05:41.203Z'
+modified: '2021-12-04T15:20:33.037Z'
 ---
 
 # Bash
@@ -47,10 +47,10 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 								
 ### Commands info						
 
-* _up arrow_	goes up in the order of execution of previous commands
+* `up arrow`	goes up in the order of execution of previous commands
 * `history`	prints a list of 1 thousand executed commands							
 * `man some_command` gives full manual info about a command, including flags requires pressing :q to exit the manual (I think it opened vim)
-* `whatis some_command` gives a short manual about a command breaks a bit if multiple similar commands are available							
+* `whatis some_command` gives a short manual about a command, breaks a bit if multiple similar commands are available							
 * `apropos` sth	gives you a list of commands with sth in their names, so that you can look them up
 
 ### Moving, deleting and renaming files and directories
@@ -67,8 +67,9 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 
 * `head file1` shows first 10 lines of a file.
 * `head -20 file1` shows first 20 lines.
-* `cat file1` prints the entire contents of a file							
-* `cat >> file2` opens a console for writing things in, then pressing ctrl+c or ctrl+d will close it end we'll write-append that into file2 (possibly creating it)							
+* `tail -20 file1` shows last 20 lines.
+* `cat file1` prints the entire contents of a file.
+* `cat >> file2` opens a console for writing things in, then pressing ctrl+c or ctrl+d will close it end we'll write-append that into file2 (possibly creating it).
 * `cat > file3` opens a console for writing things in, then overwrites (instead of appending) the content of file3 with what we wrote.
 * `cat file1 file2` will print out the concatenated contents of the 2 files, in order.
 * `more file1` gives a way to quickly read the entire file quickly, using space to move from screen-worth to another. Use `q` to exit.
@@ -76,9 +77,11 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 
 ### Nano
 
-**nano** is an alternative to ****vim***, with nano you're immediately in edit mode and the magic key is `ctrl`, which is what you press with other keys to save (`ctrl + o`) and exit (`ctrl + x`). You can also search (ask "where is?" via `ctrl + w`).
+**nano** is an alternative to `vim`, with nano you're immediately in edit mode and the magic key is `ctrl`, which is what you press with other keys to save (`ctrl + o`) and exit (`ctrl + x`). You can also search (ask "where is?" via `ctrl + w`).
 
-You can also create a new file directly by executing `nano file1`.
+You can also create a new file directly by executing `nano file1`. 
+
+More about Nano in [[Nano]]
 
 ### Redirection
 
@@ -111,7 +114,8 @@ These stand for `r` reading. `w` writing, `x` executing.
 * `chmod 700 file1` - gives me (first of 3 digits) full permissions (7) and nothing to the other 2 section (00)
 
 `chmod 4` will give read access, `chmod 6` will give read and write access. They go down in increments of `421`.
-Commonly you set `chmod 644` for files (everyone can read, I can do everything) and `chmod 755 /a_dir` for directories. Changing permissions on a directory can make it invisible to some users.
+
+Commonly you set `chmod 644` for files (everyone can read, I can read + write) and `chmod 755 /a_dir` for directories. Changing permissions on a directory can make it invisible to some users.
 
 ### Processes
 
@@ -133,7 +137,7 @@ you may need to change the permission to make the file executable first, which w
 - `!#/bin/bash -x`
 this will run your script in debug mode, with more print-outs as to what's going on.
 - `~/username/bin` or `/usr/local/bin` is where you would usually put your .sh scripts so that you don't have to point to them via relative positioning (`./first.sh`), and then just use `first.sh` - but it doesn't quite work on a Mac, cause presumably that dir is not in the path variable.
-- `echo $PATH`
+- `echo $PATH` or better `echo $PATH | tr : '\n'`
 will print out exactly what's in the current path, which is where the system will look for executable commands (as .sh scripts). This is often set / adjusted based on the contents of `.bashrc` or `.bash_profile` (on Mac, possibly just `.profile` on a linux). 
 
 

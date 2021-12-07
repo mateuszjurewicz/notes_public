@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Mac
 created: '2021-11-19T12:14:12.323Z'
-modified: '2021-11-30T15:54:05.334Z'
+modified: '2021-12-04T15:26:54.271Z'
 ---
 
 # Mac
@@ -10,7 +10,7 @@ modified: '2021-11-30T15:54:05.334Z'
 - `ctrl + cmd + q` - lock screen
 - `cmd + m` - minimize the current active window (to dock)
 - `cmd + tab + down_arrow + enter` - select minimized window and bring it back up (have to navigate to the app via `cmd + tab` and whilst holding it, use arrow keys to select and then press enter)
-- `ctrl + cmd +f` or `f`
+- `ctrl + cmd + f` or `f`
 full screen of the currently active window, or for youtube opened in Chrome, just `f`, when active.
 
 ### Two displays & full-screen
