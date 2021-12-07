@@ -2,13 +2,15 @@
 tags: [Notebooks/Skills/English]
 title: English Vocabulary
 created: '2021-11-23T17:30:16.516Z'
-modified: '2021-12-04T15:24:37.947Z'
+modified: '2021-12-06T21:04:19.386Z'
 ---
 
 # English Vocabulary
 
 Meant to be an alphabetized list of interesting words or phrases to improve my ability to express myself in English.
 
+- `accoutrement`
+an accessory, additional item of equipment or dress.
 - `adage`
 a saying, proverb.
 - `argot`
@@ -29,6 +31,8 @@ a technical medical term for gums (in the mouth). Pronounced either 'gíngiwa' o
 one's friends, acquaintances and relations as opposed to blood relative (which are the "kin" in "kith and kin")
 - `kompromat`
 information that could cause harm to someone's reputation (compromising material, from Russian). Relates to the Pegasus spyware.
+- `matinée`
+an entertainment, such as a play, presented during the day, usually in the early afternoon (from the French, meaning morning).
 - `mother lode`
 the main vein of ore in a region, often misspelled as "load".
 - `percursory` == `cursory`
