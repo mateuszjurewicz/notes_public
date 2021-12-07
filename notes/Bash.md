@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2021-11-30T16:02:54.575Z'
+modified: '2021-12-06T12:05:41.203Z'
 ---
 
 # Bash
@@ -23,6 +23,7 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 * `ls -lh` shows more info in human readable format (combined flags)
 * `pwd` tells you what your present working directory / folder is (same thing on unix).	
 * `ls -alh /some_dir` will print the contents of a specified directory, with all 3 flags.
+* `ls -Sh` will list sorting by size (from largest) (`-S`), human readable.
 
 ### Navigating directories
 
