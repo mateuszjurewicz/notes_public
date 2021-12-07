@@ -23,6 +23,7 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 * `ls -lh` shows more info in human readable format (combined flags)
 * `pwd` tells you what your present working directory / folder is (same thing on unix).	
 * `ls -alh /some_dir` will print the contents of a specified directory, with all 3 flags.
+* `ls -Sh` will list sorting by size (from largest) (`-S`), human readable.
 
 ### Navigating directories
 

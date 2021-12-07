@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Machine Learning
 created: '2021-11-19T16:02:40.897Z'
-modified: '2021-12-02T10:37:55.243Z'
+modified: '2021-12-06T09:49:54.116Z'
 ---
 
 # Machine Learning
@@ -70,3 +70,9 @@ $\textrm{Softmax}(x) = e^x / \textrm{sum}(e^x)$
 
 - `Swish` - less known, developed by google, supposed to be good for deeper models. Graph looks much like ReLU but the formula is like Sigmoid, values range from slightly negative to infinity.
 $\textrm{Sigmoid}(x) = x~/~(1.0 + e^{-x}) = x * \textrm{Sigmoid}(x)$
+
+### Ablation study
+
+In AI, `ablation` is the removal of a component of an AI system, to see how the absence of that component impacts overall performance. In this way, we are able to somewhat judge its contribution to the overall results of the entire model. For neural nets this is an analogy to ablative brain surgery, where we tried to figure out what part of the brain does what by removing parts and asking animals to perform different tasks.
+
+Ablative studies require that the system exhibits `graceful decomposition`, meaning that they continue to function (if worse) even with missing components.
