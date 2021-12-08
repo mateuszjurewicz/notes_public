@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/English]
 title: English Vocabulary
 created: '2021-11-23T17:30:16.516Z'
-modified: '2021-12-06T21:04:19.386Z'
+modified: '2021-12-08T08:39:48.905Z'
 ---
 
 # English Vocabulary
@@ -17,6 +17,8 @@ a saying, proverb.
 a language used by a group to prevent outsiders from understanding, a slang, a jargon. Not be confused with `ergot`, which is th fungus that grows in wheat and causes hallucination (`Sporysz` in Polish).
 - `Bian Lian`
 the quick-face-mask-change art popular in Sichuan operas.
+- `(false) bill of goods`
+as in "to be sold a (false) bill of goods, means to be made a false promise. Bill of goods is just a list of items, negative connotation comes from paying for a list of items but never actually receiving the items. In RDR2 Arthur responds to being threatened with hell with "I sure hope it's fiery, otherwise I'll feel I've been sold a false bill of goods".
 - `bury the lede`
 to hide the more important piece of news among less important details. `Lede` is the introductory portion of a news story, commonly the first sentence.  Often confused with "lead", originates from print journalism, where "lead" also means the strip of metal separating lines of type.
 - `cabbage vs lettuce`
