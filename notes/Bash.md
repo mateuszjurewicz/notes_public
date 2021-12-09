@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2021-12-04T15:20:33.037Z'
+modified: '2021-12-09T15:07:14.624Z'
 ---
 
 # Bash
@@ -139,5 +139,13 @@ this will run your script in debug mode, with more print-outs as to what's going
 - `~/username/bin` or `/usr/local/bin` is where you would usually put your .sh scripts so that you don't have to point to them via relative positioning (`./first.sh`), and then just use `first.sh` - but it doesn't quite work on a Mac, cause presumably that dir is not in the path variable.
 - `echo $PATH` or better `echo $PATH | tr : '\n'`
 will print out exactly what's in the current path, which is where the system will look for executable commands (as .sh scripts). This is often set / adjusted based on the contents of `.bashrc` or `.bash_profile` (on Mac, possibly just `.profile` on a linux). 
+- `sudo first.sh` will only work if your script is in `usr/local/bin`, not in e,g, `/Users/mj/bin`. Otherwise you can't execute it via sudo. That's because sudo is like using the root user to execute sth, and the root user will not look for executables in your personl home directory.
+- `\` backslash allows to break long lines into multiple lines.
+- `/dev/null` 
+is the trash bucket folder, sometimes you'll want to only know if a command executed (with what status), not see its output, so then you can do `cmd.sh > /dev/null` and the actual output that would've gone to `stdout` (your screen) will be deleted. 
+- `&1` and `&2` can be used to redirect output to `stdout` and `stderr` respectively.
+E.g. `echo 'This will go to stdout' >&1` will got to stdout. 
+**Note the lack of space after > redirection!**
+
 
 
