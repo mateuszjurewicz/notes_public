@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2021-12-09T15:07:14.624Z'
+modified: '2021-12-10T13:57:16.486Z'
 ---
 
 # Bash
@@ -130,6 +130,7 @@ How to write shell scripts for bash.
 
 - `!#/bin/bash`
 Has to be put up top in the script, it tells the system what program to use to execute this script (and that it is a script to begin with, via the hash-bang aka shebang: `!#`).
+
 - `.sh` extension
 is not strictly necessary, but good practice when naming bash script files. `sh` refers to a wider, more universal verson of the scripting language that bash is built on top of.
 - `chmod 700 first.sh`
@@ -146,6 +147,50 @@ is the trash bucket folder, sometimes you'll want to only know if a command exec
 - `&1` and `&2` can be used to redirect output to `stdout` and `stderr` respectively.
 E.g. `echo 'This will go to stdout' >&1` will got to stdout. 
 **Note the lack of space after > redirection!**
+- `env` 
+prints environment variables in the current shell.
+- `a=b` sets a variable
+  - **gotcha** there has to be no spaces around the equals sign :)
+  - `echo $a` prints a variable (note the `$`)
+  - `unset a` to remove a variable (note the lack of $)
+- `$@` represents all of the arguments passed to a command in numerical order (can be used in a loop)
+  - and `$0` is the name of the command, `$1` is the first argument and so forth.
+- `test` 
+is a condition evaluation utility with many flags
+  - `test $a == "b"` will give a 0 exit code, and can be used to test booleans
+  - you can check whether a file is present using the `test` command:
+  `test -f ".bashrc" && echo "bashrc is here" || "bashrc is not here"`
+- `&&` is used for sequentially chaining commands.
+  - `test $a == "b && echo "Worked"` shows how to run commands sequentially via the `&&` double ampersand, giving us a nice printout if the test is successful (otherwise we have no way of knowing). 
+- `||` can be used for if-not, in conjunction with the &&
+  - `test $a == "b" && echo "a equals b" || echo "a doesn't equal b"`
+- `!=` and `==` are not-equal and equals checks
+- `$?`
+is the variable storing the exit code of the lasft command. 0 is good, everything else is not.
 
+- **if / else** conditionals:
+```
+#!/bin/bash
+
+a=b
+if [ $a == "b" ]; then
+        echo "a equals b"
+else
+        echo "a doesn't equal b"
+fi
+```
+- **send output you don't care about to** `/dev/null`
+```
+#!/bin/bash
+
+which ifconfig >/dev/null
+if [ $? != "0" ]; then
+        echo "SyncAll Error: the ifconfig is not installed!" >&2
+        echo "Ubuntu and Linux Mint: Run 'sudo apt install net-tools'" >&2
+        exit 1
+else
+        echo "ifconfig is installed!"
+fi
+```
 
 
