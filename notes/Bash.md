@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2021-12-10T13:57:16.486Z'
+modified: '2021-12-10T14:06:50.803Z'
 ---
 
 # Bash
@@ -158,7 +158,7 @@ prints environment variables in the current shell.
 - `test` 
 is a condition evaluation utility with many flags
   - `test $a == "b"` will give a 0 exit code, and can be used to test booleans
-  - you can check whether a file is present using the `test` command:
+  - you can check whether a file is present using the `test -f` command with a flag:
   `test -f ".bashrc" && echo "bashrc is here" || "bashrc is not here"`
 - `&&` is used for sequentially chaining commands.
   - `test $a == "b && echo "Worked"` shows how to run commands sequentially via the `&&` double ampersand, giving us a nice printout if the test is successful (otherwise we have no way of knowing). 
