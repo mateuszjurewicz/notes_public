@@ -1,7 +1,7 @@
 ---
 title: PyTorch
 created: '2021-11-25T14:14:41.382Z'
-modified: '2021-12-03T09:24:16.623Z'
+modified: '2021-12-11T10:15:12.637Z'
 ---
 
 # PyTorch
@@ -10,8 +10,9 @@ For useful things learned while using torch.
 
 ### General
 
-- `torch.full(size, fill_value)` - creates a tensor of specific size / dimensions, filled with one given value.
+- `torch.full(size, fill_value)` - creates a tensor of specific size / dimensions, full of one given value.
 - `tensor.is_cuda` gives a Boolean value whether a tensor is on a GPU or not.
+- `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
 
 ### Custom Loss Functions
 

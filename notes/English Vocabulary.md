@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/English]
 title: English Vocabulary
 created: '2021-11-23T17:30:16.516Z'
-modified: '2021-12-08T08:39:48.905Z'
+modified: '2021-12-11T10:09:04.071Z'
 ---
 
 # English Vocabulary
@@ -18,17 +18,19 @@ a language used by a group to prevent outsiders from understanding, a slang, a j
 - `Bian Lian`
 the quick-face-mask-change art popular in Sichuan operas.
 - `(false) bill of goods`
-as in "to be sold a (false) bill of goods, means to be made a false promise. Bill of goods is just a list of items, negative connotation comes from paying for a list of items but never actually receiving the items. In RDR2 Arthur responds to being threatened with hell with "I sure hope it's fiery, otherwise I'll feel I've been sold a false bill of goods".
+as in "to be sold a (false) bill of goods, means to be made a false promise. Bill of goods is just a list of items, negative connotation comes from paying for a list of items but never actually receiving the items. In RDR2 Arthur responds to being threatened with _eternity_ with "I hope it's hot and terrible, otherwise I'll feel I've been sold a false bill of goods".
 - `bury the lede`
 to hide the more important piece of news among less important details. `Lede` is the introductory portion of a news story, commonly the first sentence.  Often confused with "lead", originates from print journalism, where "lead" also means the strip of metal separating lines of type.
 - `cabbage vs lettuce`
 kapusta & sałata
+- `derrière`
+the part of the body a person sits on (the buttocks, the rear, the rump).
 - `dotage`
 old age, a period when a person is old andd weak. "In my dotage".
 - `gingiva`
 a technical medical term for gums (in the mouth). Pronounced either 'gíngiwa' or 'dżíndżiwa`.
 - `harrow`
-(pronunciation: _haroł_), it's both the farming implement not unlike a plow (po polsku _brona_), which has teeth and is dragged across the field to upturn it. Not literally, `to harrow` means "to cause distress". See `Harrowing of Hell` - which is the apocryphal story of Christ descending to Hell between crucifixion and resurrection, supposedly freeing some souls from eternal damnation, which would be quite an exception about the concept of hell. The idea that Christ harrows Hell is considered an early Church invention, with Byzantine art pioneering its depictions. Sometimes they distinguish that he descended into Sheol or Limbo, not true Hell. The doctrine that he descended is accepted in Catholicism, Lutheranism and the Orthodox church.
+(pronunciation: _haroł_ [brit]), it's both the farming implement not unlike a plow (po polsku _brona_), which has teeth and is dragged across the field to upturn it. Not literally, `to harrow` means "to cause distress". See `Harrowing of Hell` - which is the apocryphal story of Christ descending to Hell between crucifixion and resurrection, supposedly freeing some souls from eternal damnation, which would be quite an exception about the concept of hell. The idea that Christ harrows Hell is considered an early Church invention, with Byzantine art pioneering its depictions. Sometimes they distinguish that he descended into Sheol or Limbo, not true Hell. The doctrine that he descended is accepted in Catholicism, Lutheranism and the Orthodox church.
 - `kith`
 one's friends, acquaintances and relations as opposed to blood relative (which are the "kin" in "kith and kin")
 - `kompromat`
@@ -53,6 +55,8 @@ eager or quick to argue, quarrel or fight. Connect with `pugilist` (a boxer).
 of a judge -> to remove themselves from a case because of potential conflict of interest / lack of impartiality. A lawyer can ask for the judge to be recused.
 - `sashay`
 to walk in an ostentatious manner, often with exaggerated hip and shoulder movements.
+- `scurrilous`
+expressed in a vulgar or coarse manner. Sometimes also slanderous, defamatory.
 - `self-possessed`
 calm and having a self-assured command of one's faculties, feelings and behavior.
 - `shofar`

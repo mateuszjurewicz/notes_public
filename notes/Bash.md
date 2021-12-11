@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2021-12-10T14:06:50.803Z'
+modified: '2021-12-11T10:15:35.517Z'
 ---
 
 # Bash
@@ -15,19 +15,19 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 
 ### Basic
 
-* `~` sign always refers to the home directory.				
+* `~` sign always refers to the home directory.		
 * `/` (root) sign refers to where every other directory is on a linux / unix machine.	
-* `ls` tells you what is in your current directory							
-* `ls -a` shows hidden (all) documents and directories							
+* `ls` tells you what is in your current directory
+* `ls -a` shows hidden (all) documents and directories
 * `ls -l` shows a long list of information about non-hidden contents of pwd, e.g. size, date, permission					
 * `ls -lh` shows more info in human readable format (combined flags)
 * `pwd` tells you what your present working directory / folder is (same thing on unix).	
 * `ls -alh /some_dir` will print the contents of a specified directory, with all 3 flags.
-* `ls -Sh` will list sorting by size (from largest) (`-S`), human readable.
+* `ls -Slh` will list sorting by size (from largest) (`-S`), human readable with all long details.
 
 ### Navigating directories
 
-- `cd` used for moving around, without any arguments takes you to your home (~) directory.		
+- `cd` used for moving around, without any arguments takes you to your home (~) directory.	
 - `.` current directory							
 - `..` one-up directory							
 - `TAB` used for auto-complete, press twice to see candidates							
@@ -48,7 +48,7 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 ### Commands info						
 
 * `up arrow`	goes up in the order of execution of previous commands
-* `history`	prints a list of 1 thousand executed commands							
+* `history`	prints a list of 1 thousand executed commands
 * `man some_command` gives full manual info about a command, including flags requires pressing :q to exit the manual (I think it opened vim)
 * `whatis some_command` gives a short manual about a command, breaks a bit if multiple similar commands are available							
 * `apropos` sth	gives you a list of commands with sth in their names, so that you can look them up
@@ -57,7 +57,7 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 
 * `mkdir a_dir` makes a directory. You can type multiple names to create many in one go.	
 * `touch a_file` either creates a file if it doesn't exist or updates its last modified date if it does.					
-* `cp from/file1 to/file2` copies file1 from first directory onto the second one, under name file2 using TAB to make sure the original file exists is good practice.						
+* `cp from/file1 to/file2` copies file1 from first directory onto the second one, under name file2 using TAB to make sure the original file exists is good practice.			
 * `mv file1 file2` moves / renames a file							
 * `rm sth` removes a file							
 * `rm -r dir1` removes recursively the directory and its contents							
@@ -72,8 +72,9 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 * `cat >> file2` opens a console for writing things in, then pressing ctrl+c or ctrl+d will close it end we'll write-append that into file2 (possibly creating it).
 * `cat > file3` opens a console for writing things in, then overwrites (instead of appending) the content of file3 with what we wrote.
 * `cat file1 file2` will print out the concatenated contents of the 2 files, in order.
-* `more file1` gives a way to quickly read the entire file quickly, using space to move from screen-worth to another. Use `q` to exit.
+* `more file1` gives a way to quickly read the entire file quickly, using `space` to move from screen-worth to another. Use `q` to exit.
 * `less file1` a better version of more, allows for arrow key usage and searching.
+  - `less` also allows using `space` to read a file from screen to screen, which is the **best way to quickly read a file**.
 
 ### Nano
 
@@ -140,7 +141,7 @@ this will run your script in debug mode, with more print-outs as to what's going
 - `~/username/bin` or `/usr/local/bin` is where you would usually put your .sh scripts so that you don't have to point to them via relative positioning (`./first.sh`), and then just use `first.sh` - but it doesn't quite work on a Mac, cause presumably that dir is not in the path variable.
 - `echo $PATH` or better `echo $PATH | tr : '\n'`
 will print out exactly what's in the current path, which is where the system will look for executable commands (as .sh scripts). This is often set / adjusted based on the contents of `.bashrc` or `.bash_profile` (on Mac, possibly just `.profile` on a linux). 
-- `sudo first.sh` will only work if your script is in `usr/local/bin`, not in e,g, `/Users/mj/bin`. Otherwise you can't execute it via sudo. That's because sudo is like using the root user to execute sth, and the root user will not look for executables in your personl home directory.
+- `sudo first.sh` will only work if your script is in `usr/local/bin`, not in e,g, `/Users/mj/bin`. Otherwise you can't execute it via sudo. That's because sudo is like using the root user to execute sth, and the root user will not look for executables in your personal home directory.
 - `\` backslash allows to break long lines into multiple lines.
 - `/dev/null` 
 is the trash bucket folder, sometimes you'll want to only know if a command executed (with what status), not see its output, so then you can do `cmd.sh > /dev/null` and the actual output that would've gone to `stdout` (your screen) will be deleted. 
