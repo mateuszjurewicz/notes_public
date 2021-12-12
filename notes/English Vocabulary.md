@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/English]
 title: English Vocabulary
 created: '2021-11-23T17:30:16.516Z'
-modified: '2021-12-12T11:15:42.741Z'
+modified: '2021-12-12T19:07:50.871Z'
 ---
 
 # English Vocabulary
@@ -23,6 +23,10 @@ as in "to be sold a (false) bill of goods, means to be made a false promise. Bil
 to hide the more important piece of news among less important details. `Lede` is the introductory portion of a news story, commonly the first sentence.  Often confused with "lead", originates from print journalism, where "lead" also means the strip of metal separating lines of type.
 - `cabbage vs lettuce`
 kapusta & sałata
+- `coniferous` & `conifers`
+(of trees) bearing cones, mostly evergreen and needle-leaved trees fall under this category. Translates into _iglaste_.
+- `deciduous`
+of trees, having leafs and shedding them in autumn. Antonym of `evergreen`.
 - `derrière`
 the part of the body a person sits on (the buttocks, the rear, the rump).
 - `dotage`
@@ -65,6 +69,8 @@ calm and having a self-assured command of one's faculties, feelings and behavior
 an ancient musical instrument, often in the form of a ram's horn, used for ancient Jewish religious purposes. Learned form the musical Godspell.
 - `specious`
 plausible but false, deceptively pleasing but based on false pretense.
+- `vociferous`
+loud and forceful, characterized by vehement opinions (e.g. of support for something).
 - `wallah`
 an arabic expression meaning "I swear by God" but also as a noun, from Hindi, it means a person employed in a particular activity (e.g. a kitchen wallah, rickshaw wallah) or an important person within a field (e.g. a Republican wallah).
 - `whet sb's appetite`
