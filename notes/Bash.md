@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2021-12-11T10:15:35.517Z'
+modified: '2021-12-16T15:58:04.577Z'
 ---
 
 # Bash
@@ -194,4 +194,47 @@ else
 fi
 ```
 
+### Functions
+
+```
+#!/bin/bash
+
+# first function script
+
+# declare variables (or grab shell variables)
+
+a=b
+b=c
+c=d
+
+# function
+
+function1() {
+        local VAR1=1 # local variable
+        echo "from function1:" $VAR1
+        return # optional, exits a function but not the script
+}
+
+# you can alternatively use exit 1 instead of Return
+
+function2() {
+        local VAR1=2
+        echo "from function2:" $VAR1
+        exit 1
+}
+
+
+# run commands
+function1
+function2
+
+# optionally exit with code 0 (default), which will go into $?
+exit
+```
+
+- `set -e`
+useful thing for scripts that makes them stop if there's any error at all (otherwise they'll go to the next command in the script, I think). If any of the inner commands gives an exit code other than 0, full brakes. E.g. in the above example, if we add `set -e` to the top of the script and have function2 (which exits with `1`) be called before function1, then function1 will not be called.
+
+- `-yy`
+when added after a command like `sudo apt autoremove -yy` it will go through any prompts like "are you sure?" and just execute.
 

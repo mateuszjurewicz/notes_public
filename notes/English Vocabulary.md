@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/English]
 title: English Vocabulary
 created: '2021-11-23T17:30:16.516Z'
-modified: '2021-12-13T12:51:45.888Z'
+modified: '2021-12-16T15:30:09.901Z'
 ---
 
 # English Vocabulary
@@ -79,6 +79,8 @@ an ancient musical instrument, often in the form of a ram's horn, used for ancie
 a tooth that is broken or not in alignment with the others
 - `specious`
 plausible but false, deceptively pleasing but based on false pretense.
+- `terrycloth` aka `towelling` or `terry cotton`
+is a material where there are protruding loops of thread that can absorb a large amount of water, perfect for fluffy towels and bathrobes.
 - `vociferous`
 loud and forceful, characterized by vehement opinions (e.g. of support for something).
 - `wallah`
