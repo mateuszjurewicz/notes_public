@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/English]
 title: English Vocabulary
 created: '2021-11-23T17:30:16.516Z'
-modified: '2021-12-16T15:30:09.901Z'
+modified: '2021-12-17T11:25:58.717Z'
 ---
 
 # English Vocabulary
@@ -77,6 +77,8 @@ calm and having a self-assured command of one's faculties, feelings and behavior
 an ancient musical instrument, often in the form of a ram's horn, used for ancient Jewish religious purposes. Learned form the musical Godspell.
 - `snaggletooth` & `snaggletoothed`
 a tooth that is broken or not in alignment with the others
+- `soporific`
+inducing sleep or drowsiness (e.g. motions of a train or a rocking chair). As a noun it refers to a substance that induce sleep. Can also mean "sleepy" of a person or mood.
 - `specious`
 plausible but false, deceptively pleasing but based on false pretense.
 - `terrycloth` aka `towelling` or `terry cotton`
