@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/English]
 title: English Vocabulary
 created: '2021-11-23T17:30:16.516Z'
-modified: '2021-12-16T15:30:09.901Z'
+modified: '2021-12-16T19:17:41.900Z'
 ---
 
 # English Vocabulary
@@ -35,6 +35,8 @@ the part of the body a person sits on (the buttocks, the rear, the rump).
 old age, a period when a person is old andd weak. "In my dotage".
 - `gingiva`
 a technical medical term for gums (in the mouth). Pronounced either 'gíngiwa' or 'dżíndżiwa`.
+- `gloss over sth`
+to omit or minimize sth in an account or retelling, in order to diminish its importance.
 - `harrow`
 (pronunciation: _haroł_ [brit]), it's both the farming implement not unlike a plow (po polsku _brona_), which has teeth and is dragged across the field to upturn it. Not literally, `to harrow` means "to cause distress". See `Harrowing of Hell` - which is the apocryphal story of Christ descending to Hell between crucifixion and resurrection, supposedly freeing some souls from eternal damnation, which would be quite an exception about the concept of hell. The idea that Christ harrows Hell is considered an early Church invention, with Byzantine art pioneering its depictions. Sometimes they distinguish that he descended into Sheol or Limbo, not true Hell. The doctrine that he descended is accepted in Catholicism, Lutheranism and the Orthodox church.
 - `highfalutin`
