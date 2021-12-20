@@ -1,8 +1,7 @@
 ---
-tags: [Notebooks/Skills/English]
 title: English Vocabulary
-created: '2021-11-23T17:30:16.516Z'
-modified: '2021-12-17T11:25:58.717Z'
+created: '2021-12-17T16:39:01.173Z'
+modified: '2021-12-18T11:06:29.134Z'
 ---
 
 # English Vocabulary
@@ -58,7 +57,7 @@ performed with haste and scant attention.
 - `palmistry`
 palm reading, aka `chiromancy`
 - `penury`
-extreme povertty
+extreme poverty or being extremely frugal.
 - `plaque` (dental)
 the built up of calcified minerals around teeth, also known as `tartar` or, strangely, `calculus`.
 - `poindexter`

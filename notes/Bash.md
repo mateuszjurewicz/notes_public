@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2021-12-16T15:58:04.577Z'
+modified: '2021-12-18T10:53:17.308Z'
 ---
 
 # Bash
@@ -66,7 +66,7 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 ### Reading and editing files
 
 * `head file1` shows first 10 lines of a file.
-* `head -20 file1` shows first 20 lines.
+* `head -20 file1` shows first 20 lines (equivalent to `head -n 20 file1`)
 * `tail -20 file1` shows last 20 lines.
 * `cat file1` prints the entire contents of a file.
 * `cat >> file2` opens a console for writing things in, then pressing ctrl+c or ctrl+d will close it end we'll write-append that into file2 (possibly creating it).
@@ -129,8 +129,8 @@ You want to sometimes monitor or kill processes.
 
 How to write shell scripts for bash.
 
-- `!#/bin/bash`
-Has to be put up top in the script, it tells the system what program to use to execute this script (and that it is a script to begin with, via the hash-bang aka shebang: `!#`).
+- `#!/bin/bash`
+Has to be put up top in the script, it tells the system what program to use to execute this script (and that it is a script to begin with, via the hash-bang aka shebang: `#!`).
 
 - `.sh` extension
 is not strictly necessary, but good practice when naming bash script files. `sh` refers to a wider, more universal verson of the scripting language that bash is built on top of.
@@ -141,7 +141,7 @@ this will run your script in debug mode, with more print-outs as to what's going
 - `~/username/bin` or `/usr/local/bin` is where you would usually put your .sh scripts so that you don't have to point to them via relative positioning (`./first.sh`), and then just use `first.sh` - but it doesn't quite work on a Mac, cause presumably that dir is not in the path variable.
 - `echo $PATH` or better `echo $PATH | tr : '\n'`
 will print out exactly what's in the current path, which is where the system will look for executable commands (as .sh scripts). This is often set / adjusted based on the contents of `.bashrc` or `.bash_profile` (on Mac, possibly just `.profile` on a linux). 
-- `sudo first.sh` will only work if your script is in `usr/local/bin`, not in e,g, `/Users/mj/bin`. Otherwise you can't execute it via sudo. That's because sudo is like using the root user to execute sth, and the root user will not look for executables in your personal home directory.
+- `sudo first.sh` will only work if your script is in `usr/local/bin`, not in e.g. `/Users/mj/bin`. Otherwise you can't execute it via sudo. That's because sudo is like using the root user to execute sth, and the root user will not look for executables in your personal home directory.
 - `\` backslash allows to break long lines into multiple lines.
 - `/dev/null` 
 is the trash bucket folder, sometimes you'll want to only know if a command executed (with what status), not see its output, so then you can do `cmd.sh > /dev/null` and the actual output that would've gone to `stdout` (your screen) will be deleted. 
