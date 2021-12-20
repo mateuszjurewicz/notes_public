@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2021-12-20T10:41:05.736Z'
+modified: '2021-12-20T19:46:19.826Z'
 ---
 
 # English Vocabulary
@@ -16,6 +16,8 @@ a saying, proverb.
 a hairstyle popular in ancient Greece around Alexander the Great's time, characterized by being swept back from the forehead, with curls to the sides.
 - `argot`
 a language used by a group to prevent outsiders from understanding, a slang, a jargon. Not be confused with `ergot`, which is th fungus that grows in wheat and causes hallucination (`Sporysz` in Polish).
+- `avast!`
+stop, cease (nautical term, shouted out when a sailor was meant to stop doing sth).
 - `Bian Lian`
 the quick-face-mask-change art popular in Sichuan operas.
 - `(false) bill of goods`
@@ -26,8 +28,12 @@ to hide the more important piece of news among less important details. `Lede` is
 kapusta & sałata
 - `coniferous` & `conifers`
 (of trees) bearing cones, mostly evergreen and needle-leaved trees fall under this category. Translates into _iglaste_.
+- `coup de grâce`
+a blow of mercy, a death blow to end someone's suffering.
 - `deciduous`
 of trees, having leafs and shedding them in autumn. Antonym of `evergreen`.
+- `demitasse`
+a small cup used for drinking espresso coffee.
 - `derrière`
 the part of the body a person sits on (the buttocks, the rear, the rump).
 - `dotage`
@@ -36,6 +42,8 @@ old age, a period when a person is old andd weak. "In my dotage".
 a technical medical term for gums (in the mouth). Pronounced either 'gíngiwa' or 'dżíndżiwa`.
 - `gloss over sth`
 to omit or minimize sth in an account or retelling, in order to diminish its importance.
+- `fraternal twin`
+non-identical twin, aka dizygotic, biovular twin. Identical twins are called monozygotic.
 - `harrow`
 (pronunciation: _haroł_ [brit]), it's both the farming implement not unlike a plow (po polsku _brona_), which has teeth and is dragged across the field to upturn it. Not literally, `to harrow` means "to cause distress". See `Harrowing of Hell` - which is the apocryphal story of Christ descending to Hell between crucifixion and resurrection, supposedly freeing some souls from eternal damnation, which would be quite an exception about the concept of hell. The idea that Christ harrows Hell is considered an early Church invention, with Byzantine art pioneering its depictions. Sometimes they distinguish that he descended into Sheol or Limbo, not true Hell. The doctrine that he descended is accepted in Catholicism, Lutheranism and the Orthodox church.
 - `highfalutin`
