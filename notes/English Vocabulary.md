@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2021-12-18T11:06:29.134Z'
+modified: '2021-12-20T10:41:05.736Z'
 ---
 
 # English Vocabulary
@@ -74,6 +74,8 @@ to walk in an ostentatious manner, often with exaggerated hip and shoulder movem
 expressed in a vulgar or coarse manner. Sometimes also slanderous, defamatory.
 - `self-possessed`
 calm and having a self-assured command of one's faculties, feelings and behavior.
+- `septum`
+the middle barier between nostrils. Not be confused with `philtrum`, which is cleft above lips.
 - `shofar`
 an ancient musical instrument, often in the form of a ram's horn, used for ancient Jewish religious purposes. Learned form the musical Godspell.
 - `snaggletooth` & `snaggletoothed`
