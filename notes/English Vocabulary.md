@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2021-12-20T19:46:19.826Z'
+modified: '2021-12-20T20:53:25.613Z'
 ---
 
 # English Vocabulary
@@ -70,6 +70,8 @@ extreme poverty or being extremely frugal.
 the built up of calcified minerals around teeth, also known as `tartar` or, strangely, `calculus`.
 - `poindexter`
 a highly intelligent, bookish person but often socially inept. It's `poin` not point. From a 60s animated show Felix the Cat.
+- `protégé`
+a student and _mentee_, someone under protection and tutelage of sb established.
 - `pugnacious`
 eager or quick to argue, quarrel or fight. Connect with `pugilist` (a boxer).
 - `recuse sb / oneself`
