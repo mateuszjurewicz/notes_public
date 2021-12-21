@@ -1,11 +1,11 @@
 ---
 tags: [Notebooks/Skills/Tech]
-title: Latex
+title: LaTeX
 created: '2021-12-21T09:55:45.925Z'
-modified: '2021-12-21T09:58:02.299Z'
+modified: '2021-12-21T09:58:24.098Z'
 ---
 
-# Latex
+# LaTeX
 
 Basic notes on $LaTeX$, which in Notable is actual $KaTeX$.
 
