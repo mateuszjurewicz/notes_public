@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2021-12-21T09:29:23.143Z'
+modified: '2021-12-21T13:46:38.621Z'
 ---
 
 # English Vocabulary
@@ -76,6 +76,8 @@ a highly intelligent, bookish person but often socially inept. It's `poin` not p
 a student and _mentee_, someone under protection and tutelage of sb established.
 - `pugnacious`
 eager or quick to argue, quarrel or fight. Connect with `pugilist` (a boxer).
+- `rakish` and `rakishly good-looking` (pronounced "rejkisz")
+dashingly or carelessly unconventonal. Alternatively having a trim or streamlined appearance suggestive of speed (when referring to a ship).
 - `recuse sb / oneself`
 of a judge -> to remove themselves from a case because of potential conflict of interest / lack of impartiality. A lawyer can ask for the judge to be recused.
 - `sagacious` & `sagacity`
