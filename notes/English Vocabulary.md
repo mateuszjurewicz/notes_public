@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2021-12-20T20:53:25.613Z'
+modified: '2021-12-21T09:29:23.143Z'
 ---
 
 # English Vocabulary
@@ -60,10 +60,12 @@ an entertainment, such as a play, presented during the day, usually in the early
 the main vein of ore in a region, often misspelled as "load".
 - `obviate`
 to avoid or prevent sth undesirable, prevent a difficulty. E.g. having a parachute can obviate disaster. "Bad actions aren't obviated by shame".
-- `percursory` == `cursory`
-performed with haste and scant attention.
 - `palmistry`
 palm reading, aka `chiromancy`
+- `percursory` == `cursory`
+performed with haste and scant attention.
+- `perineum`
+anatomical term for the taint
 - `penury`
 extreme poverty or being extremely frugal.
 - `plaque` (dental)
