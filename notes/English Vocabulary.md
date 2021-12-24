@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2021-12-21T13:46:38.621Z'
+modified: '2021-12-24T08:27:41.083Z'
 ---
 
 # English Vocabulary
@@ -88,6 +88,8 @@ to walk in an ostentatious manner, often with exaggerated hip and shoulder movem
 expressed in a vulgar or coarse manner. Sometimes also slanderous, defamatory.
 - `self-possessed`
 calm and having a self-assured command of one's faculties, feelings and behavior.
+- `seminal`
+strongly influential to later developments (of a work of art).
 - `septum`
 the middle barier between nostrils. Not be confused with `philtrum`, which is cleft above lips.
 - `shofar`
