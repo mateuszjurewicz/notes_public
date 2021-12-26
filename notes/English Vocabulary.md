@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2021-12-24T08:27:41.083Z'
+modified: '2021-12-26T09:46:50.133Z'
 ---
 
 # English Vocabulary
@@ -32,6 +32,8 @@ kapusta & sałata
 a blow of mercy, a death blow to end someone's suffering.
 - `deciduous`
 of trees, having leafs and shedding them in autumn. Antonym of `evergreen`.
+- `demerit`
+A mark made by a teacher or an authority figure against one's record for a fault or misconduct. When a student misbehaves they are given a ---. 
 - `demitasse`
 a small cup used for drinking espresso coffee.
 - `derrière`
@@ -76,6 +78,8 @@ a highly intelligent, bookish person but often socially inept. It's `poin` not p
 a student and _mentee_, someone under protection and tutelage of sb established.
 - `pugnacious`
 eager or quick to argue, quarrel or fight. Connect with `pugilist` (a boxer).
+- `rebar`
+short for reinforcing bar, it's those pieces of curving steel rods that go into cement.
 - `rakish` and `rakishly good-looking` (pronounced "rejkisz")
 dashingly or carelessly unconventonal. Alternatively having a trim or streamlined appearance suggestive of speed (when referring to a ship).
 - `recuse sb / oneself`
