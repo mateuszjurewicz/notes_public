@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2021-12-18T10:53:17.308Z'
+modified: '2021-12-26T13:13:44.005Z'
 ---
 
 # Bash
@@ -34,8 +34,7 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 - `\` back-slash is used for escaping characters, particularly spaces in directory and file names		
 - `/` forward-slash is also used for addressing, e.g. ~/usr/mateusz	(other than just meaning root dir)									
 - `pushd /some_dir` takes you to /sdir, but remembers where you started the journey							
-- `popd /some_dir` takes you back to your original directory, before moving to /sdir							
-- `file some_file` gives you info about a dir or file (e.g. is it jpeg, txt, wav etc., because on unix we don't always have extensions)							
+- `popd /some_dir` takes you back to your original directory, before moving to /sdir												
 								
 ### Finding things				
 
@@ -52,6 +51,7 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 * `man some_command` gives full manual info about a command, including flags requires pressing :q to exit the manual (I think it opened vim)
 * `whatis some_command` gives a short manual about a command, breaks a bit if multiple similar commands are available							
 * `apropos` sth	gives you a list of commands with sth in their names, so that you can look them up
+* `file some_file` gives you info about a dir or file (e.g. is it jpeg, txt, wav etc., because on unix we don't always have extensions)		
 
 ### Moving, deleting and renaming files and directories
 
