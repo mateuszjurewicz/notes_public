@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-01-04T10:15:22.242Z'
+modified: '2022-01-05T10:17:17.080Z'
 ---
 
 # English Vocabulary
@@ -29,11 +29,13 @@ the christian clerical clothing coat, worn primarily by Catholic priests (with t
 - `cabbage vs lettuce`
 kapusta & sałata
 - `cinch`
-something sure or easy, a person or thing certain to fulfill an expectation.
+something sure or easy, a person or thing certain to fulfill an expectation. An easy task, a certainty.
 - `coniferous` & `conifers`
 (of trees) bearing cones, mostly evergreen and needle-leaved trees fall under this category. Translates into _iglaste_.
 - `coup de grâce`
 a blow of mercy, a death blow to end someone's suffering.
+- `crack-up` (a real crack-up)
+a funny person (informally in the US), but also a mental breakdown. RBG is famously a crack-up, according to Off Book.
 - `deciduous`
 of trees, having leafs and shedding them in autumn. Antonym of `evergreen`.
 - `demerit`
@@ -54,6 +56,8 @@ non-identical twin, aka dizygotic, biovular twin. Identical twins are called mon
 (pronunciation: _haroł_ [brit]), it's both the farming implement not unlike a plow (po polsku _brona_), which has teeth and is dragged across the field to upturn it. Not literally, `to harrow` means "to cause distress". See `Harrowing of Hell` - which is the apocryphal story of Christ descending to Hell between crucifixion and resurrection, supposedly freeing some souls from eternal damnation, which would be quite an exception about the concept of hell. The idea that Christ harrows Hell is considered an early Church invention, with Byzantine art pioneering its depictions. Sometimes they distinguish that he descended into Sheol or Limbo, not true Hell. The doctrine that he descended is accepted in Catholicism, Lutheranism and the Orthodox church.
 - `highfalutin`
 pompous, pretentious, needlessly haughty, especially of a manner of speaking or one's use of vocabulary. Putting on airs, affectedly `genteel` (belonging to polite / high society, well-bred & refined).
+- `indictment`
+Either 1) something that illustrates that a certain situation is bad and deserves condemnation or 2) a formal accusation of a serious crime.
 - `journeyman`
 a qualified, competent craftsman or artisan. A step above an apprentice but possibly below a master, particularly within medieval guild systems.
 - `jowls`
@@ -98,6 +102,8 @@ of a judge -> to remove themselves from a case because of potential conflict of 
 having or showing keen mental discernment and good judgement, far-sighted, shrewd, wise. Note the difference in pronunciation between adjective and noun.
 - `sashay`
 to walk in an ostentatious manner, often with exaggerated hip and shoulder movements.
+- `scathing`
+severly critical of something, witheringly scornful. E.g. of an indictment or an attack.
 - `scurrilous`
 expressed in a vulgar or coarse manner. Sometimes also slanderous, defamatory.
 - `self-possessed`
