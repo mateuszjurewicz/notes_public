@@ -2,12 +2,14 @@
 tags: [Notebooks/Skills/Tech]
 title: LaTeX
 created: '2021-12-21T09:55:45.925Z'
-modified: '2021-12-21T09:58:24.098Z'
+modified: '2022-01-05T14:19:51.844Z'
 ---
 
 # LaTeX
 
 Basic notes on $LaTeX$, which in Notable is actual $KaTeX$.
+
+- `hat{y}` generates $\hat{y}$, which is used for model prediction in classification.
 
 ### Figure sizes
 
