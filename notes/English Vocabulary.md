@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-01-05T10:17:17.080Z'
+modified: '2022-01-05T12:48:20.888Z'
 ---
 
 # English Vocabulary
@@ -50,6 +50,8 @@ old age, a period when a person is old andd weak. "In my dotage".
 a technical medical term for gums (in the mouth). Pronounced either 'gíngiwa' or 'dżíndżiwa`.
 - `gloss over sth`
 to omit or minimize sth in an account or retelling, in order to diminish its importance.
+- `grouse (to)` (as verb)
+to grumble, to persistently complain (gderac). Can refer to a person who often complains by adding an 'r' at the end. As a noun it refers to a type of bird.
 - `fraternal twin`
 non-identical twin, aka dizygotic, biovular twin. Identical twins are called monozygotic.
 - `harrow`
@@ -88,6 +90,8 @@ extreme poverty or being extremely frugal.
 the built up of calcified minerals around teeth, also known as `tartar` or, strangely, `calculus`.
 - `poindexter`
 a highly intelligent, bookish person but often socially inept. It's `poin` not point. From a 60s animated show Felix the Cat.
+- `poultry`
+domesticated fowl, such as chickens, turkeys, ducks or gees,raised for meat and eggs. Fowl refers to these species of bird.
 - `protégé`
 a student and _mentee_, someone under protection and tutelage of sb established.
 - `pugnacious`
