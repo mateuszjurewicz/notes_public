@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2021-12-26T13:13:44.005Z'
+modified: '2022-01-06T13:10:12.275Z'
 ---
 
 # Bash
@@ -12,6 +12,14 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 * `ctrl + d` = `exit`
 * `ctrl + c` kills current process
 * `ctrl + l` = `clear`
+
+### Disk Usage
+Run into a problem with the disk being full on a paperspace instance. Here's what helped:
+
+* `sudo du -a /home | sort -n -r | head -n 10` 
+This will show the 10 largest directories, for candidates to clean.
+* `df -h`
+Will show candidate culprits, but on an Ubuntu most will be dev/mapper/ either way, which is not useful.
 
 ### Basic
 
