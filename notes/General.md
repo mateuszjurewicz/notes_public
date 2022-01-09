@@ -2,7 +2,7 @@
 pinned: true
 title: General
 created: '2021-11-18T10:44:17.779Z'
-modified: '2021-12-26T13:12:31.729Z'
+modified: '2022-01-08T10:38:50.317Z'
 ---
 
 # General
@@ -12,6 +12,7 @@ Using the `Notable` app for managing these documents. Easy to read and to have a
 
 ### Upcoming skills
 
+- [x] finish bash script vid 1
 - [ ] finish [bash script vid 2](https://www.youtube.com/watch?v=6W8sAWakcxY&list=PLTXMX1FE5Hj7QDc8R1GyaNucSI3aH-Sp5&index=2&ab_channel=JoeCollins)
 - [ ] finish [bash script vid 3](https://www.youtube.com/watch?v=9aD59kA_P1M&list=PLTXMX1FE5Hj7QDc8R1GyaNucSI3aH-Sp5&index=3&ab_channel=JoeCollins)
 - [ ] python rookie mistakes [vid](https://www.youtube.com/watch?v=qUeud6DvOWI) (for Python notes)

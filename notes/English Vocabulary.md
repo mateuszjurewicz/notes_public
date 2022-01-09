@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-01-05T12:48:20.888Z'
+modified: '2022-01-09T19:20:08.307Z'
 ---
 
 # English Vocabulary
@@ -18,6 +18,8 @@ a hairstyle popular in ancient Greece around Alexander the Great's time, charact
 a language used by a group to prevent outsiders from understanding, a slang, a jargon. Not be confused with `ergot`, which is th fungus that grows in wheat and causes hallucination (`Sporysz` in Polish).
 - `avast!`
 stop, cease (nautical term, shouted out when a sailor was meant to stop doing sth).
+- `bated breath`
+held breath (signifiying anticipation)
 - `Bian Lian`
 the quick-face-mask-change art popular in Sichuan operas.
 - `(false) bill of goods`
@@ -99,7 +101,7 @@ eager or quick to argue, quarrel or fight. Connect with `pugilist` (a boxer).
 - `rebar`
 short for reinforcing bar, it's those pieces of curving steel rods that go into cement.
 - `rakish` and `rakishly good-looking` (pronounced "rejkisz")
-dashingly or carelessly unconventonal. Alternatively having a trim or streamlined appearance suggestive of speed (when referring to a ship).
+dashingly or carelessly unconventional. Alternatively having a trim or streamlined appearance suggestive of speed (when referring to a ship).
 - `recuse sb / oneself`
 of a judge -> to remove themselves from a case because of potential conflict of interest / lack of impartiality. A lawyer can ask for the judge to be recused.
 - `sagacious` & `sagacity`
