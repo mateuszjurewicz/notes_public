@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-01-09T19:20:08.307Z'
+modified: '2022-01-13T08:39:16.205Z'
 ---
 
 # English Vocabulary
@@ -20,6 +20,8 @@ a language used by a group to prevent outsiders from understanding, a slang, a j
 stop, cease (nautical term, shouted out when a sailor was meant to stop doing sth).
 - `bated breath`
 held breath (signifiying anticipation)
+- `belfry`
+a bell tower, especially one attached to a building.
 - `Bian Lian`
 the quick-face-mask-change art popular in Sichuan operas.
 - `(false) bill of goods`
