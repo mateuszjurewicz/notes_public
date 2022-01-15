@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-01-14T21:42:21.476Z'
+modified: '2022-01-15T13:14:50.251Z'
 ---
 
 # English Vocabulary
@@ -36,6 +36,8 @@ kapusta & sałata
 something sure or easy, a person or thing certain to fulfill an expectation. An easy task, a certainty.
 - `coniferous` & `conifers`
 (of trees) bearing cones, mostly evergreen and needle-leaved trees fall under this category. Translates into _iglaste_.
+- `costermonger`
+A street seller of fruit and vegetables in British towns. The term is derived from the words for a medieval variety of apple and seller, and later came to be used to describe hawkers in general. Very coloruful figures, distinctive, shouty / singy, at war with grocers and the police.
 - `coup de grâce`
 a blow of mercy, a death blow to end someone's suffering.
 - `crack-up` (a real crack-up)
@@ -62,6 +64,8 @@ non-identical twin, aka dizygotic, biovular twin. Identical twins are called mon
 (pronunciation: _haroł_ [brit]), it's both the farming implement not unlike a plow (po polsku _brona_), which has teeth and is dragged across the field to upturn it. Not literally, `to harrow` means "to cause distress". See `Harrowing of Hell` - which is the apocryphal story of Christ descending to Hell between crucifixion and resurrection, supposedly freeing some souls from eternal damnation, which would be quite an exception about the concept of hell. The idea that Christ harrows Hell is considered an early Church invention, with Byzantine art pioneering its depictions. Sometimes they distinguish that he descended into Sheol or Limbo, not true Hell. The doctrine that he descended is accepted in Catholicism, Lutheranism and the Orthodox church.
 - `highfalutin`
 pompous, pretentious, needlessly haughty, especially of a manner of speaking or one's use of vocabulary. Putting on airs, affectedly `genteel` (belonging to polite / high society, well-bred & refined).
+- `hoi oligoi`
+The few.
 - `hoi polloi`
 from Greek, meaning the people, in English mostly pejoratively "the masses".
 - `indictment`
