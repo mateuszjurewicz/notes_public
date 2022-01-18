@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-01-15T13:14:50.251Z'
+modified: '2022-01-18T20:45:16.404Z'
 ---
 
 # English Vocabulary
@@ -18,6 +18,8 @@ a hairstyle popular in ancient Greece around Alexander the Great's time, charact
 a language used by a group to prevent outsiders from understanding, a slang, a jargon. Not be confused with `ergot`, which is th fungus that grows in wheat and causes hallucination (`Sporysz` in Polish).
 - `avast!`
 stop, cease (nautical term, shouted out when a sailor was meant to stop doing sth).
+- `avuncular`
+kind and friendly towards a younger or less experienced person. In antropology refers to the relationship between men and the children of their siblings (as in uncles).
 - `bated breath`
 held breath (signifiying anticipation)
 - `belfry`
