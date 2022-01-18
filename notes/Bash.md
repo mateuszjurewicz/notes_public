@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2022-01-06T13:10:12.275Z'
+modified: '2022-01-18T14:55:27.810Z'
 ---
 
 # Bash
@@ -20,6 +20,20 @@ Run into a problem with the disk being full on a paperspace instance. Here's wha
 This will show the 10 largest directories, for candidates to clean.
 * `df -h`
 Will show candidate culprits, but on an Ubuntu most will be dev/mapper/ either way, which is not useful.
+
+
+### Stop, Shutdown and Restart
+These are the commands for stopping and restarting your machine. All require sudo privileges.
+
+- `sudo halt` - stops all CPU functions
+- `sudo poweroff` - shuts the system down (sends a ACPI request to the hardware). Closest to actually pushing the shutdown button.
+- `sudo reboot` - restarts the system
+- `shutdown` is more gentle, sends info to other logged-in users and can be scheduled via `shutdown 20:00` or `shutdown -t n_seconds`
+
+Can be forced via:
+
+- `sudo reboot --force` aka `-f`
+- `sudo reboot --verbose` gives more debug info.
 
 ### Basic
 

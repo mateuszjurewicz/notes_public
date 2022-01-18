@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Mac
 created: '2021-11-19T12:14:12.323Z'
-modified: '2021-12-04T15:26:54.271Z'
+modified: '2022-01-18T09:14:15.899Z'
 ---
 
 # Mac
@@ -12,6 +12,7 @@ modified: '2021-12-04T15:26:54.271Z'
 - `cmd + tab + down_arrow + enter` - select minimized window and bring it back up (have to navigate to the app via `cmd + tab` and whilst holding it, use arrow keys to select and then press enter)
 - `ctrl + cmd + f` or `f`
 full screen of the currently active window, or for youtube opened in Chrome, just `f`, when active.
+- `cmd + alt/option + escape` opens a quick force-quit window
 
 ### Two displays & full-screen
 - `ctrl + left/right arrow` 
