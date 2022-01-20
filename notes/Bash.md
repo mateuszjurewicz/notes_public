@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2022-01-18T14:55:27.810Z'
+modified: '2022-01-20T15:02:04.514Z'
 ---
 
 # Bash
@@ -12,6 +12,7 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 * `ctrl + d` = `exit`
 * `ctrl + c` kills current process
 * `ctrl + l` = `clear`
+* `source ~/.bash_profile` reload shell after making changes to profiles & paths
 
 ### Disk Usage
 Run into a problem with the disk being full on a paperspace instance. Here's what helped:
@@ -259,4 +260,9 @@ useful thing for scripts that makes them stop if there's any error at all (other
 
 - `-yy`
 when added after a command like `sudo apt autoremove -yy` it will go through any prompts like "are you sure?" and just execute.
+
+#### Printing strings
+Generally speaking we can use `echo "some string"`, but for longer strings we may need to e.g. escape characters, which gets cumbersome
+
+- `$'\n'` will escape a newline, e.g. `echo line 1 $'n' line 3`
 
