@@ -2,7 +2,7 @@
 pinned: true
 title: General
 created: '2021-11-18T10:44:17.779Z'
-modified: '2022-01-18T14:45:25.340Z'
+modified: '2022-01-22T10:20:14.314Z'
 ---
 
 # General
@@ -25,7 +25,9 @@ Using the `Notable` app for managing these documents. Easy to read and to have a
 ### _Notable_ functionalities
 
 - `cmd + alt + s` 
-switches back and forth between a split view of rendered markdown and the editor to just the render.
+switches back and forth between a split view of rendered markdown and the editor to just the render (in Notable.)
+- `cmd + e` 
+enters editing mode in Obsidian (not in Notable).
 - **relative links**
 [a relative link to Bash notes](Bash.md)
 - **colour text** 

@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-01-18T20:45:16.404Z'
+modified: '2022-01-22T10:36:32.521Z'
 ---
 
 # English Vocabulary
@@ -53,23 +53,25 @@ a small cup used for drinking espresso coffee.
 - `derrière`
 the part of the body a person sits on (the buttocks, the rear, the rump).
 - `dotage`
-old age, a period when a person is old andd weak. "In my dotage".
+old age, a period when a person is old and weak. "In my dotage".
+- `fraternal twin`
+non-identical twin, aka dizygotic, biovular twin. Identical twins are called monozygotic.
 - `gingiva`
 a technical medical term for gums (in the mouth). Pronounced either 'gíngiwa' or 'dżíndżiwa`.
 - `gloss over sth`
 to omit or minimize sth in an account or retelling, in order to diminish its importance.
 - `grouse (to)` (as verb)
 to grumble, to persistently complain (gderac). Can refer to a person who often complains by adding an 'r' at the end. As a noun it refers to a type of bird.
-- `fraternal twin`
-non-identical twin, aka dizygotic, biovular twin. Identical twins are called monozygotic.
 - `harrow`
 (pronunciation: _haroł_ [brit]), it's both the farming implement not unlike a plow (po polsku _brona_), which has teeth and is dragged across the field to upturn it. Not literally, `to harrow` means "to cause distress". See `Harrowing of Hell` - which is the apocryphal story of Christ descending to Hell between crucifixion and resurrection, supposedly freeing some souls from eternal damnation, which would be quite an exception about the concept of hell. The idea that Christ harrows Hell is considered an early Church invention, with Byzantine art pioneering its depictions. Sometimes they distinguish that he descended into Sheol or Limbo, not true Hell. The doctrine that he descended is accepted in Catholicism, Lutheranism and the Orthodox church.
+- `hearse`
+A funeral car that carries the casket from the funeral house to the cemetery or crematorium.
 - `highfalutin`
 pompous, pretentious, needlessly haughty, especially of a manner of speaking or one's use of vocabulary. Putting on airs, affectedly `genteel` (belonging to polite / high society, well-bred & refined).
 - `hoi oligoi`
 The few.
 - `hoi polloi`
-from Greek, meaning the people, in English mostly pejoratively "the masses".
+from Greek, meaning the common people, in English mostly pejoratively "the masses".
 - `indictment`
 Either 1) something that illustrates that a certain situation is bad and deserves condemnation or 2) a formal accusation of a serious crime.
 - `journeyman`
@@ -91,9 +93,11 @@ to avoid or prevent sth undesirable, prevent a difficulty. E.g. having a parachu
 - `palmistry`
 palm reading, aka `chiromancy`
 - `panhandling`
-a synonym of begging. When preceded by the term "aggressive" it becomes an illegal form of begging. Begging can also be called `mendicancy`, and a beggar a `mendicant`,with religious connotation (e.g. alms for the poor).
+a synonym of begging. When preceded by the term "aggressive" it becomes an illegal form of begging. Begging can also be called `mendicancy`, and a beggar a `mendicant`, with religious connotation (e.g. alms for the poor).
 - `percursory` == `cursory`
 performed with haste and scant attention.
+- `perfunctory`
+performed without real interest, feeling or effort.
 - `perineum`
 anatomical term for the taint
 - `penury`
