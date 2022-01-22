@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-01-22T10:36:32.521Z'
+modified: '2022-01-22T13:45:52.399Z'
 ---
 
 # English Vocabulary
@@ -42,6 +42,8 @@ something sure or easy, a person or thing certain to fulfill an expectation. An 
 A street seller of fruit and vegetables in British towns. The term is derived from the words for a medieval variety of apple and seller, and later came to be used to describe hawkers in general. Very coloruful figures, distinctive, shouty / singy, at war with grocers and the police.
 - `coup de grâce`
 a blow of mercy, a death blow to end someone's suffering.
+- `coxswain`
+in rowing, the person navigating the boat with a stern (doesn't actually row). In naval terms, in the age of sails, it's generally a petty officer.
 - `crack-up` (a real crack-up)
 a funny person (informally in the US), but also a mental breakdown. RBG is famously a crack-up, according to Off Book.
 - `deciduous`
