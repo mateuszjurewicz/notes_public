@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-01-27T11:55:00.067Z'
+modified: '2022-01-27T21:09:49.115Z'
 ---
 
 # English Vocabulary
@@ -116,6 +116,8 @@ domesticated fowl, such as chickens, turkeys, ducks or gees,raised for meat and 
 a student and _mentee_, someone under protection and tutelage of sb established.
 - `pugnacious`
 eager or quick to argue, quarrel or fight. Connect with `pugilist` (a boxer).
+- `quilted`
+in polish "pikowana", e.g. of leather or a jacket. Refers to joining layers of fabric, usually by stitching, forming all kinds but usually a criss-cross pattern.
 - `rebar`
 short for reinforcing bar, it's those pieces of curving steel rods that go into cement.
 - `rakish` and `rakishly good-looking` (pronounced "rejkisz")
