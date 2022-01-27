@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-01-22T13:45:52.399Z'
+modified: '2022-01-27T11:55:00.067Z'
 ---
 
 # English Vocabulary
@@ -36,6 +36,8 @@ the christian clerical clothing coat, worn primarily by Catholic priests (with t
 kapusta & sałata
 - `cinch`
 something sure or easy, a person or thing certain to fulfill an expectation. An easy task, a certainty.
+- `clarion (call)`
+loud and clear (as adjective), strongly expressed demand or request for action (with noun). Refers to a trumpet-like instrument.
 - `coniferous` & `conifers`
 (of trees) bearing cones, mostly evergreen and needle-leaved trees fall under this category. Translates into _iglaste_.
 - `costermonger`
