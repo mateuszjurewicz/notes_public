@@ -1,7 +1,7 @@
 ---
 title: PyTorch
 created: '2021-11-25T14:14:41.382Z'
-modified: '2021-12-11T10:15:12.637Z'
+modified: '2022-01-28T13:21:25.705Z'
 ---
 
 # PyTorch
@@ -13,6 +13,24 @@ For useful things learned while using torch.
 - `torch.full(size, fill_value)` - creates a tensor of specific size / dimensions, full of one given value.
 - `tensor.is_cuda` gives a Boolean value whether a tensor is on a GPU or not.
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
+
+### Stack or Concatenate
+
+Often when creating sythetic training examples (`x` and `y`) I end up having to create them one by one in a loop and then put them together into a tensor of size batch or dataset length. 
+
+To do this, first just append your tensors to a placeholder empty list and then either `torch.stack` or `torch.concatenate`. 
+
+The difference comes from **cat** using given dimension, and **stack** concatenating them along a new dimension.
+
+```
+a = torch.rand(3, 4)
+b = torch.rand(3, 4)
+
+catted = torch.cat([a, b], dim=0)  # (6, 4)
+stacked = torch.stack([a, b], dim=0)  # (2, 3, 4)
+```
+
+So it depends if you created individual examples already unsqueezed or not. 
 
 ### Custom Loss Functions
 
