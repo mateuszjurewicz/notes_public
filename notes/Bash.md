@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2022-01-20T15:02:04.514Z'
+modified: '2022-01-29T10:30:55.001Z'
 ---
 
 # Bash
@@ -263,6 +263,4 @@ when added after a command like `sudo apt autoremove -yy` it will go through any
 
 #### Printing strings
 Generally speaking we can use `echo "some string"`, but for longer strings we may need to e.g. escape characters, which gets cumbersome
-
-- `$'\n'` will escape a newline, e.g. `echo line 1 $'n' line 3`
 
