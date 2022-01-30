@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-01-27T21:09:49.115Z'
+modified: '2022-01-30T19:57:36.895Z'
 ---
 
 # English Vocabulary
@@ -118,12 +118,14 @@ a student and _mentee_, someone under protection and tutelage of sb established.
 eager or quick to argue, quarrel or fight. Connect with `pugilist` (a boxer).
 - `quilted`
 in polish "pikowana", e.g. of leather or a jacket. Refers to joining layers of fabric, usually by stitching, forming all kinds but usually a criss-cross pattern.
-- `rebar`
-short for reinforcing bar, it's those pieces of curving steel rods that go into cement.
 - `rakish` and `rakishly good-looking` (pronounced "rejkisz")
 dashingly or carelessly unconventional. Alternatively having a trim or streamlined appearance suggestive of speed (when referring to a ship).
+- `rebar`
+short for reinforcing bar, it's those pieces of curving steel rods that go into cement.
 - `recuse sb / oneself`
 of a judge -> to remove themselves from a case because of potential conflict of interest / lack of impartiality. A lawyer can ask for the judge to be recused.
+- `to remit sth`
+either to transmit (a sum of money) in payment, or to cancel, or to pardon or forgive (e.g. sins). Many other meanings, mostly to pay or to diminish sth (sins, tolls, taxes). But also to restore something to its former position. Word of many meanings. From Latin "to send back".
 - `sagacious` & `sagacity`
 having or showing keen mental discernment and good judgement, far-sighted, shrewd, wise. Note the difference in pronunciation between adjective and noun.
 - `sashay`
