@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-01-30T19:57:36.895Z'
+modified: '2022-02-01T18:31:18.868Z'
 ---
 
 # English Vocabulary
@@ -144,6 +144,8 @@ the middle barier between nostrils. Not be confused with `philtrum`, which is cl
 an ancient musical instrument, often in the form of a ram's horn, used for ancient Jewish religious purposes. Learned form the musical Godspell.
 - `snaggletooth` & `snaggletoothed`
 a tooth that is broken or not in alignment with the others
+- `sojourn`
+a temporary stay (as noun), or to stay somewhere temporarily.
 - `soporific`
 inducing sleep or drowsiness (e.g. motions of a train or a rocking chair). As a noun it refers to a substance that induce sleep. Can also mean "sleepy" of a person or mood.
 - `specious`
