@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-02-01T18:32:38.592Z'
+modified: '2022-02-01T20:21:15.052Z'
 ---
 
 # English Vocabulary
@@ -34,6 +34,8 @@ to hide the more important piece of news among less important details. `Lede` is
 the christian clerical clothing coat, worn primarily by Catholic priests (with the white clerical collar).
 - `cabbage vs lettuce`
 kapusta & sałata
+- `Chatham House Rule`
+a rule about meetings, according to which any information given during the meeting can be freely acted upon, but it can never be revealed who said what. Also a modern think tank.
 - `cinch`
 something sure or easy, a person or thing certain to fulfill an expectation. An easy task, a certainty.
 - `clarion (call)`
