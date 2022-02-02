@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-02-02T09:00:33.550Z'
+modified: '2022-02-02T14:53:35.501Z'
 ---
 
 # English Vocabulary
@@ -120,10 +120,14 @@ the built up of calcified minerals around teeth, also known as `tartar` or, stra
 a highly intelligent, bookish person but often socially inept. It's `poin` not point. From a 60s animated show Felix the Cat.
 - `poultry`
 domesticated fowl, such as chickens, turkeys, ducks or gees,raised for meat and eggs. Fowl refers to these species of bird.
+- `procurer`
+a person who obtains something (a good or an effect). Another meaning is specifically about acquiring a prostitute or a sexual partner for sb else.
 - `protégé`
 a student and _mentee_, someone under protection and tutelage of sb established.
 - `pugnacious`
 eager or quick to argue, quarrel or fight. Connect with `pugilist` (a boxer).
+- `purveyor`
+someone who sells or deals in particular goods. 
 - `quilted`
 in polish "pikowana", e.g. of leather or a jacket. Refers to joining layers of fabric, usually by stitching, forming all kinds but usually a criss-cross pattern.
 - `rakish` and `rakishly good-looking` (pronounced "rejkisz")
