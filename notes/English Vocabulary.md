@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-02-02T06:27:24.686Z'
+modified: '2022-02-02T09:00:33.550Z'
 ---
 
 # English Vocabulary
@@ -58,8 +58,12 @@ A mark made by a teacher or an authority figure against one's record for a fault
 a small cup used for drinking espresso coffee.
 - `derrière`
 the part of the body a person sits on (the buttocks, the rear, the rump).
+- `diaphanous`
+(especially of fabric) light, delicate, and translucent. E.g. of a see-through dress.
 - `dotage`
 old age, a period when a person is old and weak. "In my dotage".
+- `embossed`
+(of a surface or object) decorated with a design that stands out in relief. E.g. a notarized document, diploma or a business card.
 - `fraternal twin`
 non-identical twin, aka dizygotic, biovular twin. Identical twins are called monozygotic.
 - `gingiva`
