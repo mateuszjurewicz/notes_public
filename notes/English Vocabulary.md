@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-02-01T20:21:15.052Z'
+modified: '2022-02-02T06:27:24.686Z'
 ---
 
 # English Vocabulary
@@ -108,6 +108,8 @@ performed without real interest, feeling or effort.
 anatomical term for the taint
 - `penury`
 extreme poverty or being extremely frugal.
+- `play hooky` (inf. hookie)
+to miss school, work or other duties without permission or excuse. Truancy.
 - `plaque` (dental)
 the built up of calcified minerals around teeth, also known as `tartar` or, strangely, `calculus`.
 - `poindexter`
