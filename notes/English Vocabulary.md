@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-02-02T14:53:35.501Z'
+modified: '2022-02-06T12:16:25.695Z'
 ---
 
 # English Vocabulary
@@ -28,6 +28,8 @@ a bell tower, especially one attached to a building.
 the quick-face-mask-change art popular in Sichuan operas.
 - `(false) bill of goods`
 as in "to be sold a (false) bill of goods, means to be made a false promise. Bill of goods is just a list of items, negative connotation comes from paying for a list of items but never actually receiving the items. In RDR2 Arthur responds to being threatened with _eternity_ with "I hope it's hot and terrible, otherwise I'll feel I've been sold a false bill of goods".
+- `Boston marriage`
+historically, the cohabitation of two wealthy women, independent of financial support from a man. The term is said to have been in use in New England in the late 19th/early 20th century, refers to Henry James novel. Some of these relationships were romantic in nature and might now be considered a lesbian relationship; others were not.
 - `bury the lede`
 to hide the more important piece of news among less important details. `Lede` is the introductory portion of a news story, commonly the first sentence.  Often confused with "lead", originates from print journalism, where "lead" also means the strip of metal separating lines of type.
 - `cassock` aka `soutane`
