@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-02-06T12:16:25.695Z'
+modified: '2022-02-08T19:17:42.017Z'
 ---
 
 # English Vocabulary
@@ -96,6 +96,8 @@ one's friends, acquaintances and relations as opposed to blood relative (which a
 information that could cause harm to someone's reputation (compromising material, from Russian). Relates to the Pegasus spyware.
 - `legerdemain`
 sleight of hand, artful trickery, deception.
+- `limerenece`
+a state of mind resulting from romantic attraction, characterized by feelings of euphoria, the desire to have one's feelings reciprocated. Infatuation.
 - `matinée`
 an entertainment, such as a play, presented during the day, usually in the early afternoon (from the French, meaning morning).
 - `mother lode`
@@ -114,6 +116,8 @@ performed without real interest, feeling or effort.
 anatomical term for the taint
 - `penury`
 extreme poverty or being extremely frugal.
+- `pillory`
+dyby po angielsku (works as noun and verb).
 - `play hooky` (inf. hookie)
 to miss school, work or other duties without permission or excuse. Truancy.
 - `plaque` (dental)
