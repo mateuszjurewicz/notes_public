@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-02-08T19:17:42.017Z'
+modified: '2022-02-11T07:00:40.154Z'
 ---
 
 # English Vocabulary
@@ -168,6 +168,8 @@ a temporary stay, brief period of residence (as noun), or to stay somewhere temp
 inducing sleep or drowsiness (e.g. motions of a train or a rocking chair). As a noun it refers to a substance that induce sleep. Can also mean "sleepy" of a person or mood.
 - `specious`
 plausible but false, deceptively pleasing but based on false pretense.
+- `tempered and annealed glass`
+first type of glass is made stronger through controlled thermal or chemical treatment, resulting in the glass shattering into small granular chunks as oppossed to sharp shards, making it safer. The second type is obtained through slow, controlled cooling and is more durable, but doesn't have the safe-when-cracked property. Improperly annealed glass can shatter due to very little or even no stress at all, possibly also a small shift in temperature.
 - `terrycloth` aka `towelling` or `terry cotton`
 is a material where there are protruding loops of thread that can absorb a large amount of water, perfect for fluffy towels and bathrobes.
 - `vociferous`
