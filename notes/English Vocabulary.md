@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-02-11T07:00:40.154Z'
+modified: '2022-02-12T11:49:12.782Z'
 ---
 
 # English Vocabulary
@@ -19,7 +19,7 @@ a language used by a group to prevent outsiders from understanding, a slang, a j
 - `avast!`
 stop, cease (nautical term, shouted out when a sailor was meant to stop doing sth).
 - `avuncular`
-kind and friendly towards a younger or less experienced person. In antropology refers to the relationship between men and the children of their siblings (as in uncles).
+kind and friendly towards a younger or less experienced person. In anthropology refers to the relationship between men and the children of their siblings (as in uncles).
 - `bated breath`
 held breath (signifiying anticipation)
 - `belfry`
@@ -45,7 +45,7 @@ loud and clear (as adjective), strongly expressed demand or request for action (
 - `coniferous` & `conifers`
 (of trees) bearing cones, mostly evergreen and needle-leaved trees fall under this category. Translates into _iglaste_.
 - `costermonger`
-A street seller of fruit and vegetables in British towns. The term is derived from the words for a medieval variety of apple and seller, and later came to be used to describe hawkers in general. Very coloruful figures, distinctive, shouty / singy, at war with grocers and the police.
+A street seller of fruit and vegetables in British towns (from a smaller, portable cart). The term is derived from the words for a medieval variety of apple and seller, and later came to be used to describe hawkers in general. Very coloruful figures, distinctive, shouty / singy, at war with grocers and the police.
 - `coup de grâce`
 a blow of mercy, a death blow to end someone's suffering.
 - `coxswain`
@@ -63,7 +63,7 @@ the part of the body a person sits on (the buttocks, the rear, the rump).
 - `diaphanous`
 (especially of fabric) light, delicate, and translucent. E.g. of a see-through dress.
 - `dotage`
-old age, a period when a person is old and weak. "In my dotage".
+old age, a period when a person is old and weak. "In my -----".
 - `embossed`
 (of a surface or object) decorated with a design that stands out in relief. E.g. a notarized document, diploma or a business card.
 - `fraternal twin`
@@ -96,7 +96,7 @@ one's friends, acquaintances and relations as opposed to blood relative (which a
 information that could cause harm to someone's reputation (compromising material, from Russian). Relates to the Pegasus spyware.
 - `legerdemain`
 sleight of hand, artful trickery, deception.
-- `limerenece`
+- `limerence`
 a state of mind resulting from romantic attraction, characterized by feelings of euphoria, the desire to have one's feelings reciprocated. Infatuation.
 - `matinée`
 an entertainment, such as a play, presented during the day, usually in the early afternoon (from the French, meaning morning).
@@ -137,11 +137,11 @@ someone who sells or deals in particular goods.
 - `quilted`
 in polish "pikowana", e.g. of leather or a jacket. Refers to joining layers of fabric, usually by stitching, forming all kinds but usually a criss-cross pattern.
 - `rakish` and `rakishly good-looking` (pronounced "rejkisz")
-dashingly or carelessly unconventional. Alternatively having a trim or streamlined appearance suggestive of speed (when referring to a ship).
+dashingly or carelessly unconventional, `debonair`, slightly disreputable, rogueish. Alternatively having a trim or streamlined appearance suggestive of speed (when referring to a ship).
 - `rebar`
 short for reinforcing bar, it's those pieces of curving steel rods that go into cement.
 - `recuse sb / oneself`
-of a judge -> to remove themselves from a case because of potential conflict of interest / lack of impartiality. A lawyer can ask for the judge to be recused.
+of a judge -> to remove themselves from a case because of potential conflict of interest / lack of impartiality. A lawyer can ask for the judge to be -----.
 - `to remit sth`
 either to transmit (a sum of money) in payment, or to cancel, or to pardon or forgive (e.g. sins). Many other meanings, mostly to pay or to diminish sth (sins, tolls, taxes). But also to restore something to its former position. Word of many meanings. From Latin "to send back".
 - `sagacious` & `sagacity`
@@ -175,7 +175,7 @@ is a material where there are protruding loops of thread that can absorb a large
 - `vociferous`
 loud and forceful, characterized by vehement opinions (e.g. of support for something).
 - `wallah`
-an arabic expression meaning "I swear by God" but also as a noun, from Hindi, it means a person employed in a particular activity (e.g. a kitchen wallah, rickshaw wallah) or an important person within a field (e.g. a Republican wallah).
+an arabic expression meaning "I swear by God" but also as a noun, from Hindi, it means a person employed in a particular activity (e.g. a kitchen -----, rickshaw -----) or an important person within a field (e.g. a Republican ----).
 - `whet sb's appetite`
-to increase sb's appetite, from `whet` as "to sharpen", as in a whetstone.
+to increase sb's appetite, from the word for "to sharpen", as in a ----stone.
 
