@@ -2,7 +2,7 @@
 tags: [Notebooks/Skills/Tech]
 title: Bash
 created: '2021-11-18T10:43:28.058Z'
-modified: '2022-01-29T10:30:55.001Z'
+modified: '2022-02-12T11:53:02.163Z'
 ---
 
 # Bash
@@ -17,6 +17,7 @@ Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 ### Disk Usage
 Run into a problem with the disk being full on a paperspace instance. Here's what helped:
 
+* `du -sh ./some_dir` shows the total memory taken up by a specific directory (without `-s` it is split by subdirs)
 * `sudo du -a /home | sort -n -r | head -n 10` 
 This will show the 10 largest directories, for candidates to clean.
 * `df -h`
