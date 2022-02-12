@@ -1,7 +1,7 @@
 ---
 title: English Vocabulary
 created: '2021-12-17T16:39:01.173Z'
-modified: '2022-02-12T11:49:12.782Z'
+modified: '2022-02-12T13:38:54.925Z'
 ---
 
 # English Vocabulary
@@ -16,6 +16,8 @@ a saying, proverb.
 a hairstyle popular in ancient Greece around Alexander the Great's time, characterized by being swept back from the forehead, with curls to the sides.
 - `argot`
 a language used by a group to prevent outsiders from understanding, a slang, a jargon. Not be confused with `ergot`, which is th fungus that grows in wheat and causes hallucination (`Sporysz` in Polish).
+- `arpeggio`
+production of the tones of a chord in succession and not simultaneously. 
 - `avast!`
 stop, cease (nautical term, shouted out when a sailor was meant to stop doing sth).
 - `avuncular`
