@@ -1,7 +1,7 @@
 ---
 title: PyTorch
 created: '2021-11-25T14:14:41.382Z'
-modified: '2022-01-28T13:21:25.705Z'
+modified: '2022-02-14T13:18:00.700Z'
 ---
 
 # PyTorch
@@ -10,6 +10,7 @@ For useful things learned while using torch.
 
 ### General
 
+- `torch.autograd.set_detect_anomaly(True)` for debugging loss functions when e.g. sigmoid values end in strange range.
 - `torch.full(size, fill_value)` - creates a tensor of specific size / dimensions, full of one given value.
 - `tensor.is_cuda` gives a Boolean value whether a tensor is on a GPU or not.
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
