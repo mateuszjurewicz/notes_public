@@ -1,7 +1,7 @@
 ---
 title: PyTorch
 created: '2021-11-25T14:14:41.382Z'
-modified: '2022-02-15T08:45:30.428Z'
+modified: '2022-02-15T10:00:14.507Z'
 ---
 
 # PyTorch
@@ -12,6 +12,7 @@ For useful things learned while using torch.
 
 - `torch.Tensor.requires_grad` is the argument that specifies whether gradients are tracked for this tensor node. If requires_grad is True, then this tensor should also have a `grad_fn` attribute, which specifies the mathematical operator that created the variable (used in backwards pass). requires_grad is contagious, meaning that tensors that are transformations of the initial tensor will automatically also require and track gradients. `.detach()` is used to remove a tensor from the computation graph (gradients won't be tracked). Nicely explained [here](https://blog.paperspace.com/pytorch-101-understanding-graphs-and-automatic-differentiation/).
 - `torch.autograd.set_detect_anomaly(True)` for debugging loss functions when e.g. sigmoid values end in strange range.
+  - useful, but in the end either adding a requires_grad to one tensor in the custom loss or upgrading to torch==1.10.0 helped.
 - `torch.full(size, fill_value)` - creates a tensor of specific size / dimensions, full of one given value.
 - `tensor.is_cuda` gives a Boolean value whether a tensor is on a GPU or not.
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
