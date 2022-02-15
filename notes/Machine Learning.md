@@ -2,12 +2,21 @@
 tags: [Notebooks/Skills/Tech]
 title: Machine Learning
 created: '2021-11-19T16:02:40.897Z'
-modified: '2021-12-06T09:49:54.116Z'
+modified: '2022-02-14T14:49:27.479Z'
 ---
 
 # Machine Learning
 
 Definitions of concepts, practical tips, possibly notes on select papers. Goal is to solidify understanding by writing things down / explaining them to myself.
+
+
+### Normalizing Flows
+
+In simple words, normalizing flows is a series of simple functions which are invertible, or the analytical inverse of the function can be calculated. For example, f(x) = x + 2 is a reversible function because for each input, a unique output exists and vice-versa whereas f(x) = x² is not a reversible function. Such functions are also known as bijective functions.
+
+Good explanation [here](https://towardsdatascience.com/introduction-to-normalizing-flows-d002af262a4b). 
+
+The normalizing flows transform a complex data point such as an MNIST Image to a simple Gaussian Distribution or vice-versa (and by distribution we mean it gets the $\mu$ and $\sigma$ of a $\mathcal{N}$ Normal distribution). Not clear to me how it's different from a VAE, but generally it is often presented side to side with GANs and VAEs that are capable of learning from unsupervised data.
 
 
 ### Chain Rule
