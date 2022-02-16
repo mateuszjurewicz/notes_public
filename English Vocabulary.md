@@ -68,6 +68,8 @@ the part of the body a person sits on (the buttocks, the rear, the rump).
 old age, a period when a person is old and weak. "In my -----".
 - `embossed`
 (of a surface or object) decorated with a design that stands out in relief. E.g. a notarized document, diploma or a business card.
+- `forcemeat`
+  a uniform mixture of lean meat with fat made by grinding or sieving the ingredients. Po polsku parówki, but also other types of sausage might fit here.
 - `fraternal twin`
 non-identical twin, aka dizygotic, biovular twin. Identical twins are called monozygotic.
 - `gingiva`
