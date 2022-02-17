@@ -1,14 +1,16 @@
----
-title: PyTorch
-created: '2021-11-25T14:14:41.382Z'
-modified: '2022-02-15T10:00:14.507Z'
----
-
 # PyTorch
 
 For useful things learned while using torch.
 
 ### General
+
+- `torch.clamp(min, max)` - makes all values within a tensor that were under min or above max be min or max, respectively. Great for adding random noise but wanting to keep data within some boundaries, e.g.
+
+```
+mock_sigmoid_preds = mock_sigmoid_preds + (0.1**0.5)*torch.randn(mock_sigmoid_preds.size())
+mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
+```
+
 
 - `torch.Tensor.requires_grad` is the argument that specifies whether gradients are tracked for this tensor node. If requires_grad is True, then this tensor should also have a `grad_fn` attribute, which specifies the mathematical operator that created the variable (used in backwards pass). requires_grad is contagious, meaning that tensors that are transformations of the initial tensor will automatically also require and track gradients. `.detach()` is used to remove a tensor from the computation graph (gradients won't be tracked). Nicely explained [here](https://blog.paperspace.com/pytorch-101-understanding-graphs-and-automatic-differentiation/).
 - `torch.autograd.set_detect_anomaly(True)` for debugging loss functions when e.g. sigmoid values end in strange range.

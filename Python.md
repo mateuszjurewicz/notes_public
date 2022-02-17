@@ -1,13 +1,4 @@
----
-tags: [Notebooks/Skills/Tech]
-title: Python
-created: '2021-12-07T14:57:32.374Z'
-modified: '2022-02-15T09:15:36.002Z'
----
-
 # Python
-
-
 
 - installing a specific version of a package:
 
