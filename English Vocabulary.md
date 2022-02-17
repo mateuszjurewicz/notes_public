@@ -176,6 +176,8 @@ plausible but false, deceptively pleasing but based on false pretense.
 first type of glass is made stronger through controlled thermal or chemical treatment, resulting in the glass shattering into small granular chunks as oppossed to sharp shards, making it safer. The second type is obtained through slow, controlled cooling and is more durable, but doesn't have the safe-when-cracked property. Improperly annealed glass can shatter due to very little or even no stress at all, possibly also a small shift in temperature.
 - `terrycloth` aka `towelling` or `terry cotton`
 is a material where there are protruding loops of thread that can absorb a large amount of water, perfect for fluffy towels and bathrobes.
+- `unalome`
+a buddhist symbol for the journey towards enlightenment, in the form of a straight line turning into a zig-zag like pattern, ending in a spiral (variations exist).
 - `vociferous`
 loud and forceful, characterized by vehement opinions (e.g. of support for something).
 - `wallah`
