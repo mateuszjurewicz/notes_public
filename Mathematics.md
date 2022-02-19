@@ -1,10 +1,3 @@
----
-tags: [Notebooks/Skills/Tech]
-title: Mathematics
-created: '2021-11-19T15:01:38.887Z'
-modified: '2021-11-27T12:46:33.276Z'
----
-
 # Mathematics
 
 ### Notation

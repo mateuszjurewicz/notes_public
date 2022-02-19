@@ -1,10 +1,3 @@
----
-tags: [Notebooks/Skills/Tech]
-title: PyCharm
-created: '2021-11-19T12:30:15.889Z'
-modified: '2021-11-25T12:40:06.071Z'
----
-
 # PyCharm
 
 ### General

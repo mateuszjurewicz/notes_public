@@ -1,9 +1,3 @@
----
-title: English Vocabulary
-created: '2021-12-17T16:39:01.173Z'
-modified: '2022-02-12T13:38:54.925Z'
----
-
 # English Vocabulary
 
 Meant to be an alphabetized list of interesting words or phrases to improve my ability to express myself in English.
@@ -107,7 +101,7 @@ an entertainment, such as a play, presented during the day, usually in the early
 - `mother lode`
 the main vein of ore in a region, often misspelled as "load".
 - `obviate`
-to avoid or prevent sth undesirable, prevent a difficulty. E.g. having a parachute can obviate disaster. "Bad actions aren't obviated by shame".
+to avoid or prevent sth undesirable, prevent a difficulty. E.g. having a parachute can ____ disaster. "Bad actions aren't ____ed by shame".
 - `palmistry`
 palm reading, aka `chiromancy`
 - `panhandling`
@@ -125,7 +119,7 @@ dyby po angielsku (works as noun and verb).
 - `play hooky` (inf. hookie)
 to miss school, work or other duties without permission or excuse. Truancy.
 - `plaque` (dental)
-the built up of calcified minerals around teeth, also known as `tartar` or, strangely, `calculus`.
+the built-up of calcified minerals around teeth, also known as `tartar` or, strangely, `calculus`.
 - `poindexter`
 a highly intelligent, bookish person but often socially inept. It's `poin` not point. From a 60s animated show Felix the Cat.
 - `poultry`
@@ -153,7 +147,7 @@ having or showing keen mental discernment and good judgement, far-sighted, shrew
 - `sashay`
 to walk in an ostentatious manner, often with exaggerated hip and shoulder movements.
 - `scathing`
-severly critical of something, witheringly scornful. E.g. of an indictment or an attack.
+severely critical of something, witheringly scornful. E.g. of an indictment or an attack.
 - `scurrilous`
 expressed in a vulgar or coarse manner. Sometimes also slanderous, defamatory.
 - `self-possessed`
@@ -161,7 +155,7 @@ calm and having a self-assured command of one's faculties, feelings and behavior
 - `seminal`
 strongly influential to later developments (of a work of art).
 - `septum`
-the middle barier between nostrils. Not be confused with `philtrum`, which is cleft above lips.
+the middle barrier between nostrils. Not be confused with `philtrum`, which is cleft above lips.
 - `shofar`
 an ancient musical instrument, often in the form of a ram's horn, used for ancient Jewish religious purposes. Learned form the musical Godspell.
 - `snaggletooth` & `snaggletoothed`

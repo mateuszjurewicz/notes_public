@@ -1,10 +1,3 @@
----
-pinned: true
-title: General
-created: '2021-11-18T10:44:17.779Z'
-modified: '2022-02-05T10:31:41.805Z'
----
-
 # General
 
 Using the `Notable` app for managing these documents. Easy to read and to have a backup on github.

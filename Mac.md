@@ -1,10 +1,3 @@
----
-tags: [Notebooks/Skills/Tech]
-title: Mac
-created: '2021-11-19T12:14:12.323Z'
-modified: '2022-01-18T09:14:15.899Z'
----
-
 # Mac
 
 - `ctrl + cmd + q` - lock screen

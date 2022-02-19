@@ -1,10 +1,3 @@
----
-tags: [Notebooks/Skills/Tech]
-title: Bash
-created: '2021-11-18T10:43:28.058Z'
-modified: '2022-02-12T11:53:02.163Z'
----
-
 # Bash
 Based on the video: https://www.youtube.com/watch?v=oxuRxtrO2Ag
 

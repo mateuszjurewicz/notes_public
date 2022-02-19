@@ -1,10 +1,3 @@
----
-tags: [Notebooks/Skills/Tech]
-title: Machine Learning
-created: '2021-11-19T16:02:40.897Z'
-modified: '2022-02-14T14:49:27.479Z'
----
-
 # Machine Learning
 
 Definitions of concepts, practical tips, possibly notes on select papers. Goal is to solidify understanding by writing things down / explaining them to myself.
