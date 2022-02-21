@@ -66,6 +66,8 @@ old age, a period when a person is old and weak. "In my -----".
   a uniform mixture of lean meat with fat made by grinding or sieving the ingredients. Po polsku parówki, but also other types of sausage might fit here.
 - `fraternal twin`
 non-identical twin, aka dizygotic, biovular twin. Identical twins are called monozygotic.
+- `fuselage` (pron. fjuselaż)
+The central body of an aircraft, to which the wings and tail assembly are attached and which accommodates the crew, passengers, and cargo.
 - `gingiva`
 a technical medical term for gums (in the mouth). Pronounced either 'gíngiwa' or 'dżíndżiwa`.
 - `gloss over sth`
