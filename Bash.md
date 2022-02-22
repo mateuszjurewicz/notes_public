@@ -258,3 +258,11 @@ when added after a command like `sudo apt autoremove -yy` it will go through any
 #### Printing strings
 Generally speaking we can use `echo "some string"`, but for longer strings we may need to e.g. escape characters, which gets cumbersome
 
+#### Aliasing functions
+Useful, reusable chains of commands can be turned into a single alias:
+
+```
+function gacp() {
+        git add --all && git commit -m "$1" && git push
+}
+```
