@@ -21,3 +21,5 @@ the long tilde is used to mean _equivalence_.
 - $\theta, \Theta$ - theta, often denotes learnable parameters
 - $\mu, \Mu$ - pronounced _mju_, usually used to mean the mean (average)
 - $\sigma, \Sigma$ - pronunciation _sigma_, lowercase is standard deviation, uppercase is sum.
+- $\gamma, \Gamma$ - gamma
+- $\lambda, \Lambda$ - lambda
