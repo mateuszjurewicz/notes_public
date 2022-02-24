@@ -1,7 +1,5 @@
 # General
 
-Using the `Notable` app for managing these documents. Easy to read and to have a backup on github.
-
 ### Upcoming skills
 
 - [x] finish bash script vid 1
