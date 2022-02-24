@@ -76,6 +76,8 @@ a technical medical term for gums (in the mouth). Pronounced either 'gíngiwa' o
 to omit or minimize sth in an account or retelling, in order to diminish its importance.
 - `grouse (to)` (as verb)
 to grumble, to persistently complain (gderac). Can refer to a person who often complains by adding an 'r' at the end. As a noun it refers to a type of bird.
+- `growler`
+informal US word for the jug that moonshine would come in. Also northern english for pork pie. Also a word for a small iceberg.
 - `harrow`
 (pronunciation: _haroł_ [brit]), it's both the farming implement not unlike a plow (po polsku _brona_), which has teeth and is dragged across the field to upturn it. Not literally, `to harrow` means "to cause distress". See `Harrowing of Hell` - which is the apocryphal story of Christ descending to Hell between crucifixion and resurrection, supposedly freeing some souls from eternal damnation, which would be quite an exception about the concept of hell. The idea that Christ harrows Hell is considered an early Church invention, with Byzantine art pioneering its depictions. Sometimes they distinguish that he descended into Sheol or Limbo, not true Hell. The doctrine that he descended is accepted in Catholicism, Lutheranism and the Orthodox church.
 - `hearse`
@@ -172,6 +174,8 @@ inducing sleep or drowsiness (e.g. motions of a train or a rocking chair). As a 
 plausible but false, deceptively pleasing but based on false pretense.
 - `tempered and annealed glass`
 first type of glass is made stronger through controlled thermal or chemical treatment, resulting in the glass shattering into small granular chunks as oppossed to sharp shards, making it safer. The second type is obtained through slow, controlled cooling and is more durable, but doesn't have the safe-when-cracked property. Improperly annealed glass can shatter due to very little or even no stress at all, possibly also a small shift in temperature.
+- `terrapin`
+a small specie of turtle, living in brackish or fresh water, common house pet.
 - `terrycloth` aka `towelling` or `terry cotton`
 is a material where there are protruding loops of thread that can absorb a large amount of water, perfect for fluffy towels and bathrobes.
 - `unalome`
@@ -180,6 +184,8 @@ a buddhist symbol for the journey towards enlightenment, in the form of a straig
 loud and forceful, characterized by vehement opinions (e.g. of support for something).
 - `wallah`
 an arabic expression meaning "I swear by God" but also as a noun, from Hindi, it means a person employed in a particular activity (e.g. a kitchen -----, rickshaw -----) or an important person within a field (e.g. a Republican ----).
+- `what's good for the goose is good for the gander`
+an idiom or saying, according to which if one person or situation should be treated in a specific way then another person or situation should too. E.g. if one child is allowed to stay out till 10, the other should too.
 - `whet sb's appetite`
 to increase sb's appetite, from the word for "to sharpen", as in a ----stone.
 
