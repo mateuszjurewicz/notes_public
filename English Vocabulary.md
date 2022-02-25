@@ -170,6 +170,8 @@ a tooth that is broken or not in alignment with the others
 a temporary stay, brief period of residence (as noun), or to stay somewhere temporarily.
 - `soporific`
 inducing sleep or drowsiness (e.g. motions of a train or a rocking chair). As a noun it refers to a substance that induce sleep. Can also mean "sleepy" of a person or mood.
+- `sotto voce`
+in a quiet voice, as if to not be overheard. A ___ ___ remark. Under the breath, in an undertone. Also used to mean "very softly" as a direction in music.
 - `specious`
 plausible but false, deceptively pleasing but based on false pretense.
 - `tempered and annealed glass`
