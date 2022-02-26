@@ -12,6 +12,8 @@
 - [ ] BCE loss understood in detail, with coding experiments
 - [ ] precommit library for linting and such
 - [ ] poetry library for package management
+- [ ] apache arrow for efficient storage of data (Munin Data's Jorge presentation from pydata)
+- [ ] polars -> a much quicker alternative to pandas, [here](https://github.com/pola-rs/polars)
 
 ### _Notable_ functionalities
 
