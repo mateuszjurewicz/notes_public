@@ -14,6 +14,7 @@ similar, hold ctrl and press tab and then navigate between open files seeing the
 ### PyCharm via ssh
 
 <span style="color:red">**UNTESTED IDEA**</span>
+
 <span style="color:red">**REQUIRES THE PROFESSIONAL LICENCE**</span>
 
 - Seems like pycharm actually support editing files using SFTP (which uses SSH)

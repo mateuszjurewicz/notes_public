@@ -25,7 +25,7 @@ the quick-face-mask-change art popular in Sichuan operas.
 - `(false) bill of goods`
 as in "to be sold a (false) bill of goods, means to be made a false promise. Bill of goods is just a list of items, negative connotation comes from paying for a list of items but never actually receiving the items. In RDR2 Arthur responds to being threatened with _eternity_ with "I hope it's hot and terrible, otherwise I'll feel I've been sold a false bill of goods".
 - `blithe` (adj) and `blithely`
-carefree and lighthearted, lacking due concern, casual. E.g. Fear ____ly continues to steal things despite her lack of sleight of hand.
+carefree and lighthearted, lacking due concern, casual. E.g. Fearne ____ly continues to steal things despite her lack of sleight of hand.
 - `Boston marriage`
 historically, the cohabitation of two wealthy women, independent of financial support from a man. The term is said to have been in use in New England in the late 19th/early 20th century, refers to Henry James novel. Some of these relationships were romantic in nature and might now be considered a lesbian relationship; others were not.
 - `bury the lede`
@@ -127,7 +127,7 @@ to miss school, work or other duties without permission or excuse. Truancy.
 - `plaque` (dental)
 the built-up of calcified minerals around teeth, also known as `tartar` or, strangely, `calculus`.
 - `poindexter`
-a highly intelligent, bookish person but often socially inept. It's `poin` not point. From a 60s animated show Felix the Cat.
+a highly intelligent, bookish person but often socially inept. It's not point. From a 60s animated show Felix the Cat.
 - `poultry`
 domesticated fowl, such as chickens, turkeys, ducks or gees,raised for meat and eggs. Fowl refers to these species of bird.
 - `procurer`
@@ -175,7 +175,7 @@ in a quiet voice, as if to not be overheard. A ___ ___ remark. Under the breath,
 - `specious`
 plausible but false, deceptively pleasing but based on false pretense.
 - `tempered and annealed glass`
-first type of glass is made stronger through controlled thermal or chemical treatment, resulting in the glass shattering into small granular chunks as oppossed to sharp shards, making it safer. The second type is obtained through slow, controlled cooling and is more durable, but doesn't have the safe-when-cracked property. Improperly annealed glass can shatter due to very little or even no stress at all, possibly also a small shift in temperature.
+first type of glass is made stronger through controlled thermal or chemical treatment, resulting in the glass shattering into small granular chunks as oppossed to sharp shards, making it safer. The second type is obtained through slow, controlled cooling and is more durable, but doesn't have the safe-when-cracked property. Improperly a____ed glass can shatter due to very little or even no stress at all, possibly also a small shift in temperature.
 - `terrapin`
 a small specie of turtle, living in brackish or fresh water, common house pet.
 - `terrycloth` aka `towelling` or `terry cotton`
@@ -187,7 +187,7 @@ loud and forceful, characterized by vehement opinions (e.g. of support for somet
 - `wallah`
 an arabic expression meaning "I swear by God" but also as a noun, from Hindi, it means a person employed in a particular activity (e.g. a kitchen -----, rickshaw -----) or an important person within a field (e.g. a Republican ----).
 - `what's good for the goose is good for the gander`
-an idiom or saying, according to which if one person or situation should be treated in a specific way then another person or situation should too. E.g. if one child is allowed to stay out till 10, the other should too.
+an idiom or saying, according to which if one person or situation should be treated in a specific way then another person or situation should too. E.g. if one child is allowed to stay out till 10, the other should too. A _____ is a male ____.
 - `whet sb's appetite`
 to increase sb's appetite, from the word for "to sharpen", as in a ----stone.
 

@@ -15,7 +15,7 @@ Is an adaptive clustering algorithm, a step above K-means, because it automatica
 
 ### Normalizing Flows
 
-In simple words, normalizing flows is a series of simple functions which are invertible, or the analytical inverse of the function can be calculated. For example, f(x) = x + 2 is a reversible function because for each input, a unique output exists and vice-versa whereas f(x) = x² is not a reversible function. Such functions are also known as bijective functions.
+Normalizing flows are a representation learning technique, comparable to VAEs and GANs. In simple words, normalizing flows is a series of simple functions which are invertible, or the analytical inverse of the function can be calculated. For example, f(x) = x + 2 is a reversible function because for each input, a unique output exists and vice-versa whereas f(x) = x² is not a reversible function. Such functions are also known as bijective functions.
 
 Good explanation [here](https://towardsdatascience.com/introduction-to-normalizing-flows-d002af262a4b). 
 
