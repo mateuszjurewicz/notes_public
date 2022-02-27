@@ -146,8 +146,12 @@ dashingly or carelessly unconventional, `debonair`, slightly disreputable, rogue
 short for reinforcing bar, it's those pieces of curving steel rods that go into cement.
 - `recuse sb / oneself`
 of a judge -> to remove themselves from a case because of potential conflict of interest / lack of impartiality. A lawyer can ask for the judge to be -----.
+- `redolent`
+strongly reminiscent or suggestive of sth, also "fragrant or sweet-smelling" (perhaps echoing how smell elicits feelings and memories). E.g. a military campaign _____ of Hannibal himself.
 - `to remit sth`
 either to transmit (a sum of money) in payment, or to cancel, or to pardon or forgive (e.g. sins). Many other meanings, mostly to pay or to diminish sth (sins, tolls, taxes). But also to restore something to its former position. Word of many meanings. From Latin "to send back".
+- `rugose`
+Having a rough, ridged, or wrinkled surface. Corrugated (word used more commonly to refer to materials, e.g. corrugated cardboard is wrinkled with parallel edges). Marked by `rugae` (wrinkles, anatomical terms, also in internal organs).
 - `sagacious` & `sagacity`
 having or showing keen mental discernment and good judgement, far-sighted, shrewd, wise. Note the difference in pronunciation between adjective and noun.
 - `sashay`
