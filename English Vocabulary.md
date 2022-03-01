@@ -8,6 +8,8 @@ an accessory, additional item of equipment or dress.
 a saying, proverb.
 - `anastole`
 a hairstyle popular in ancient Greece around Alexander the Great's time, characterized by being swept back from the forehead, with curls to the sides.
+- `anatine`
+having the properties of or relating to a duck.
 - `argot`
 a language used by a group to prevent outsiders from understanding, a slang, a jargon. Not be confused with `ergot`, which is th fungus that grows in wheat and causes hallucination (`Sporysz` in Polish).
 - `arpeggio`
