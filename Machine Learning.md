@@ -3,6 +3,22 @@
 Definitions of concepts, practical tips, possibly notes on select papers. Goal is to solidify understanding by writing things down / explaining them to myself.
 
 
+### Hierarchical Clustering
+
+Is an unsupervised method to cluster data points based on their distance matrix. The hierarchy comes from doing it in steps, either starting with each point forming its own cluster (agglomerative) or all points being in a single cluster (divisive, much rarer).
+
+In agglomerative hierarchical clustering, you first find two points (each in their own, single-point cluster at this point) that are closest to each other based on the distance matric (e.g. Euclidean distance, but others can be chosen depending on the domain of application). These two points become a new cluster. This step is repeated until all points are in a single cluster. At each step, we have a partitional clustering.
+
+There is some nuance also in how the distance between two clusters is calculated. It can be done by finding the average position of the point-memmbers of a cluster or in other ways.
+
+Nicely explained in [displayr](https://www.displayr.com/what-is-hierarchical-clustering/) and [wiki](https://en.wikipedia.org/wiki/Hierarchical_clustering).
+
+Part of the reason hierarchical clustering beats K-means is that you don't have to specify the target number of clusters ahead of time. However, we always end up with a single cluster in the end (in the agglomerative version). So how do we use this to find the right number of clusters? 
+
+Some answers are here on [vidyaanalytics](https://www.analyticsvidhya.com/blog/2019/05/beginners-guide-hierarchical-clustering/). Essentially we obtain a dendrogram of the progressive clusters and choose a threshold distance value. This can be useful for e.g. Sales when they can have some flexibility as to how many different target groups (segments) of customers they can approach in different ways.
+
+Finally, here's an actual [paper using supervised hierarchical clustering](http://proceedings.mlr.press/v97/yadav19a/yadav19a.pdf), from 2019.
+
 ### Autoregressive Models
 
 Autoregressive means predicting the future behavior based on past behavior. In ML world it refers to seq2seq models that predict the next token based on previously predicted tokens (I believe).
