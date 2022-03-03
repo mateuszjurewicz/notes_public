@@ -134,6 +134,8 @@ the built-up of calcified minerals around teeth, also known as `tartar` or, stra
 a highly intelligent, bookish person but often socially inept. It's not point. From a 60s animated show Felix the Cat.
 - `poultry`
 domesticated fowl, such as chickens, turkeys, ducks or gees,raised for meat and eggs. Fowl refers to these species of bird.
+- `primrose path` (to lead somebody down the ___)
+Either a way of life devoted to hedonism or a course of action that is easy or tempting but hazardous in the end. Leisure and pleasure leading to disaster.
 - `procurer`
 a person who obtains something (a good or an effect). Another meaning is specifically about acquiring a prostitute or a sexual partner for sb else.
 - `protégé`
