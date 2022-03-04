@@ -2,6 +2,29 @@
 
 Definitions of concepts, practical tips, possibly notes on select papers. Goal is to solidify understanding by writing things down / explaining them to myself.
 
+### Ordinal Regression
+
+Is a type of regression analysis used for predicting an ordinal variable (i.e. a variable for which we only know that class B is above class A and below class C, not specifically by how much). It's applicable to ordered category prediction, when the distances between categories aren't known (they exist on an ordinal scale, but not an interval or ratio one).
+
+This came up when talking to Graham and looking for a loss function that punishes mis-assigning a point to a cluster close to the correct one less harshly than to a far-off one. It also often comes up in social sciences (Likert scale). 
+
+When the data belongs to e.g. Likert-style classes (lowest - low - medium - high - highest), this [article](https://towardsdatascience.com/how-to-perform-ordinal-regression-classification-in-pytorch-361a2a095a99) suggests specifying the target prediction matrix per element as:
+
+``` 
+lowest_y  = [1, 0 , 0, 0, 0]
+low_y     = [1, 1 , 0, 0, 0]
+medium_y  = [1, 1 , 1, 0, 0]
+high_y    = [1, 1 , 1, 1, 0]
+highest_y = [1, 1 , 1, 1, 1]
+```
+
+And then just using binary cross-entropy loss function as criterion. Maybe we can use this in point-wise ordering predictions? E.g. the target attention per selected element could be 1s all the way up until the proper index. No, this doesn't work, the attention is a distribution over all element, in their arbitrary order. If we try to instead predict things for each point, the prediction might not result in a valid sequence (e.g. two elements in the same place).
+
+There have also been more recent approaches to fix the problem of inconsistent predictions when ordinal regression is done through e.g. 5 binary classifiers (like in the Likert example), which is that the model can simultaneously predict the example to belong to lowest and highest class (`[1, 0, 0, 0, 1]`). Paper [here](https://arxiv.org/pdf/1901.07884.pdf), by Wenzhi Cao (2020). However this is always done per-example, not on an interconnected set of examples.
+
+We would need Multiple-Instance Ordinal Regression, for which there is a 2018 [paper](https://ieeexplore.ieee.org/document/8107717), but it still predicts an ordinal label for the entire set (bag), not valid ordinal labels for the elements.
+
+This is also connected to learning to rank, where our main problem was that we don't have a query (we'd have to use a learned representation of the entire set) and that order between elements within clusters doesn't matter.
 
 ### Hierarchical Clustering
 
