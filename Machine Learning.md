@@ -2,6 +2,43 @@
 
 Definitions of concepts, practical tips, possibly notes on select papers. Goal is to solidify understanding by writing things down / explaining them to myself.
 
+
+### Neural Clustering Process  (2020)
+
+Is a supervised clustering method that predicts an adaptive (learned) number of clusters, by Ari Pakman. It proposed two separate methods:
+
+  1. Neural Clustering Process (pointwise) aka NCP
+  2. Clusterwise Clustering Process (clusterwise) aka CCP
+
+I will refer to pointwise NCP as just NCP. CCP, by contrast, predicts one cluster at a time. NCP is $O(N)$, CCP is $O(K)$, where $N$ is the cardinality of the input set and $K$ is the number of clusters.
+
+Important to note that NCP/CCP does not **explicitly enforce permutation invariance** of the final output. So there's still a chance that it won't learn to make the same clustering choices with regards to two permutations of the same underlying set.
+
+NCP and CCP were tested on clustering mixtures of 2D Gaussians, clustering MNIST images into single-class clusters, and something called Spike Sorting, which is not an ordering task, but it's about grouping electrical neuron activity spikes as belonging to individual neurons.
+
+I'm not sure what they mean by the importance of a variable-input softmax function for the prediction of a varying number of clusters, will have to look at code.
+
+Sources:
+- [github implementation](https://github.com/aripakman/neural_clustering_process) by the authors.
+
+### Latent Variables
+
+The things that are not directly observed, which we are trying to infer from observed data. Can refer to both the parameters of the network $\theta$ or more commonly to the actual predictions of interest $\hat{y}$.
+
+### Amortization
+
+In Neural Clustering Processes refers to investing a lot of computational resources during training of the model, to then be able to make very fast predictions (which they call posterior inference, here referring to predicting $\hat{y}$).
+
+### Prior and Posterior 
+
+Are two probabilities, stemming from Bayesian statistics. The **posterior** is the conditional probability $P(A|B) = \frac{P(B|A)~P(A)}{P(B)}$. However, the term *posterior* is used informally to refer more specifically to the probability which we are inferring. To add to the confusion, in variational Bayesian methods this doesn't refer to the inference in the sense of making a prediction ($\hat{y}$) but to the inference of $\theta$ (the model parameters), i.e. the posterior is $P(\theta|X)$ (the probability of parameters given the evidence X). In contrast, **likelihood** function is the probability of evidence given the parametrs $P(X|\theta)$. The **prior** in that context is $p(\theta)$. However, in many papers, like in Ari Pakman's NCP paper, you will find that **posterior inference** refers to actually predicting $\hat{y}$.
+
+A related term is **conjugacy**, a **conjugate prior** is a prior such that both the prior and posterior are in the same probability distribution family (e.g Bernoulli, binomial, Poission or such). If the prior is conjugate, it affords certain algebraic convenience, in that it gives a closed-form expression for the posterior, otherwise requiring **numerical integration**.
+
+In turn, a **closed-form expression** means that a mathematical expression uses a finite number of standard operations. This means that it contains constants, variables, certain basic operations like addition, multiplication, subtraction and division as well as some functions (exponent, logarithm, trig etc.) but no limits, differentiation or integrals. 
+
+So numerical integration means calculating integrals. Interestingly numerical quadrature is for area under the surface and numerical cubature for the 3rd dimension.
+
 ### Ordinal Regression
 
 Is a type of regression analysis used for predicting an ordinal variable (i.e. a variable for which we only know that class B is above class A and below class C, not specifically by how much). It's applicable to ordered category prediction, when the distances between categories aren't known (they exist on an ordinal scale, but not an interval or ratio one).
