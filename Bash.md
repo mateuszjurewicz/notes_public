@@ -99,7 +99,7 @@ Can be forced via:
 
 You can also create a new file directly by executing `nano file1`. 
 
-More about Nano in [[Nano]]
+More about Nano in a separate note.
 
 ### Redirection
 

@@ -48,11 +48,11 @@ This came up when talking to Graham and looking for a loss function that punishe
 When the data belongs to e.g. Likert-style classes (lowest - low - medium - high - highest), this [article](https://towardsdatascience.com/how-to-perform-ordinal-regression-classification-in-pytorch-361a2a095a99) suggests specifying the target prediction matrix per element as:
 
 ``` 
-lowest_y  = [1, 0 , 0, 0, 0]
-low_y     = [1, 1 , 0, 0, 0]
-medium_y  = [1, 1 , 1, 0, 0]
-high_y    = [1, 1 , 1, 1, 0]
-highest_y = [1, 1 , 1, 1, 1]
+lowest_y  = [1, 0, 0, 0, 0]
+low_y     = [1, 1, 0, 0, 0]
+medium_y  = [1, 1, 1, 0, 0]
+high_y    = [1, 1, 1, 1, 0]
+highest_y = [1, 1, 1, 1, 1]
 ```
 
 And then just using binary cross-entropy loss function as criterion. Maybe we can use this in point-wise ordering predictions? E.g. the target attention per selected element could be 1s all the way up until the proper index. No, this doesn't work, the attention is a distribution over all element, in their arbitrary order. If we try to instead predict things for each point, the prediction might not result in a valid sequence (e.g. two elements in the same place).
@@ -61,21 +61,21 @@ There have also been more recent approaches to fix the problem of inconsistent p
 
 We would need Multiple-Instance Ordinal Regression, for which there is a 2018 [paper](https://ieeexplore.ieee.org/document/8107717), but it still predicts an ordinal label for the entire set (bag), not valid ordinal labels for the elements.
 
-This is also connected to learning to rank, where our main problem was that we don't have a query (we'd have to use a learned representation of the entire set) and that order between elements within clusters doesn't matter.
+This is also connected to learning to rank, where our main problem was that we don't have a query (we'd have to use a learned representation of the entire set) and that order between elements within clusters doesn't matter in our case, but it does in ranking.
 
 ### Hierarchical Clustering
 
 Is an **unsupervised** method to cluster data points based on their distance matrix. The hierarchy comes from doing it in steps, either starting with each point forming its own cluster (agglomerative) or all points being in a single cluster (divisive, much rarer).
 
-In agglomerative hierarchical clustering, you first find two points (each in their own, single-point cluster at this point) that are closest to each other based on the distance matric (e.g. Euclidean distance, but others can be chosen depending on the domain of application). These two points become a new cluster. This step is repeated until all points are in a single cluster. At each step, we have a partitional clustering.
+In agglomerative hierarchical clustering, you first find two points (each in their own, single-point cluster at this point) that are closest to each other based on the distance matrix (e.g. Euclidean distance, but others can be chosen depending on the domain of application). These two points become a new cluster. This step is repeated until all points are in a single cluster. At each step, we have a partitional clustering.
 
-There is some nuance also in how the distance between two clusters is calculated. It can be done by finding the average position of the point-memmbers of a cluster or in other ways.
+There is some nuance also in how the distance between two clusters is calculated. It can be done by finding the average position of the point-members of a cluster or in other ways.
 
 Nicely explained in [displayr](https://www.displayr.com/what-is-hierarchical-clustering/) and [wiki](https://en.wikipedia.org/wiki/Hierarchical_clustering).
 
 Part of the reason hierarchical clustering beats K-means is that you don't have to specify the target number of clusters ahead of time. However, we always end up with a single cluster in the end (in the agglomerative version). So how do we use this to find the right number of clusters? 
 
-Some answers are here on [vidyaanalytics](https://www.analyticsvidhya.com/blog/2019/05/beginners-guide-hierarchical-clustering/). Essentially we obtain a dendrogram of the progressive clusters and choose a threshold distance value. This can be useful for e.g. Sales when they can have some flexibility as to how many different target groups (segments) of customers they can approach in different ways.
+Some answers are here on [vidyaanalytics](https://www.analyticsvidhya.com/blog/2019/05/beginners-guide-hierarchical-clustering/). Essentially we obtain a dendrogram of the progressive clusters and choose a threshold distance value. This can be useful for e.g. Sales when they can have some flexibility as to how many different target groups (segments) of customers they want to approach in different ways.
 
 Finally, here's an actual [paper using supervised hierarchical clustering](http://proceedings.mlr.press/v97/yadav19a/yadav19a.pdf), from 2019. Notice the switch to using supervision.
 
@@ -98,7 +98,7 @@ Skip-connections solve this by either adding the output of an earlier layer dire
 
 ### Affinity Propagation
 
-Is an adaptive clustering algorithm, a step above K-means, because it automatically chooses the optimal number of clusters (so it's adaptive). However, it still depends on so called "prototypes", i.e. it tries to learn what the prototype point for each cluster would be, and assigns points based on the distance from it. Thus it skews towards clusters in the shape of circles. This leads to incorrect assignments when the data consists of e.g. two crescents latching onto each other. An example of such a case can be seen [here](https://youtu.be/5O4aPDpRHpA?t=667). The step above this is DBSCAN, which solves for different cluster shapes (not just dispersions) - but DBSCAN doesn't guarantee that it will assign every element to a cluster (that depends on chosen parameters).
+Is an adaptive, unsupervised clustering algorithm, a step above K-means, because it automatically chooses the optimal number of clusters (so it's adaptive). However, it still depends on so called "prototypes", i.e. it tries to learn what the prototype point for each cluster would be, and assigns points based on the distance from it. Thus it skews towards clusters in the shape of filled circles (discs). This leads to incorrect assignments when the data consists of e.g. two crescents latching onto each other. An example of such a case can be seen [here](https://youtu.be/5O4aPDpRHpA?t=667). The step above this is DBSCAN, which solves for different cluster shapes (not just dispersions) - but DBSCAN doesn't guarantee that it will assign every element to a cluster (that depends on chosen parameters).
 
 ### Normalizing Flows
 

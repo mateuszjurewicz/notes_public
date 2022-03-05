@@ -1,9 +1,7 @@
 # General
 
-### Upcoming skills
+### Planned
 
-- [x] finish bash script vid 1
-- [x] finish [bash script vid 2](https://www.youtube.com/watch?v=6W8sAWakcxY&list=PLTXMX1FE5Hj7QDc8R1GyaNucSI3aH-Sp5&index=2&ab_channel=JoeCollins)
 - [ ] finish [bash script vid 3](https://www.youtube.com/watch?v=9aD59kA_P1M&list=PLTXMX1FE5Hj7QDc8R1GyaNucSI3aH-Sp5&index=3&ab_channel=JoeCollins)
 - [ ] python rookie mistakes [vid](https://www.youtube.com/watch?v=qUeud6DvOWI) (for Python notes)
 - [ ] 50 linux commands [here](https://www.youtube.com/watch?v=ZtqBQ68cfJc&ab_channel=freeCodeCamp.org)
@@ -15,16 +13,7 @@
 - [ ] apache arrow for efficient storage of data (Munin Data's Jorge presentation from pydata)
 - [ ] polars -> a much quicker alternative to pandas, [here](https://github.com/pola-rs/polars)
 
-### _Notable_ functionalities
+### Completed
 
-- `cmd + alt + s` 
-switches back and forth between a split view of rendered markdown and the editor to just the render (in Notable.)
-- `cmd + e` 
-enters editing mode in Obsidian (not in Notable).
-- **relative links**
-[a relative link to Bash notes](Bash.md)
-- **colour text** 
-that gets included when exported to pdf: <span style="color:orange">Color HTML via **span**</span>
-- **nested tags**
-just use forward slash: `Notebooks/Skills/Tech/`, nesting is allowed
-
+- [x] finish bash script vid 1
+- [x] finish [bash script vid 2](https://www.youtube.com/watch?v=6W8sAWakcxY&list=PLTXMX1FE5Hj7QDc8R1GyaNucSI3aH-Sp5&index=2&ab_channel=JoeCollins)
