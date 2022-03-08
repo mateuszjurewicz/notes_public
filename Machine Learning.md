@@ -3,7 +3,7 @@
 Definitions of concepts, practical tips, possibly notes on select papers. Goal is to solidify understanding by writing things down / explaining them to myself.
 
 
-### Neural Clustering Process  (2020)
+## Neural Clustering Process  (2020)
 
 Is a supervised clustering method that predicts an adaptive (learned) number of clusters, by Ari Pakman. It proposed two separate methods:
 
@@ -18,18 +18,42 @@ NCP and CCP were tested on clustering mixtures of 2D Gaussians, clustering MNIST
 
 I'm not sure what they mean by the importance of a variable-input softmax function for the prediction of a varying number of clusters, will have to look at code.
 
+### How does NCP work?
+
+During training, NCP takes batches of points that are generated in such a way that a single target cluster assignment applies to every example in the batch, at least with 2D Mixtures of Gaussians. It then iterates over all available elements ($N$) and decides whether the current element should be assigned to one of the already _opened_ clusters or should become the first element of a new cluster. It is capable of predicting $K$ clusters, where $K \leq N$. 
+
+During training, NCP is teacher-forced, in the sense that it's prevented from predicting more clusters than there were in the target (`cs`). Target takes the form of an array referring to the arbitrary order of elements in the batched $X$ (`data`, in the code). For example:
+```
+# single-example batch of 3 points, in 2D (batch, N, elem_dim)
+data = [[[0.9, 0.4], [0.3, 0.6], [0.1, 0.2]]]
+
+# target 
+cs = [0, 0, 1]
+
+# also number of cluster members, padded at the start and end
+clusters = [0 2 1 0]
+```
+
+In order to help the model learn to be **approximately invariant** to one of the 3 meaningless permutations (specificially of elements in $X$ aka `data`, since they all represent the same set) by default 6 different permutations of `cs` and `data` are obtained and essentially that means each batch becomes 6 batches during training.
+
+#### NCP Training
+So, for each element $x_{n \in (0, N)}$ (`data[n]`), during training, we proceed to:
+  - pass the `data`, `cs` and current `n` to the `NeuralClustering()` model class.
+  - obtain the `logprobs` from the model, which are (batch, current k + 1), where current k is the number of clusters that we already assigned elements to, plus 1 for starting a new cluster.
+  - use `logprobs` to get the difference [CONTINUE HERE]
+
 Sources:
 - [github implementation](https://github.com/aripakman/neural_clustering_process) by the authors.
 
-### Latent Variables
+## Latent Variables
 
 The things that are not directly observed, which we are trying to infer from observed data. Can refer to both the parameters of the network $\theta$ or more commonly to the actual predictions of interest $\hat{y}$.
 
-### Amortization
+## Amortization
 
 In Neural Clustering Processes refers to investing a lot of computational resources during training of the model, to then be able to make very fast predictions (which they call posterior inference, here referring to predicting $\hat{y}$).
 
-### Prior and Posterior 
+## Prior and Posterior 
 
 Are two probabilities, stemming from Bayesian statistics. The **posterior** is the conditional probability $P(A|B) = \frac{P(B|A)~P(A)}{P(B)}$. However, the term *posterior* is used informally to refer more specifically to the probability which we are inferring. To add to the confusion, in variational Bayesian methods this doesn't refer to the inference in the sense of making a prediction ($\hat{y}$) but to the inference of $\theta$ (the model parameters), i.e. the posterior is $P(\theta|X)$ (the probability of parameters given the evidence X). In contrast, **likelihood** function is the probability of evidence given the parametrs $P(X|\theta)$. The **prior** in that context is $p(\theta)$. However, in many papers, like in Ari Pakman's NCP paper, you will find that **posterior inference** refers to actually predicting $\hat{y}$.
 
@@ -39,7 +63,7 @@ In turn, a **closed-form expression** means that a mathematical expression uses 
 
 So numerical integration means calculating integrals. Interestingly numerical quadrature is for area under the surface and numerical cubature for the 3rd dimension.
 
-### Ordinal Regression
+## Ordinal Regression
 
 Is a type of regression analysis used for predicting an ordinal variable (i.e. a variable for which we only know that class B is above class A and below class C, not specifically by how much). It's applicable to ordered category prediction, when the distances between categories aren't known (they exist on an ordinal scale, but not an interval or ratio one).
 
@@ -63,7 +87,7 @@ We would need Multiple-Instance Ordinal Regression, for which there is a 2018 [p
 
 This is also connected to learning to rank, where our main problem was that we don't have a query (we'd have to use a learned representation of the entire set) and that order between elements within clusters doesn't matter in our case, but it does in ranking.
 
-### Hierarchical Clustering
+## Hierarchical Clustering
 
 Is an **unsupervised** method to cluster data points based on their distance matrix. The hierarchy comes from doing it in steps, either starting with each point forming its own cluster (agglomerative) or all points being in a single cluster (divisive, much rarer).
 
@@ -79,28 +103,28 @@ Some answers are here on [vidyaanalytics](https://www.analyticsvidhya.com/blog/2
 
 Finally, here's an actual [paper using supervised hierarchical clustering](http://proceedings.mlr.press/v97/yadav19a/yadav19a.pdf), from 2019. Notice the switch to using supervision.
 
-### Autoregressive Models
+## Autoregressive Models
 
 Autoregressive means predicting the future behavior based on past behavior. In ML world it refers to seq2seq models that predict the next token based on previously predicted tokens (I believe).
 
-### Graph Convolutional Networks (GCNs)
+## Graph Convolutional Networks (GCNs)
 
 Very nice intro in [this article](https://towardsdatascience.com/understanding-graph-convolutional-networks-for-node-classification-a2bfdb7aba7b) by Inneke Mayachita. Inspired by Rylee Thompson's comments. The GCN's simplest version needs both an adjacency matrix $\mathcal{A}^{~n \times n}$ and a matrix of node features $\mathcal{R}^{~n \times d}$, which we then take the dot product of to get some new representation of the nodes as $\mathcal{H}^{~n \times d}$.
 
 It's a generalization of the 2D convolution operation, looking at immediately (1-step away) connected neighbor nodes, in this simplest version.
 
 
-### Skip-Connections 
+## Skip-Connections 
 
 Aka `Shortcut Connections` are a way to prevent very deep models from being hard to optimize. There are cases where a shallower model, with fewer layers, will perform better (even on the training set) than a deeper one, even if only identity layers were added. The problem of optimization can become harder for a deeper model.
 
 Skip-connections solve this by either adding the output of an earlier layer directly to the output of later layers (skipping some layers) like in ResNet (residual connections) or by concatenating it, like in DenseNet. Whilst batch normalization and proper weights initialization by themselves should prevent the vanishing / exploding gradient problem, in practice these skip connections appear helpful too.
 
-### Affinity Propagation
+## Affinity Propagation
 
 Is an adaptive, unsupervised clustering algorithm, a step above K-means, because it automatically chooses the optimal number of clusters (so it's adaptive). However, it still depends on so called "prototypes", i.e. it tries to learn what the prototype point for each cluster would be, and assigns points based on the distance from it. Thus it skews towards clusters in the shape of filled circles (discs). This leads to incorrect assignments when the data consists of e.g. two crescents latching onto each other. An example of such a case can be seen [here](https://youtu.be/5O4aPDpRHpA?t=667). The step above this is DBSCAN, which solves for different cluster shapes (not just dispersions) - but DBSCAN doesn't guarantee that it will assign every element to a cluster (that depends on chosen parameters).
 
-### Normalizing Flows
+## Normalizing Flows
 
 Normalizing flows are a representation learning technique, comparable to VAEs and GANs. In simple words, normalizing flows is a series of simple functions which are invertible, or the analytical inverse of the function can be calculated. For example, f(x) = x + 2 is a reversible function because for each input, a unique output exists and vice-versa whereas f(x) = x² is not a reversible function. Such functions are also known as bijective functions.
 
@@ -108,8 +132,7 @@ Good explanation [here](https://towardsdatascience.com/introduction-to-normalizi
 
 The normalizing flows transform a complex data point such as an MNIST Image to a simple Gaussian Distribution or vice-versa (and by distribution we mean it gets the $\mu$ and $\sigma$ of a $\mathcal{N}$ Normal distribution). Not clear to me how it's different from a VAE, but generally it is often presented side to side with GANs and VAEs that are capable of learning from unsupervised data.
 
-
-### Chain Rule
+## Chain Rule
 
 In calculus the chain rule is a formula for calculating the derivative of the composition $f(g(x)) = (f \circ g)(x)$ of two differentiable functions $f$ and $g$.
 Specifically, the chain rule is: $\frac{df}{dx} = \frac{df}{dg} \times \frac{dg}{dx}$
@@ -122,8 +145,7 @@ The Leibniz notation of $\frac{df}{dx}$ can be read as _the direction and rate o
 
 Chain Rule is often used e.g. in RNNs and RL, as at each time step we go back to some past time step to calculate current loss function. We're looking for the derivative of the parameters with respect to the value of the loss function $\frac{d \theta}{d L}$.
 
-
-### PonderNet
+## PonderNet
 
 Is a more recent improvement of the Alex Graves' ACT (adaptive computation time). It's a way for the model to adjust the number of computation steps to the input.
 
@@ -135,8 +157,7 @@ A good code implementation via github:
   - from https://github.com/labmlai/annotated_deep_learning_paper_implementations
 - https://github.com/lucidrains/ponder-transformer
 
-
-### Reparametrization trick
+## Reparametrization trick
 
 Is about being able to backpropagate the gradients back through a **variational** autoencoder (as opposed to just a normal autoencoder which generates a latent vector representation of the input and not a sequence of means and standard deviations per latent component). We can't backpropagate through a sampling operation, which is what happens when the VAE obtains an actual latent vector representation from the learned distribution of latent components.
 
@@ -150,7 +171,7 @@ https://youtu.be/EeMhj0sPrhE?t=1178
 And very simple VAE in code:
 https://github.com/pytorch/examples/blob/master/vae/main.py 
 
-### Activation functions
+## Activation functions
 
 Nonlinear functions often applied as the last tranformation in a neural network layer, giving them greater representation power than just a linear transform. In terms of biological inspiration, they are supposed to mimic the action potential of neurons (i.e. fire or don't fire, past a threshold). They usually have to be differentiable to allow for gradient-based learning.
 
@@ -172,7 +193,7 @@ $\textrm{Sigmoid}(x) = x~/~(1.0 + e^{-x}) = x * \textrm{Sigmoid}(x)$
 
 - `PReLU` - is a parameterized version of ReLU, proposed in [this paper](https://arxiv.org/pdf/1502.01852.pdf). It is similar to `LeakyReLU`, in that the left-of-y-axis part is not a flat y=0, like `ReLU`, instead it's a slightly rising slope. Difference is that in leakyReLU the parameter that controls the slope is set, in PReLU it is learned. Supposedly helps deeper models!
 
-### Ablation study
+## Ablation study
 
 In AI, `ablation` is the removal of a component of an AI system, to see how the absence of that component impacts overall performance. In this way, we are able to somewhat judge its contribution to the overall results of the entire model. For neural nets this is an analogy to ablative brain surgery, where we tried to figure out what part of the brain does what by removing parts and asking animals to perform different tasks.
 
