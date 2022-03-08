@@ -28,7 +28,7 @@ However, the term has a messy history within Deep Learning, where people refer t
 
 Here's the graph:
 
-<img src="img/logit_plot.svg" alt="Logarithm Plots" style="height: 400px; background-color: #FFFFFF"/>
+<img src="img/logit_plot.png" alt="Logarithm Plots" style="height: 400px; background-color: #FFFFFF"/>
 
 Sources:
 - [deepmind's definition](https://deepai.org/machine-learning-glossary-and-terms/logit)
