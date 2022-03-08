@@ -1,7 +1,6 @@
 # Mathematics
 
-
-### Logarithm
+## Logarithm
 
 Is the inverse of exponentiation. If you think of exponentiation as a function `y = exp(x)`, the `x` is the base but we still need to specify `the power` / `the exponent` to which we raise the base, to get the value of `y`. E.g. if we choose the exponent = 4 and base = 2, then $y = \textrm{exp}_4(2) = 2 * 2 * 2 * 2 = 16$.
 
@@ -18,7 +17,25 @@ Binary logarithm uses base = 2 and is common in computer science. Logarithms wer
 **The logarithm of a product is the sum of the logarithms of the factors:** $\textrm{log}_{b}(p~q) = \textrm{log}_{b}(p) + \textrm{log}_{b}(q)$. 
 There are some caveats - b, p and q all need to be positive and b cannot equal 1.
 
-### Notation
+
+## Logit
+
+The logit function, also known as **log-odds** function, take probability values ranging between 0 and 1 and turns them into real values between -inf and inf. It is the inverse of the sigmoid function. It's domain is thus <0, 1>. It can be used as the final layer of a neural network for e.g. classification tasks, where the previous layers output class probabilities between 0 and 1, and the logit function turns them into real numbers.
+
+It takes the form $\textrm{logit}(p) = \textrm{ln}(\frac{p}{1-p}) = \textrm{ln}(p) - \textrm{ln}(1-p)$, due to the logarithm rule regarding logarithms of products being the sum of the logarithms of the factors of that multiplication. $p$ here stands for probability.
+
+However, the term has a messy history within Deep Learning, where people refer to the **logits layer** as the one that feeds into a softmax activation, since the output of the softmax is interpreted as probabilities and the logit function is its inverse. Apparently some functions in e.g. tensorflow are named with the suffix like `tf.nn.softmax_crossentropy_with_logits` where it just means that input of this function is supposed to be output of the last neuron layer prior to the activation function. So it's messy.
+
+Here's the graph:
+
+<img src="img/logit_plot.svg" alt="Logarithm Plots" style="height: 400px; background-color: #FFFFFF"/>
+
+Sources:
+- [deepmind's definition](https://deepai.org/machine-learning-glossary-and-terms/logit)
+- [stackoverflow on why it's confusing in DL](https://stackoverflow.com/questions/41455101/what-is-the-meaning-of-the-word-logits-in-tensorflow/52111173#52111173)
+
+
+## Notation
 
 Using KaTeX instead of LaTeX because that's what Notable supports. KaTeX is just a JS wrapper for LaTeX in markdown files and such.
 
