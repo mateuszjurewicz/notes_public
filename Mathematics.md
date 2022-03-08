@@ -34,7 +34,6 @@ Sources:
 - [deepmind's definition](https://deepai.org/machine-learning-glossary-and-terms/logit)
 - [stackoverflow on why it's confusing in DL](https://stackoverflow.com/questions/41455101/what-is-the-meaning-of-the-word-logits-in-tensorflow/52111173#52111173)
 
-
 ## Notation
 
 Using KaTeX instead of LaTeX because that's what Notable supports. KaTeX is just a JS wrapper for LaTeX in markdown files and such.
