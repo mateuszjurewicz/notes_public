@@ -192,6 +192,8 @@ first type of glass is made stronger through controlled thermal or chemical trea
 a small specie of turtle, living in brackish or fresh water, common house pet.
 - `terrycloth` aka `towelling` or `terry cotton`
 is a material where there are protruding loops of thread that can absorb a large amount of water, perfect for fluffy towels and bathrobes.
+- `true-blue` (noun and adjective)
+extremely loyal, regardless of circumstances, unwavering in one's committment (positively so). Also real, genuine. As a noun refers to a person with these qualities. British specific: staunchly loyal supporter of the Conservative Party.
 - `unalome`
 a buddhist symbol for the journey towards enlightenment, in the form of a straight line turning into a zig-zag like pattern, ending in a spiral (variations exist).
 - `vociferous`
