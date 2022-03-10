@@ -152,7 +152,8 @@ During the call to `NCP_Sampler(S)`, the underlying model makes `S` predictions 
     - `cs` is constructed via `ss`, by placing the predicted/sampled cluster indices from `ss` into `cs` at $n^\textrm{th}$ index.
     - `nll` is all zeros at first iteration, and we keep subtracting from that zero the probability value we predicted for the target cluster, for each element. So `nll` starts with shape (`S`) and keeps that shape, and for each sample (each index) we keep subtracting the predicted probability of the target cluster, until we're out of elements.
 - **(after N loop)**
-    - d
+    - the `nll` is sorted and turned into probabilities, so that we know how probable each sample was.
+    - the predicted cluster assignments are sorted from most probable to least, and returned.
 
 
 
