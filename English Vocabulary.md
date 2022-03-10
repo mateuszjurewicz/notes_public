@@ -13,7 +13,9 @@ having the properties of or relating to a duck.
 - `argot`
 a language used by a group to prevent outsiders from understanding, a slang, a jargon. Not be confused with `ergot`, which is th fungus that grows in wheat and causes hallucination (`Sporysz` in Polish).
 - `arpeggio`
-production of the tones of a chord in succession and not simultaneously. 
+production of the tones of a chord in succession and not simultaneously.
+- `arrears`
+money that is owed and should have been payed earlier. Can refer to wages, rent etc. Can also be used more generally to refer to unpaid, overdue debt and unfulfilled obligations or the state of being behind in fulfilling them, e.g. an account in ____s.
 - `avast!`
 stop, cease (nautical term, shouted out when a sailor was meant to stop doing sth).
 - `avuncular`

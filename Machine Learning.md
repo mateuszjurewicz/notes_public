@@ -16,7 +16,7 @@ Important to note that NCP/CCP does not **explicitly enforce permutation invaria
 
 NCP and CCP were tested on clustering mixtures of 2D Gaussians, clustering MNIST images into single-class clusters, and something called Spike Sorting, which is not an ordering task, but it's about grouping electrical neuron activity spikes as belonging to individual neurons.
 
-I'm not sure what they mean by the importance of a variable-input softmax function for the prediction of a varying number of clusters, will have to look at code.
+It includes a form of variable-input length softmax for the prediction of a varying number of clusters, which just means there may be a different number of available clusters to assign a point to, but looking at code it's also not exactly a softmax function that in the end returns a vector over all available clusters, the highest being at the index of the chosen cluster.
 
 ### How does NCP work?
 
@@ -30,7 +30,7 @@ data = [[[0.9, 0.4], [0.3, 0.6], [0.1, 0.2]]]
 # target 
 cs = [0, 0, 1]
 
-# also number of cluster members, padded at the start and end
+# also number of cluster members, padded at the start and end (doesn't seem to be used in the code)
 clusters = [0 2 1 0]
 ```
 
