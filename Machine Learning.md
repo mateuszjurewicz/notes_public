@@ -119,8 +119,8 @@ During the call to `NCP_Sampler(S)`, the underlying model makes `S` predictions 
             - **but** `self.H` is initiated to be (`S`, 2, 256), where `S` is the number of chosen samples, and we already get representations of 2 clusters.
     - if **later iteration**:
         - first, we check whether `maxK` is larger than `previous_maxK`, and if it is:
-              - we create `new_h`, which is all zeros (`S`, 1, 256), which represents an empty cluster.
-              - we then concatenate `new_h` to the end of `self.H`
+            - we create `new_h`, which is all zeros (`S`, 1, 256), which represents an empty cluster.
+            - we then concatenate `new_h` to the end of `self.H`
         - `self.Q` is updated to reflect the removal/subtraction of current point from remaining, unclustered points via `self.Q[0,:] -= self.qs[n,:]`
         or it's set to zeros if we're at the last element in the set.
         - `previous_maxK` is set to equal `maxK`.
@@ -150,12 +150,14 @@ During the call to `NCP_Sampler(S)`, the underlying model makes `S` predictions 
             ```
     - `ss` is thus obtained by sampling, which gives us cluster assignments for current point, for all samples (`S`). `ss` is of size (`S`).
     - `cs` is constructed via `ss`, by placing the predicted/sampled cluster indices from `ss` into `cs` at $n^\textrm{th}$ index.
+    - `nll` is all zeros at first iteration, and we keep subtracting from that zero the probability value we predicted for the target cluster, for each element. So `nll` starts with shape (`S`) and keeps that shape, and for each sample (each index) we keep subtracting the predicted probability of the target cluster, until we're out of elements.
+- **(after N loop)**
+    - d
 
 
 
 ### Questions / Open Problems:
 1. CCP code is not available, it's not clear whether it will lend itself better to being extended to cluster ordering. Plan is to reach out to Ari Pakman.
-1. MNIST training can be a better parallel to PROCAT, where we can't have batches where all examples share one target. This might be computationally prohibitive.
 1. **Extend NCP to Cluster Ordering** ideas:
 
      1. **NCP and Set2Seq training jointly on shared element embeddings** | we can use the same embedding of points for NCP and set-to-sequence, using the per-point order predictions from set2seq to then calculate the average order per cluster and treat that as a prediction.
