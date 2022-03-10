@@ -10,9 +10,9 @@ Is a supervised clustering method that predicts an adaptive (learned) number of 
   1. Neural Clustering Process (pointwise) aka NCP
   2. Clusterwise Clustering Process (clusterwise) aka CCP
 
-I will refer to pointwise NCP as just NCP. CCP, by contrast, predicts one cluster at a time. NCP is $O(N)$, CCP is $O(K)$, where $N$ is the cardinality of the input set and $K$ is the number of clusters.
+I will refer to pointwise NCP as just NCP. CCP, by contrast, predicts one cluster at a time. NCP is $O(N)$, CCP is $O(K)$, where $N$ is the cardinality of the input set and $K$ is the number of clusters. I have some doubts, from the implementation it looks like NCP is $O(NK)$, the paper claims to achieve $O(N)$ through parallelization, but I see it loop over all points and within that loop over all current clusters + one potential newly opened one.
 
-Important to note that NCP/CCP does not **explicitly enforce permutation invariance** of the final output. So there's still a chance that it won't learn to make the same clustering choices with regards to two permutations of the same underlying set.
+Important to note that NCP/CCP does not **explicitly enforce permutation invariance** of the final output. So there's still a chance that it won't learn to make the same clustering choices with regards to two permutations of the same underlying set. Additionally, authors report a metric related to how permutations of the same set change the prediction.
 
 NCP and CCP were tested on clustering mixtures of 2D Gaussians, clustering MNIST images into single-class clusters, and something called Spike Sorting, which is not an ordering task, but it's about grouping electrical neuron activity spikes as belonging to individual neurons.
 
@@ -22,7 +22,7 @@ I'm not sure what they mean by the importance of a variable-input softmax functi
 
 During training, NCP takes batches of points that are generated in such a way that a single target cluster assignment applies to every example in the batch, at least with 2D Mixtures of Gaussians. It then iterates over all available elements ($N$) and decides whether the current element should be assigned to one of the already _opened_ clusters or should become the first element of a new cluster. It is capable of predicting $K$ clusters, where $K \leq N$. 
 
-During training, NCP is teacher-forced, in the sense that it's prevented from predicting more clusters than there were in the target (`cs`). Target takes the form of an array referring to the arbitrary order of elements in the batched $X$ (`data`, in the code). For example:
+During training, NCP is teacher-forced, in the sense that it uses the target (`cs`) to add the previously considered point ($n-1\textrm{th}$) to the internal representation of the cluster it actually belonged to. Target takes the form of an array referring to the arbitrary order of elements in the batched $X$ (`data`, in the code). For example:
 ```
 # single-example batch of 3 points, in 2D (batch, N, elem_dim)
 data = [[[0.9, 0.4], [0.3, 0.6], [0.1, 0.2]]]
@@ -34,13 +34,139 @@ cs = [0, 0, 1]
 clusters = [0 2 1 0]
 ```
 
-In order to help the model learn to be **approximately invariant** to one of the 3 meaningless permutations (specificially of elements in $X$ aka `data`, since they all represent the same set) by default 6 different permutations of `cs` and `data` are obtained and essentially that means each batch becomes 6 batches during training.
+In order to help the model learn to be **approximately invariant** to one of the 3 meaningless permutations (specifically of elements in $X$ aka `data`, since they all represent the same set) by default 6 different permutations of `cs` and `data` are obtained and essentially that means each batch becomes 6 batches during training. The other noisy, meaningless permutations are the order of points within clusters and the order of unassigned points.
 
-#### NCP Training
-So, for each element $x_{n \in (0, N)}$ (`data[n]`), during training, we proceed to:
+### NCP Training
+We will be using the following internal, learned representations:
+1. `self.Hs` | previously opened (current) clusters, individually (b, K, 256)
+1. `self.hs` | all elements in the set, individually (b, N, 256)
+1. `self.Q` | all **remaining, unclustered elements** jointly (b, 256)
+1. `self.qs` | all points in the set, individually (b, N, 256), used to represent **remaining, unclustered** elements
+    - despite being $N$-sized, this is used to obtain `self.Q` by summing the remaining elements via indexing (`self.Q = self.qs[:, n,;].sum()`) during the very first interation, and then consecutively by subtracting the current points representation (`self.Q -= self.qs[:,n,]`)
+
+There are also temporary representations that exist whilst looping over candidate clusters ($k \in K$) for the current point ($n^\textrm{th}$):
+1. `Hs2` | previously opened (current) clusters, with the current candidate element ($n^\textrm{th}$) added to the currently considered ($k^\textrm{th}$) cluster.
+    - `Hs2` is (b, k, 256)
+1. `gs` | previously opened (current) clusters and the adjusted ($k^\textrm{th}$) cluster, individually (b, k, 512)
+    - `gs` is (b, k, 512), it's a transformation of `Hs2` via `self.g()`. 
+1. `Gk` | previously opened (current) clusters and the adjusted ($k^\textrm{th}$) cluster, jointly (b, 512), obtained from `gs` via summing.
+1. `uu` | `Gk` and `self.Q`, concatenated (b, 256 + 512 = 768). Within the `k in range(K)` loop it represents all potential clusters and the remaining, unclustered points.
+
+Finally there are 4 learned functions, which are all sequential stacks of `Linear()` and `PReLU`:
+1. `self.h()` | obtains `self.hs` point representations from `data`, at the first element (`n==1`)
+1. `self.q()` | obtains `self.qs` point representations from `data`, at the first element (`n==1`)
+1. `self.g()` | obtains `gs` cluster representatiosn from flattened `Hs2`, at each `k` iteration plus another for the new potential cluster.
+1. `self.f()` | obtains predictions from `uu` (the concatenated `Gk` and `self.Q`), at each `k` iteration plus another for the new potential cluster.
+
+So, for each element $x_{n \in (0, N)}$ (`data[n]`) in a single example from the batch, during training, we proceed to:
   - pass the `data`, `cs` and current `n` to the `NeuralClustering()` model class.
-  - obtain the `logprobs` from the model, which are (batch, current k + 1), where current k is the number of clusters that we already assigned elements to, plus 1 for starting a new cluster.
-  - use `logprobs` to get the difference [CONTINUE HERE]
+  -  **(inference)** obtain the `logprobs` from the model, which are (batch, current k + 1), where current k is the number of clusters that we already assigned elements to (opened), plus 1 for starting a new cluster.
+      - the prediction is teacher-forced, in that it checks at each n-th iteration whether the **previous** ($n-1\textrm{th}$) point should have been added to a new cluster or an existing one, and it either adds the representation of the previous point (from `self.hs`) to the correct cluster (via `self.Hs`) or concatenates the representation of the previous point (from `self.hs`) as the latest, unpredicted cluster (in `self.Hs`). 
+      - in this way, when looping through current clusters the model has perfect awareness of what the correct assignments of preceding points were, and its internal representations of clusters (`self.Hs`) reflects that.
+      - additionally, if the current element is **not** the last one, we update the joint representation of all the remaining elements (`self.Q`) by subtracting the representation of the current element from it (`self.Q -= self.qs[:, n, :]`).
+          - if we are on the last element (the $n^{\textrm{th}}$), the representation of the remaining available points (`self.Q`) is set to all zeros.
+      - the `logprobs` are now initiated to contain predictions per current K+1 clusters (making room for the potential newly opened one)
+      - **(cluster loop)**: loop over all current clusters (`for k in range(K)`), **excluding the possibility of opening a new cluster** with current point as its only member:
+          - initiate a new, temporary representation of current clusters (`Hs2 = self.Hs.clone()`).
+          - add the current n-th point to the representation of the current candidate cluster (`Hs2[:,k,:] += self.hs[:,n,:]`)
+          - then the clusters are flattened for the entire batch and embedded via the `self.g()` function into `gs`, which is a representation of all clusters **individually** (b, k, 512).
+          - obtain the representation of all clusters `Gk` (b, 512), by summing over `gs`.
+          - obtain the representation of all clusters and all available points `uu`, by concatenating `Gk` and `self.Q`. This joint representation of everything is now (b, 256 + 512 = 768).
+          - make a per-cluster prediction about whether the current n-th point should be assigned to it by passing `uu` to `self.f()`, which outputs a single floating point number, which is then inserted into `logprobs` at the index `k` of the currently considered cluster (`logprobs[:,k] = torch.squeeze(self.f(uu))`)
+      - **(potential new cluster)** is considered after the loop.
+          - concatenate the representation of the current point (`self.hs[:,n,:]`) with `self.Hs` into the last `Hs2`
+          - pass the flattened `Hs2` to `self.g()` to obtain `gs`
+          - sum over `gs` to obtain `Gk` (b, 512), the representation of all clustered points (including the potentially clustered n-th point forming its own new cluster).
+          - obtain `uu` by concatenating `Gk` with the representation of unassigned points `self.Q`
+          - get the prediction regarding current point being in this new cluster by passing `uu` to `self.f()`, and put it in the last index of the tracked predictions for this point (`logprobs[:,K]`)
+      - **(final logprobs)** are normalized into actual log values and somewhat normalized.
+          - first, the highest predicted value is found (the predicted floating point number for the m-th cluster), marked as `m`.
+          - every predicted value in logprobs (of length K+1) has `m` subtracted from it, resulting in a vector where every value is negative, except for the index of `m`, whose value becomes 0 (m - m = 0), the full operation is `logprobs = logprobs - m - torch.log(torch.exp(logprobs-m).sum(dim=1, keepdim=True))`
+          - this results in a `logprobs` vector where the previously highest `m` value become the least negative one (so also most positive). Not clear to me what the purpose of this is.
+  -  **(metric)** use `logprobs` and `cs` to see if the current element was assigned to the correct cluster, if so for the current example we track accuracy as 1.0, otherwise 0.0, but this is done for all n-th elements in the batch at the same time, so the actually accuracy per n-th element is a float between 0.0 and 1.0.
+  -  **(loss)** is calculated by taking the predicted `logprob` of assigning the current n-th element to the **correct** cluster (based on the target) and subtracting it from the tracked loss value (initiated to zero), for every single element in batch, across the batch (mean reduced).
+  - **(backwards)**, the loss is backpropagated only once all elements were assigned to clusters.
+
+### NCP Sampling / Inference
+
+Here's how the `NCP_Sampler()` class, which takes the instance of the `NeuralClustering()` model as `dpmm`, is used to make inferences on 1-elem batches. A new sampler is initialized for each 1-elem batch during the plotting function's execution.
+
+During `NCP_Sampler()` initialization:
+
+- `self.hs` is obtained via `model.h(data)`
+- `self.qs` is obtainde via `model.q(data)`
+- `self.f()` and `self.g()` are assigned to refer to `model.f()` and `model.g()` respectively.
+
+During the call to `NCP_Sampler(S)`, the underlying model makes `S` predictions (`S` is th chosen number of samples), including their probabilities:
+
+- (**before loop**): 
+    - `cs` of size (`S`, `N`) is initiated. This will contain cluster assignments, sampled from the predicted probabilities, for all 5000 samples (`S = 5000`)
+    - `previous_maxK` is set to 1
+    - `nll` is initialized to all zeros of size (`S`). This will hold the actual probability of each sample.
+- (**loop over $N$**) begins:
+    - before checking if this is the first or later iteration:
+        - `Ks` is initialized to `cs.max(dim=1)`. This holds the highest predicted cluster index for each sample.
+              - so it tracks how many clusters are already opened in each sample. `Ks` is of size (`S`).
+        - `Ks` gets 1 added to each entry, so that even from the start we have at least 1 cluster.
+        - `maxK` and `minK` are obtained from `Ks`. These are integer values, tracking the maximum and minimum number of clusters already predicted
+        in all samples so far.
+        - `inds` dictionary is created, it's keys are all integers in range `(minK, maxK)` (inclusive), and the values are a Boolean vector over `Ks`. 
+    - if **first iteration**:
+        -  get `self.Q` by summing `self.qs[2:,:]` (excluding the first element). This represents remaining elements (jointly).
+           - `self.Q` is (1, 256), `self.qs` is (N, 256)
+        -  get `self.H` by inserting the first element of `self.hs` into it, at 0th index.
+            - `self.hs` is (N, 256)
+            - **but** `self.H` is initiated to be (`S`, 2, 256), where `S` is the number of chosen samples, and we already get representations of 2 clusters.
+    - if **later iteration**:
+        - first, we check whether `maxK` is larger than `previous_maxK`, and if it is:
+              - we create `new_h`, which is all zeros (`S`, 1, 256), which represents an empty cluster.
+              - we then concatenate `new_h` to the end of `self.H`
+        - `self.Q` is updated to reflect the removal/subtraction of current point from remaining, unclustered points via `self.Q[0,:] -= self.qs[n,:]`
+        or it's set to zeros if we're at the last element in the set.
+        - `previous_maxK` is set to equal `maxK`.
+    - `logprobs` are initiated to be (`S`, `maxK`) where `maxK` is the number of potential clusters to assign the current point to (2 even at first iteration, when the first point has to go into the first cluster).
+    - `rQ` (`S`, 256) is initated from `self.Q`. It represents the remaining set of points (jointly) for all potential samples.
+    - (**loop over $K$**) begins:
+        - `K = maxK + 1` is used as loop range limit.
+        - `Hs2` is obtained by cloning `self.Hs`. `Hs2` is (`S`, K, 256)
+        - the current point's representation (`self.hs[n,:]`) is added into the currently considered cluster's representation `Hs2[:,k,:]`.
+        - `gs` is obtained via `self.h()` to get a representation of all currently considered clusters (individually). `gs` is (`S`, `K`, 512).
+        - (**big difference 1**) because each sample's prediction might have a different number of clusters already predicted, the `ind` is used
+        to set the values of clusters that haven't been initiated yet in some samples to all 0s in those samples.
+        - `Gk` is obtained by summing over `gs`. `Gk` is (`S`, 512) and represents all currently considered clusters, jointly as a set, for all samples.
+        - `uu` is obtained by concatenating `Gk` and `rQ`, representing all currently considered clusters and remaining points. `uu` is (S, 768)
+        - `logprobs` are obtained by passing `uu` to `self.f()`. 
+            - `logprobs` contain the predictions of current $n^\textrm{th}$  point belonging to $k^\textrm{th}$ cluster, for all `S` samples. As the loop over $K$ continues, progressive indices in `logprobs` get filled with predictions for each possible cluster.
+    - (**big difference 2**) because samples at this point may have a different number of clusters already predicted, the `inds` vector is used to set impossible predictions in `logprobs` to `-inf`. In this way we make sure the model isn't assigning the current $n^\textrm{th}$ point to a cluster beyond the potential newly opened one, I believe.
+    - `logprobs` are normalized in the same way as in the train call.
+    - `probs` are obtained from `logprobs` via exponentiation ($e^{x_{i}}$)
+        - `probs` are (`S`, `K`)
+    - `m` is initialized from `torch.distributions.Categorical(probs)`.
+        - what this does is use the values from `probs` to return their indices, according to the probabilities belonging to them.
+            - for example:
+            ```
+            m = Categorical(torch.tensor([ 0.25, 0.25, 0.25, 0.25 ]))
+            m.sample()  # equal probability of 0, 1, 2, 3
+            ```
+    - `ss` is thus obtained by sampling, which gives us cluster assignments for current point, for all samples (`S`). `ss` is of size (`S`).
+    - `cs` is constructed via `ss`, by placing the predicted/sampled cluster indices from `ss` into `cs` at $n^\textrm{th}$ index.
+
+
+
+### Questions / Open Problems:
+1. CCP code is not available, it's not clear whether it will lend itself better to being extended to cluster ordering. Plan is to reach out to Ari Pakman.
+1. MNIST training can be a better parallel to PROCAT, where we can't have batches where all examples share one target. This might be computationally prohibitive.
+1. **Extend NCP to Cluster Ordering** ideas:
+
+     1. **NCP and Set2Seq training jointly on shared element embeddings** | we can use the same embedding of points for NCP and set-to-sequence, using the per-point order predictions from set2seq to then calculate the average order per cluster and treat that as a prediction.
+        - we can possibly further improve it by using PMA as set pooling instead of summation!
+        - still need to check papers that cite NCP (for ideas others have already implemented)
+
+     1. **Simplest Set2Seq with repeated break marker** | we can use the simplest set-to-sequence approach with the section break token being always provided, and always available for pointing to it.
+         - this can lead to model never finishing (always pointing to the page break and never having all elements selected)
+     1. **CCP with pairwise predictions** | possibly with CCP, we could add a step that makes pairwise predictions regarding representations of already predicted clusters once
+       a cluster is closed (but when do we know that it is closed?)
+
 
 Sources:
 - [github implementation](https://github.com/aripakman/neural_clustering_process) by the authors.
