@@ -105,7 +105,7 @@ one's friends, acquaintances and relations as opposed to blood relative (which a
 - `kompromat`
 information that could cause harm to someone's reputation (compromising material, from Russian). Relates to the Pegasus spyware.
 - `larceny`
-formal legal term for theft of personal property.
+formal legal term for theft of personal property (of a person or business though). Grand _____ has to exceed a specific amount of dollars.
 - `legerdemain`
 sleight of hand, artful trickery, deception.
 - `limerence`
