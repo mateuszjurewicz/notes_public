@@ -6,7 +6,6 @@ For useful things learned while using torch.
 
 - cuda version incompatible with torch after upgrading torch: I just run `sudo apt-get -y install cuda` on a 64bit Ubuntu 16.04 and rebooted, worked after.
   - checked via `torch.cuda.is_available()`
-
 - `torch.clamp(min, max)` - makes all values within a tensor that were under min or above max be min or max, respectively. Great for adding random noise but wanting to keep data within some boundaries, e.g.
 
 ```

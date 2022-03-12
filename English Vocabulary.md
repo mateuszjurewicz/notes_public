@@ -187,7 +187,7 @@ in a quiet voice, as if to not be overheard. A ___ ___ remark. Under the breath,
 - `specious`
 plausible but false, deceptively pleasing but based on false pretense.
 - `spoor`
-as a noun, it's the track or scent of a hunted animal. As a verb, to ____ an animal means to follow its track or scent. "Taking his  spear, he set off to ____ his prey".
+as a noun, it's the track or scent of a hunted animal. As a verb, to ____ an animal means to follow its track or scent. "Taking his spear, he set off to ____ his prey".
 - `tempered and annealed glass`
 first type of glass is made stronger through controlled thermal or chemical treatment, resulting in the glass shattering into small granular chunks as oppossed to sharp shards, making it safer. The second type is obtained through slow, controlled cooling and is more durable, but doesn't have the safe-when-cracked property. Improperly a____ed glass can shatter due to very little or even no stress at all, possibly also a small shift in temperature.
 - `terrapin`

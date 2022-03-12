@@ -3,7 +3,7 @@
 Definitions of concepts, practical tips, possibly notes on select papers. Goal is to solidify understanding by writing things down / explaining them to myself.
 
 ## Neural Structured Learning
-Is a learning paradigm that came from Google's Tensorflow team around 2020, it leverages additional knowledge about some of the examples in the training set, such as their neighboring examples in some knowledge graph, and use that knowledge to regularize during e.g. a classification of that sample, making models more robust.
+Is a learning paradigm that came from Google's Tensorflow team around 2020, it leverages additional knowledge about some of the examples in the training set, such as their neighboring examples in some knowledge graph, and uses that knowledge to regularize during e.g. a classification of that sample, making models more robust.
 
 For example imagine you're trying to classify an image of a dog. You might also have some data about other pictures of similar dogs, such that the current example picture is connected to its neighbors in a graph. The model is then fed the pictures of the neighbors along with the example, and then its loss is increased if the learned representation of the example and the neighbors is different.
 
