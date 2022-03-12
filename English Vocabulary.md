@@ -104,6 +104,8 @@ anatomically it's the lower part of a person or animal's cheeks, especially when
 one's friends, acquaintances and relations as opposed to blood relative (which are the "kin" in "kith and kin")
 - `kompromat`
 information that could cause harm to someone's reputation (compromising material, from Russian). Relates to the Pegasus spyware.
+- `larceny`
+formal legal term for theft of personal property.
 - `legerdemain`
 sleight of hand, artful trickery, deception.
 - `limerence`
