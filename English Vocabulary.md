@@ -24,6 +24,8 @@ kind and friendly towards a younger or less experienced person. In anthropology 
 held breath (signifiying anticipation)
 - `belfry`
 a bell tower, especially one attached to a building.
+- `bellwether`
+something that serves as a leader or leading indictator of future trends. "The degree to which the paper is censored is a political _____" A w___ is  castrated male sheep or goat (leading the flock, wearing a b___).
 - `Bian Lian`
 the quick-face-mask-change art popular in Sichuan operas.
 - `(false) bill of goods`
