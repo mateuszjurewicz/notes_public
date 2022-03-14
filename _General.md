@@ -12,6 +12,7 @@
 - [ ] poetry library for package management
 - [ ] apache arrow for efficient storage of data (Munin Data's Jorge presentation from pydata)
 - [ ] polars -> a much quicker alternative to pandas, [here](https://github.com/pola-rs/polars)
+- [ ] basic sql injections [here](https://www.youtube.com/watch?v=WXQDruIyPGE&ab_channel=LoiLiangYang), just for fun
 
 ### Completed
 
