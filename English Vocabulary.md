@@ -71,7 +71,7 @@ old age, a period when a person is old and weak. "In my -----".
 - `embossed`
 (of a surface or object) decorated with a design that stands out in relief. E.g. a notarized document, diploma or a business card.
 - `expound`
-to explain, state in detail, elucidate. "The professor was _____ing **on** his favorite subject". Commonly confused with expand, which refers to adding further detail.
+to explain, state in detail, elucidate. "The professor was _____ing **on** his favorite subject". Commonly confused with expand, which also refers to adding further detail.
 - `figment`
 Something invented, made up, or fabricated. From latin _fingere_ - to "form". 
 - `forcemeat`
