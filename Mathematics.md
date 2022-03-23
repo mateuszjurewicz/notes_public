@@ -48,7 +48,7 @@ Is a symbol for _defined as_. Or more precisely _equal by definition_. As oppose
 symbol of _defined as_.
 
 - $\sim$
-the long tilde is used to mean _equivalence_.
+the long tilde is used to mean _equivalence_. **But** it's also used in Bayesian Inference to mean sampling from, e.g. $\rho \sim \mathcal{N}(\mu, \sigma)$. Here rho is sampled from a Normal distribution, with given params (mean and stdev).
 
 ### Greek alphabet
 - $\tau, \Tau$ - tau

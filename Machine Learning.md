@@ -2,6 +2,27 @@
 
 Definitions of concepts, practical tips, possibly notes on select papers. Goal is to solidify understanding by writing things down / explaining them to myself.
 
+## Dirichlet Process
+
+"_Distribution over distributions_"
+
+In probability theory, a Dirichlet process is a probability distribution whose output is itself a set of probability distributions. It is used in **Bayesian Inference** (aka using Bayes Theorem to update the probability of a hypothesis as more evidence becomes available) to describe the prior knowledge about the distribution of random variables. In other words, to describe how likely it is that the random variables are distributed according to one or another probability distribution from some set of probability distributions.
+
+For a real world example, imagine you have a bag with a 100 D20s from the same dice maker. You randomly draw a dice and roll it. All the random variables (dice rolls) from this bag should follow the uniform probability mass function. But if we also have a second bag of a 100 D20s from a dice maker that is not reliable, this second PMF would not be uniform. The randomness of these 2 PMFs can be modelled with the Dirichlet distribution.
+
+Another example would come from modelling the distribution of words in text documents. Imagine you have a dictionary of k words. Each document can be represented as a PMF of length k, produced by normalizing the seen frequency of its words. A group of documents become a collections of PMFs, and we can fit a Dirichlet distribution ot capture the variability of these PMFs.
+
+The Chinese Restaurant Process is a metaphor used to exemplify a Dirichlet Process. It also shows a "rich-get-richer" pattern, where whether a person sits at the currently occupied tables is dependent on how many people are already sitting there (positively). There's an analogous "stick-break" process, where we break a stick into smaller and smaller pieces.
+
+The Dirichlet distribution is the extension of the Beta distribution (which outputs 0-1).
+
+Btw, it's named after Dirichlet (a German mathematician) but was invented by THomas Ferguson in 1973.
+
+Sources:
+- [friendlier presentation on DP](https://youtu.be/I7bgrZjoRhM?t=688)
+- [video on nonparametric clustering using DP](https://youtu.be/UTW530-QVxo?t=119)
+- [long lecture specfically on DP](https://www.youtube.com/watch?v=bNbdsq8xlds&ab_channel=10-708PGM)
+
 ## Neural Structured Learning
 Is a learning paradigm that came from Google's Tensorflow team around 2020, it leverages additional knowledge about some of the examples in the training set, such as their neighboring examples in some knowledge graph, and uses that knowledge to regularize during e.g. a classification of that sample, making models more robust.
 
