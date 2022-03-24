@@ -120,6 +120,8 @@ a state of mind resulting from romantic attraction, characterized by feelings of
 an entertainment, such as a play, presented during the day, usually in the early afternoon (from the French, meaning morning).
 - `mother lode`
 the main vein of ore in a region, often misspelled as "load".
+- `nictate` (to)
+to wink or blink. 
 - `obviate`
 to avoid or prevent sth undesirable, prevent a difficulty. E.g. having a parachute can ____ disaster. "Bad actions aren't ____ed by shame".
 - `palmistry`
