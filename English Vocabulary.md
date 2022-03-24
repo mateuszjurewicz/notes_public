@@ -32,6 +32,8 @@ the quick-face-mask-change art popular in Sichuan operas.
 as in "to be sold a (false) bill of goods, means to be made a false promise. Bill of goods is just a list of items, negative connotation comes from paying for a list of items but never actually receiving the items. In RDR2 Arthur responds to being threatened with _eternity_ with "I hope it's hot and terrible, otherwise I'll feel I've been sold a false bill of goods".
 - `blithe` (adj) and `blithely`
 carefree and lighthearted, lacking due concern, casual. E.g. Fearne ____ly continues to steal things despite her lack of sleight of hand.
+- `Bon ton` aka `the ton`
+from French "good manners" or "good form / style", refers to the nobility and its society in the 19th century England. Comparable with `beau monde` (the beautiful world) meaning the fashionable society. Also `Upper Ten Thousand` referring to the wealthiest 10K new yorkers.
 - `Boston marriage`
 historically, the cohabitation of two wealthy women, independent of financial support from a man. The term is said to have been in use in New England in the late 19th/early 20th century, refers to Henry James novel. Some of these relationships were romantic in nature and might now be considered a lesbian relationship; others were not.
 - `bury the lede`
