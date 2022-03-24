@@ -121,7 +121,7 @@ an entertainment, such as a play, presented during the day, usually in the early
 - `mother lode`
 the main vein of ore in a region, often misspelled as "load".
 - `nictate` (to)
-to wink or blink. 
+to wink or blink. Also seen as referring to eyelids that close horizontally. 
 - `obviate`
 to avoid or prevent sth undesirable, prevent a difficulty. E.g. having a parachute can ____ disaster. "Bad actions aren't ____ed by shame".
 - `palmistry`
