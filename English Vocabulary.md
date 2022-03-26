@@ -139,7 +139,7 @@ extreme poverty or being extremely frugal.
 - `pillory`
 dyby po angielsku (works as noun and verb).
 - `play hooky` (inf. hookie)
-to miss school, work or other duties without permission or excuse. Truancy.
+to skip school, work or other duties without permission or excuse. Truancy.
 - `plaque` (dental)
 the built-up of calcified minerals around teeth, also known as `tartar` or, strangely, `calculus`.
 - `poindexter`

@@ -8,7 +8,7 @@ Definitions of concepts, practical tips, possibly notes on select papers. Goal i
 
 In probability theory, a Dirichlet process is a probability distribution whose output is itself a set of probability distributions. It is used in **Bayesian Inference** (aka using Bayes Theorem to update the probability of a hypothesis as more evidence becomes available) to describe the prior knowledge about the distribution of random variables. In other words, to describe how likely it is that the random variables are distributed according to one or another probability distribution from some set of probability distributions.
 
-For a real world example, imagine you have a bag with a 100 D20s from the same dice maker. You randomly draw a dice and roll it. All the random variables (dice rolls) from this bag should follow the uniform probability mass function. But if we also have a second bag of a 100 D20s from a dice maker that is not reliable, this second PMF would not be uniform. The randomness of these 2 PMFs can be modelled with the Dirichlet distribution.
+For a real world example, imagine you have a bag with a 100 D20s from the same dice maker. You randomly draw a dice and roll it. All the random variables (dice rolls) from this bag should follow the uniform probability mass function. But if we also have a second bag of a 50 D20s from a dice maker that is not reliable, this second PMF would not be uniform. The randomness of these 2 PMFs can be modelled with the Dirichlet distribution. So there's on probability over which kind of dice you get (e.g. 100/150 or 50/150) and anotherr about what you'll roll (either uniform on the fair die or sth weird on the bad ones).
 
 Another example would come from modelling the distribution of words in text documents. Imagine you have a dictionary of k words. Each document can be represented as a PMF of length k, produced by normalizing the seen frequency of its words. A group of documents become a collections of PMFs, and we can fit a Dirichlet distribution ot capture the variability of these PMFs.
 
@@ -16,7 +16,7 @@ The Chinese Restaurant Process is a metaphor used to exemplify a Dirichlet Proce
 
 The Dirichlet distribution is the extension of the Beta distribution (which outputs 0-1).
 
-Btw, it's named after Dirichlet (a German mathematician) but was invented by THomas Ferguson in 1973.
+Btw, it's named after Dirichlet (a German mathematician) but was invented by Thomas Ferguson in 1973.
 
 Sources:
 - [friendlier presentation on DP](https://youtu.be/I7bgrZjoRhM?t=688)
@@ -337,7 +337,7 @@ Common activation functions:
 - `ReLU` - rectified linear activation unit. Everything below zero gets turned to zero, everything above stays itself.
 $\textrm{ReLU}(x) = \textrm{max}(0.0, x)$
 
-- `Sigmoid` - aka `Logistic`, everything gets pushed between 0 and 1, with a hyperbolic-like curve in the middle. Most things below -5 and above 5 get pushed to almost -1 and almost 1. Recommended to use the Xavier Glorot's `Xavier Uniform` weight initialization and scale input data to 0-1 when using sigmoid.
+- `Sigmoid` - aka `Logistic`, everything gets pushed between 0 and 1, with a hyperbolic-like curve in the middle. Most things below -5 and above 5 get pushed to almost 0 and almost 1. Recommended to use the Xavier Glorot's `Xavier Uniform` weight initialization and scale input data to 0-1 when using sigmoid.
 $\textrm{Sigmoid}(x) = 1.0~/~(1.0 + e^{-x})$
 
 - `TanH` - aka `hyperbolic tangent` function. Same shape as Sigmoid, but it has the range between -1 and 1.
