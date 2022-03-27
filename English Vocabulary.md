@@ -72,12 +72,14 @@ the part of the body a person sits on (the buttocks, the rear, the rump).
 old age, a period when a person is old and weak. "In my -----".
 - `embossed`
 (of a surface or object) decorated with a design that stands out in relief. E.g. a notarized document, diploma or a business card.
+- `eyrie` ("iyri")
+a large nest of an eagle or other bird of prey, built high in a tree or on a cliff. Figuratively a high or inaccessible place from which someone can observe what is below them.
 - `expound`
 to explain, state in detail, elucidate. "The professor was _____ing **on** his favorite subject". Commonly confused with expand, which also refers to adding further detail.
 - `figment`
 Something invented, made up, or fabricated. From latin _fingere_ - to "form". 
 - `forcemeat`
-  a uniform mixture of lean meat with fat made by grinding or sieving the ingredients. Po polsku parówki, but also other types of sausage might fit here.
+a uniform mixture of lean meat with fat made by grinding or sieving the ingredients. Po polsku parówki, but also other types of sausage might fit here.
 - `fraternal twin`
 non-identical twin, aka dizygotic, biovular twin. Identical twins are called monozygotic.
 - `fuselage` (pron. fjuselaż)
