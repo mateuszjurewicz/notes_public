@@ -6,6 +6,8 @@ Meant to be an alphabetized list of interesting words or phrases to improve my a
 an accessory, additional item of equipment or dress.
 - `adage`
 a saying, proverb.
+- `agog`
+eager, full of keen anticipation.
 - `anastole`
 a hairstyle popular in ancient Greece around Alexander the Great's time, characterized by being swept back from the forehead, with curls to the sides.
 - `anatine`
@@ -73,7 +75,7 @@ old age, a period when a person is old and weak. "In my -----".
 - `embossed`
 (of a surface or object) decorated with a design that stands out in relief. E.g. a notarized document, diploma or a business card.
 - `eyrie` ("iyri")
-a large nest of an eagle or other bird of prey, built high in a tree or on a cliff. Figuratively a high or inaccessible place from which someone can observe what is below them.
+a large nest of an eagle or other bird of prey, built high in a tree or on a cliff. Figuratively 
 - `expound`
 to explain, state in detail, elucidate. "The professor was _____ing **on** his favorite subject". Commonly confused with expand, which also refers to adding further detail.
 - `figment`
@@ -200,6 +202,8 @@ in a quiet voice, as if to not be overheard. A ___ ___ remark. Under the breath,
 plausible but false, deceptively pleasing but based on false pretense.
 - `spoor`
 as a noun, it's the track or scent of a hunted animal. As a verb, to ____ an animal means to follow its track or scent. "Taking his spear, he set off to ____ his prey".
+- `supine`
+1) lying down, on one's back, facing up 2) failing to act or protest as a result of moral weakness or indolence, passive to the point of deserving blame.
 - `tempered and annealed glass`
 first type of glass is made stronger through controlled thermal or chemical treatment, resulting in the glass shattering into small granular chunks as oppossed to sharp shards, making it safer. The second type is obtained through slow, controlled cooling and is more durable, but doesn't have the safe-when-cracked property. Improperly a____ed glass can shatter due to very little or even no stress at all, possibly also a small shift in temperature.
 - `terrapin`
