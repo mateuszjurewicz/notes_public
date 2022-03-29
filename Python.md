@@ -18,7 +18,7 @@ r2 = list(filter((value_to_remove).__ne__, a_list))
 print(r2)
 ```
 
-Here `.__ne__` refers to the _not_equal_ function of the element we want to remove. We could have also used a lambda.
+Here `.__ne__` refers to the _not_equal_ function of the element we want to remove. We could have also used a lambda. The `filter()` function removes all the elements for whom the not-equal will return `True`.
 
 - `installing a specific version of a package`
 
