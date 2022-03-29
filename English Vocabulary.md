@@ -204,7 +204,7 @@ plausible but false, deceptively pleasing but based on false pretense.
 as a noun, it's the track or scent of a hunted animal. As a verb, to ____ an animal means to follow its track or scent. "Taking his spear, he set off to ____ his prey".
 - `supine`
 1) lying down, on one's back, facing up 2) failing to act or protest as a result of moral weakness or indolence, passive to the point of deserving blame.
-- `sybarite`
+- `sybarite` / `sybaritic`
 A person devoted to pleasure and luxury; a voluptuary. Often used to describe born-rich wastrels. Originally Greek, refering to the rich inhabitants of Sybaris.
 - `tempered and annealed glass`
 first type of glass is made stronger through controlled thermal or chemical treatment, resulting in the glass shattering into small granular chunks as oppossed to sharp shards, making it safer. The second type is obtained through slow, controlled cooling and is more durable, but doesn't have the safe-when-cracked property. Improperly a____ed glass can shatter due to very little or even no stress at all, possibly also a small shift in temperature.
