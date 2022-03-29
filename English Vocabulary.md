@@ -204,6 +204,8 @@ plausible but false, deceptively pleasing but based on false pretense.
 as a noun, it's the track or scent of a hunted animal. As a verb, to ____ an animal means to follow its track or scent. "Taking his spear, he set off to ____ his prey".
 - `supine`
 1) lying down, on one's back, facing up 2) failing to act or protest as a result of moral weakness or indolence, passive to the point of deserving blame.
+- `sybarite`
+A person devoted to pleasure and luxury; a voluptuary. Often used to describe born-rich wastrels. Originally Greek, refering to the rich inhabitants of Sybaris.
 - `tempered and annealed glass`
 first type of glass is made stronger through controlled thermal or chemical treatment, resulting in the glass shattering into small granular chunks as oppossed to sharp shards, making it safer. The second type is obtained through slow, controlled cooling and is more durable, but doesn't have the safe-when-cracked property. Improperly a____ed glass can shatter due to very little or even no stress at all, possibly also a small shift in temperature.
 - `terrapin`
@@ -216,6 +218,8 @@ extremely loyal, regardless of circumstances, unwavering in one's committment (p
 a buddhist symbol for the journey towards enlightenment, in the form of a straight line turning into a zig-zag like pattern, ending in a spiral (variations exist).
 - `vociferous`
 loud and forceful, characterized by vehement opinions (e.g. of support for something).
+- `voluptuary`
+A person devoted or addicted to luxury and sensual pleasures. Synonym of a sybarite. From latin _voluptas_ (pleasure). A hedonist.
 - `wallah`
 an arabic expression meaning "I swear by God" but also as a noun, from Hindi, it means a person employed in a particular activity (e.g. a kitchen -----, rickshaw -----) or an important person within a field (e.g. a Republican ----).
 - `what's good for the goose is good for the gander`
