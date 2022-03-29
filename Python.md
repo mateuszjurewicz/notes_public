@@ -1,5 +1,16 @@
 # Python
 
+- `counting occurrences of each item in a list`
+
+We can use the `collections.Counter()` item easily:
+
+```
+l = ['a', 'a', 'b', 'c', 'c', 'c']
+from collections import Counter
+print(Counter(l))
+# will show Counter({'c': 3, 'a': 2, 'b': 1})
+```
+
 - `removing all occurrences of an element from a list`
 
 Note that the `list.remove()` function only removes a single occurrence.
