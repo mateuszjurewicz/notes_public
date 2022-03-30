@@ -104,6 +104,8 @@ pompous, pretentious, needlessly haughty, especially of a manner of speaking or 
 The few.
 - `hoi polloi`
 from Greek, meaning the common people, in English mostly pejoratively "the masses".
+- `a hoot and a holler`
+a ton of fun, cool way of saying sth will be great.
 - `indictment`
 Either 1) something that illustrates that a certain situation is bad and deserves condemnation or 2) a formal accusation of a serious crime.
 - `journeyman`
