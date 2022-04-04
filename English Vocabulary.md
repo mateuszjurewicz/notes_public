@@ -50,6 +50,8 @@ a rule about meetings, according to which any information given during the meeti
 something sure or easy, a person or thing certain to fulfill an expectation. An easy task, a certainty.
 - `clarion (call)`
 loud and clear (as adjective), strongly expressed demand or request for action (with noun). Refers to a trumpet-like instrument.
+- `confectionery`
+the art of making confections, which are food items that are rich in sugar and carbohydrates. Note the last 'e'.
 - `coniferous` & `conifers`
 (of trees) bearing cones, mostly evergreen and needle-leaved trees fall under this category. Translates into _iglaste_.
 - `costermonger`
