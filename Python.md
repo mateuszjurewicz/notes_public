@@ -1,5 +1,20 @@
 # Python
 
+- `printing with leading zeros`
+
+Sometimes you want a log line to have always the same length, for easy readability. In such a case you can easily use python string formatting to pad the int with leading zeros, to the specified length:
+
+```
+var = 35
+print(f'{var:04d}')
+# prints 0035 (pads to 4 digits)
+
+# you can also use zfill()
+var_2 = str(var).zfill(4)
+print(var_2)
+# prints 0035 too
+```
+
 - `counting occurrences of each item in a list`
 
 We can use the `collections.Counter()` item easily:
