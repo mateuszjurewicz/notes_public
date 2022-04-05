@@ -30,6 +30,9 @@ a bell tower, especially one attached to a building.
 something that serves as a leader or leading indictator of future trends. "The degree to which the paper is censored is a political _____" A w___ is  castrated male sheep or goat (leading the flock, wearing a b___).
 - `Bian Lian`
 the quick-face-mask-change art popular in Sichuan operas.
+- `bijou`
+a small dainty usually ornamental piece of delicate workmanship (a jewel).
+Also something delicate, elegant, or highly prized. From Breton / French for jewelled ring, originally from the word for finger (biz).
 - `(false) bill of goods`
 as in "to be sold a (false) bill of goods, means to be made a false promise. Bill of goods is just a list of items, negative connotation comes from paying for a list of items but never actually receiving the items. In RDR2 Arthur responds to being threatened with _eternity_ with "I hope it's hot and terrible, otherwise I'll feel I've been sold a false bill of goods".
 - `blithe` (adj) and `blithely`
