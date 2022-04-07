@@ -189,6 +189,8 @@ to walk in an ostentatious manner, often with exaggerated hip and shoulder movem
 severely critical of something, witheringly scornful. E.g. of an indictment or an attack.
 - `scurrilous`
 expressed in a vulgar or coarse manner. Sometimes also slanderous, defamatory.
+- `scuttlebutt`
+Informal for gossip, rumors. But also in nautical terms: a cask on a ship used to hold the day's supply of drinking water.
 - `self-possessed`
 calm and having a self-assured command of one's faculties, feelings and behavior.
 - `seminal`
@@ -210,7 +212,7 @@ plausible but false, deceptively pleasing but based on false pretense.
 - `spoor`
 as a noun, it's the track or scent of a hunted animal. As a verb, to ____ an animal means to follow its track or scent. "Taking his spear, he set off to ____ his prey".
 - `supine`
-1) lying down, on one's back, facing up 2) failing to act or protest as a result of moral weakness or indolence, passive to the point of deserving blame.
+Either: 1) lying down, on one's back, facing up 2) failing to act or protest as a result of moral weakness or indolence, passive to the point of deserving blame.
 - `sybarite` / `sybaritic`
 A person devoted to pleasure and luxury; a voluptuary. Often used to describe born-rich wastrels. Originally Greek, refering to the rich inhabitants of Sybaris.
 - `tempered and annealed glass`
