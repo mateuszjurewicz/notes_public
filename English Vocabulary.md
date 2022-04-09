@@ -79,8 +79,8 @@ the part of the body a person sits on (the buttocks, the rear, the rump).
 old age, a period when a person is old and weak. "In my -----".
 - `embossed`
 (of a surface or object) decorated with a design that stands out in relief. E.g. a notarized document, diploma or a business card.
-- `eyrie` ("iyri")
-a large nest of an eagle or other bird of prey, built high in a tree or on a cliff. Figuratively 
+- `eyrie` ("iyri") aka `aerie`
+a large nest of an eagle or other bird of prey, built high in a tree or on a cliff. Figuratively a safe haven somewher hard to reach, e.g. a castle or fortress located in the mountains.
 - `expound`
 to explain, state in detail, elucidate. "The professor was _____ing **on** his favorite subject". Commonly confused with expand, which also refers to adding further detail.
 - `figment`
