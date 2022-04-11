@@ -1,6 +1,19 @@
 # Python
 
-- `printing with leading zeros`
+
+## Pyplot and garbage collection
+
+Apparently opened plots can sometimes not get properly garbarge collected (memory leak?). Got this warning on GPU: 
+
+```
+RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory"
+```
+
+The only safe solution seems to be to call `plt.close('all')` at the end of the visualization functions, after the figure gets saved somewhere.
+
+Source [here](https://stackoverflow.com/questions/8213522/when-to-use-cla-clf-or-close-for-clearing-a-plot-in-matplotlib).
+
+## Printing with leading zeros
 
 Sometimes you want a log line to have always the same length, for easy readability. In such a case you can easily use python string formatting to pad the int with leading zeros, to the specified length:
 
@@ -15,7 +28,7 @@ print(var_2)
 # prints 0035 too
 ```
 
-- `counting occurrences of each item in a list`
+## Counting occurrences of each item in a list
 
 We can use the `collections.Counter()` item easily:
 
@@ -26,7 +39,7 @@ print(Counter(l))
 # will show Counter({'c': 3, 'a': 2, 'b': 1})
 ```
 
-- `removing all occurrences of an element from a list`
+## Removing all occurrences of an element from a list
 
 Note that the `list.remove()` function only removes a single occurrence.
 So instead we have 2 options:
@@ -46,14 +59,14 @@ print(r2)
 
 Here `.__ne__` refers to the _not_equal_ function of the element we want to remove. We could have also used a lambda. The `filter()` function removes all the elements for whom the not-equal will return `True`.
 
-- `installing a specific version of a package`
+## Installing a specific version of a package
 
 ```
 python3 -m pip install torch==1.10.0  # upgrades to specified version
 python3 -m pip install --upgrade torch  # upgrade to latest version
 ```
 
-- `ast` library
+## `ast` library
 
 for converting nested lists stored as strings in a csv file back into lists:
 
