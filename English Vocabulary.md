@@ -24,6 +24,8 @@ stop, cease (nautical term, shouted out when a sailor was meant to stop doing st
 kind and friendly towards a younger or less experienced person. In anthropology refers to the relationship between men and the children of their siblings (as in uncles).
 - `bated breath`
 held breath (signifiying anticipation)
+- `barding`
+the armor for a horse.
 - `belfry`
 a bell tower, especially one attached to a building.
 - `bellwether`
