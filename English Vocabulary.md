@@ -169,6 +169,8 @@ a person who obtains something (a good or an effect). Another meaning is specifi
 a student and _mentee_, someone under protection and tutelage of sb established.
 - `pugnacious`
 eager or quick to argue, quarrel or fight. Connect with `pugilist` (a boxer).
+- `puissant` (read pjuisant) (noun: `puissance`)
+archaic / literary for having great power, might or influence. Same French root as power.
 - `purveyor`
 someone who sells or deals in particular goods. 
 - `quilted`
