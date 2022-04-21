@@ -177,6 +177,9 @@ someone who sells or deals in particular goods.
 in polish "pikowana", e.g. of leather or a jacket. Refers to joining layers of fabric, usually by stitching, forming all kinds but usually a criss-cross pattern.
 - `rakish` and `rakishly good-looking` (pronounced "rejkisz")
 dashingly or carelessly unconventional, `debonair`, slightly disreputable, rogueish. Alternatively having a trim or streamlined appearance suggestive of speed (when referring to a ship).
+- `rapt`
+completely fascinated or absorbed by what one is seeing or hearing.
+"a _____ teenage audience". Archaically to be transported to heaven, e.g. ""he was _____ on high".
 - `rebar`
 short for reinforcing bar, it's those pieces of curving steel rods that go into cement.
 - `recuse sb / oneself`
