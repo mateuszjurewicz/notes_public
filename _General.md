@@ -16,6 +16,7 @@
 - [ ] apache arrow for efficient storage of data (Munin Data's Jorge presentation from pydata)
 - [ ] polars -> a much quicker alternative to pandas, [here](https://github.com/pola-rs/polars)
 - [ ] basic sql injections [here](https://www.youtube.com/watch?v=WXQDruIyPGE&ab_channel=LoiLiangYang), just for fun
+- [ ] Bertsekas new RL material [here](http://web.mit.edu/dimitrib/www/RLbook.html)
 - [ ] read Hal Doume's [book](http://ciml.info/dl/v0_99/ciml-v0_99-all.pdf), great intro to ML
 
 ### Completed
