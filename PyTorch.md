@@ -22,10 +22,15 @@ mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
 
 - `torch.full(size, fill_value)` - creates a tensor of specific size / dimensions, full of one given value.
 
+- `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
+
+### Checking CUDA / GPU
+
 - `tensor.is_cuda` gives a Boolean value whether a tensor is on a GPU or not.
   - to move a tensor to the preferred device, use `a_tensor = a_tensor.to(torch.device('cuda:0'))`
-
-- `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
+- `next(model.parameters()).is_cuda` is a quick way to check if the model is on the CUDA device
+- alternatively tou can ask explicit for which device a thing is on `next(network.parameters()).device`
+  - `tensor.device` works as well.
 
 ### Truncating Tensors
 
