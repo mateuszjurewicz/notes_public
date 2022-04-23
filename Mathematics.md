@@ -20,7 +20,7 @@ There are some caveats - b, p and q all need to be positive and b cannot equal 1
 
 ## Logit
 
-The logit function, also known as **log-odds** function, take probability values ranging between 0 and 1 and turns them into real values between -inf and inf. It is the inverse of the sigmoid function. It's domain is thus <0, 1>. It can be used as the final layer of a neural network for e.g. classification tasks, where the previous layers output class probabilities between 0 and 1, and the logit function turns them into real numbers.
+The logit function, also known as **log-odds** function, take probability values ranging between 0 and 1 and turns them into real values between -inf and inf. It is the inverse of the sigmoid function (in that sigmoid takes values from the domain of -inf to inf and returns values within 0-1). It's domain is thus <0, 1>. It can be used as the final layer of a neural network for e.g. classification tasks, where the previous layers output class probabilities between 0 and 1, and the logit function turns them into real numbers.
 
 It takes the form $\textrm{logit}(p) = \textrm{ln}(\frac{p}{1-p}) = \textrm{ln}(p) - \textrm{ln}(1-p)$, due to the logarithm rule regarding logarithms of products being the sum of the logarithms of the factors of that multiplication. $p$ here stands for probability.
 
