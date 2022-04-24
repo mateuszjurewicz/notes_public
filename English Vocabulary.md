@@ -209,7 +209,7 @@ strongly influential to later developments (of a work of art).
 - `septum`
 the middle barrier between nostrils. Not be confused with `philtrum`, which is cleft above lips.
 - `shamisen` (Japanese instrument)
-a traditional Japanese instrument, resembling a guitar. It's name means "3 strings", it's originally Chinese, and is fretless. The resonance chamber isn't made entirely from wood, instead the front is covered with a stretched cured cat-skin (traditionally), much like a drum or a banjo. The player uses a large pick with handle, called _bachi_. A more generic term for picks is a `plectrum`, a tool used for plucking or strumming stringed instruments.
+a traditional Japanese instrument, resembling a guitar. It's name means "3 strings", it's originally Chinese, and is fretless. The resonance chamber isn't made entirely from wood, instead the front is covered with a stretched cured cat-skin (traditionally), much like a drum or a banjo. The player uses a large pick with handle, called _bachi_. A more generic term for picks is a `plectrum`, a tool used for plucking or strumming stringed instruments. The plectrum has a handle cause it is used to simultaneously strum and drum.
 - `shofar`
 an ancient musical instrument, often in the form of a ram's horn, used for ancient Jewish religious purposes. Learned form the musical Godspell.
 - `snaggletooth` & `snaggletoothed`
