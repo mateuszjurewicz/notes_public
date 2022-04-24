@@ -95,6 +95,8 @@ a uniform mixture of lean meat with fat made by grinding or sieving the ingredie
 non-identical twin, aka dizygotic, biovular twin. Identical twins are called monozygotic.
 - `fuselage` (pron. fjuselaż)
 The central body of an aircraft, to which the wings and tail assembly are attached and which accommodates the crew, passengers, and cargo.
+- `germane` and `to germinate`
+relevant to a subject under consideration, pertinent. Stems from an old english word for "having the same parents". Reminds me of "___minating" (beginning to sprout or coming into existance).
 - `gingiva`
 a technical medical term for gums (in the mouth). Pronounced either 'gíngiwa' or 'dżíndżiwa`.
 - `gloss over sth`
