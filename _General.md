@@ -18,6 +18,7 @@
 - [ ] basic sql injections [here](https://www.youtube.com/watch?v=WXQDruIyPGE&ab_channel=LoiLiangYang), just for fun
 - [ ] Bertsekas new RL material [here](http://web.mit.edu/dimitrib/www/RLbook.html)
 - [ ] read Hal Doume's [book](http://ciml.info/dl/v0_99/ciml-v0_99-all.pdf), great intro to ML
+- [ ] JAX as faster, cleaner alternative to PyTorch, from the same guy who co-created autograd, [vid intro here](https://www.youtube.com/watch?v=xFtctq75WaE&t=1s&ab_channel=FieldsInstitute)
 
 ### Completed
 
