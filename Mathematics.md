@@ -57,3 +57,4 @@ the long tilde is used to mean _equivalence_. **But** it's also used in Bayesian
 - $\sigma, \Sigma$ - pronunciation _sigma_, lowercase is standard deviation, uppercase is sum.
 - $\gamma, \Gamma$ - gamma
 - $\lambda, \Lambda$ - lambda
+- $\beta, \Beta$ - beta. Note that lowercase beta is close to a German _scharfes s_ and kinda looks like an upper-case letter.
