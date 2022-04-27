@@ -2,6 +2,64 @@
 
 Definitions of concepts, practical tips, possibly notes on select papers. Goal is to solidify understanding by writing things down / explaining them to myself.
 
+## Attentive Clustering Process (ACP)
+
+ACP is a supervised neural clustering method capable of predicting an adaptive number of clusters. It offers an improvement over the Clusterwise Clustering Process (CCP) introduced in the NCP paper through the introduction of attention mechanisms. 
+
+Pakman and Juho Lee found that **CCP underfits more complex datasets**, showcasing a need for greater expressive power, which ACP is supposed to bring. It was tested on graph community detection with adaptive (learned) number of communities, but the original code is also applied to a Mixture of Gaussians clustering problem much like NCP & CCP in this [github repo](https://github.com/aripakman/amortized_community_detection).
+
+The paper introduces both ACP and ACP-S. ACP-S uses a simpler, anchor-independent aggregation with attention, explained in Appendix A (both methods). The anchor, I believe, is the uniformly sampled first point of the new cluster. Not sure how this changes things mechanically, it also seems ACP and ACP-S have similar performance.
+
+### ACP training
+
+1. model takes `data` and`labels`.
+    - `data` is (b, N, 2) for Mixture of Gaussians (2 dimensional points)
+    - `labels` is (N), presumably same trick with each example in batch having the same target. It takes the form of e.g. [0, 0, 1, 2, 2, 2, 3], in order.
+2. within `model.forward_train()` we get cardinalities of each cluster as `cluster_counts`, in order, as a list.
+    - e.g. if the 0th cluster had 10 elements and the 1st had 5, `cluster_counts` would be [10, 5]
+3. `get_ATUS()` funtion gets called on the `cluster_counts`, returning 4 objects listed below. This function is an element of **teacher-forcing**. It gives the element indices that will be needed at each k-th step of ACP.
+    - firstly, anchors get initialized to a list of as many 0s as there are clusters. E.g. [0, 0].
+    - secondly, it obtains `cumsum`, which is a list of accumulated cluster cardinalities, preceded by a 0. In our example cumsum would be [0, 10, 15]
+    - thirdly, we enter a **loop over  K**, the number of clusters in this example / batch (`k` in `K`)
+        1. `all_anchors[k]` is set to `cumsum[k]`, identifiying the first point of each new cluster by its index in the original `data`, which is ordered ascendingly at this step.
+        2. `all_targets` is a binary target vector over points available at `k`-th step, where points that should be assigned to `k`-th cluster get a 1, and the other available points get a 0.
+        3. `all_unassigned` is the indices of unassigned points at each step `k`
+        4. `last_assigned` is a list of the indices of all points in `k`-th cluster
+4. `loss` and `elbo` get set to 0, these are the only output of `forward_train()` (no predictions are returned).
+5. `MOG_Encoder` takes the data to embedd it, this is just a stack of Linear() and PReLU(), ending on a Linear().
+    - `enc_data` is returned and reshaped into (b, N, 128)
+6. `sorted_ind` is obtained by passing `labels` (currently still sorted) to torch.argsort(), which returns the indices that would sort the values from labels. But because many labels have the same value (same cluster assignment), the output of argsort has an **element of randomness** to it.
+    - e.g. in our example of [0 x 10, 1 x 5], the sorted_ind first 10 elements could have the indices of 0-10 in any order, e.g. [9, 2, 7, ...]. Only the elements after the 10th index would be guaranteed to be above 10, with the values between 10-15 in random over in that second sector.
+7. `labels` are reordered according to the semi-shuffled, `sorted_ind`, not clear to me what this achieves.
+8. `enc_data` gets roereded according to `sorted_ind` too, not clear what this achieves either, except the order of elements within clusters gets shuffled.
+9. `G` is initialized to None.
+10. **loop over k in K begins**, where `model.forward_k()` gets repeatedly called returning:
+    - new loss term, new elbo term, new `G`
+    - there's also a break condition if only 1 unassigned point remains to be clustered
+    - `ind_anchor` is the index of the starting point (anchor) of current, `k`-th cluster, gotten from `all_anchors` at `[k]` index.
+    - `ind_unassigned` is a list of indices of the points that are still unassigned, obtained from `all_unassinged` via `[k]` index.
+    - `ind_last_assigned` is a list containing the indices of points from previous cluster  via `all_last_assigned][k-1]`, but **only if we're not on `k == 0` (as there is no previous cluster then)
+    - `targets`, a binary vector of 0s and 1s over the remaining available points is obtained from `all_targets` via `[k]` index.
+    - from here, `self.forward_k()` gets called
+11. `forward_k()` is called within the `K` loop.
+    - it takes these as input:
+        - `k` index of current cluster
+        - `enc_data`, embedded elements
+        - `G`, set to None at first cluster
+        - `ind_anchor`, `ind_unassigned` and `ind_last_assigned`
+        - `w`, the chosen number of VAE samples to generate (default 40)
+        - `targets`, the binary vector of $y$ over unassigned, available points at k-th step.
+    - it will return:
+        - `loss_term` and `elbo_term` 
+        - `G` for the next k+1 iteration.
+        - the `loss` and `elbo` then get the terms added to them.
+12. `forward_k()` call internals:
+    - 2
+
+
+Sources:
+- [Ari Pakman's github repo for ACP](https://github.com/aripakman/amortized_community_detection)
+
 ## Dirichlet Process
 
 "_Distribution over distributions_"
