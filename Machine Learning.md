@@ -15,7 +15,7 @@ The paper introduces both ACP and ACP-S. ACP-S uses a simpler, anchor-independen
 1. model takes `data` and`labels`.
     - `data` is (b, N, 2) for Mixture of Gaussians (2 dimensional points)
     - `labels` is (N), presumably same trick with each example in batch having the same target. It takes the form of e.g. [0, 0, 1, 2, 2, 2, 3], in order.
-2. within `model.forward_train()` we get cardinalities of each cluster as `cluster_counts`, in order, as a list.
+2. within `self.forward_train()` we get cardinalities of each cluster as `cluster_counts`, in order, as a list.
     - e.g. if the 0th cluster had 10 elements and the 1st had 5, `cluster_counts` would be [10, 5]
 3. `get_ATUS()` funtion gets called on the `cluster_counts`, returning 4 objects listed below. This function is an element of **teacher-forcing**. It gives the element indices that will be needed at each k-th step of ACP.
     - firstly, anchors get initialized to a list of as many 0s as there are clusters. E.g. [0, 0].
@@ -33,7 +33,7 @@ The paper introduces both ACP and ACP-S. ACP-S uses a simpler, anchor-independen
 7. `labels` are reordered according to the semi-shuffled, `sorted_ind`, not clear to me what this achieves.
 8. `enc_data` gets roereded according to `sorted_ind` too, not clear what this achieves either, except the order of elements within clusters gets shuffled.
 9. `G` is initialized to None.
-10. **loop over k in K begins**, where `model.forward_k()` gets repeatedly called returning:
+10. **loop over k in K begins**, where `self.forward_k()` gets repeatedly called returning:
     - new loss term, new elbo term, new `G`
     - there's also a break condition if only 1 unassigned point remains to be clustered
     - `ind_anchor` is the index of the starting point (anchor) of current, `k`-th cluster, gotten from `all_anchors` at `[k]` index.
@@ -53,8 +53,50 @@ The paper introduces both ACP and ACP-S. ACP-S uses a simpler, anchor-independen
         - `loss_term` and `elbo_term` 
         - `G` for the next k+1 iteration.
         - the `loss` and `elbo` then get the terms added to them.
-12. `forward_k()` call internals:
-    - 2
+
+**ACP_Model.forward_k() call**
+
+At this point we enter a big, main function that gets called at each iteration in `K`. Here's what happens inside it.
+
+1. `self.update_global()` is called. 
+    - it takes as arguments `enc_data`, `ind_last_assigned`, `G`, and `k`
+    - it return a new `G`
+    - if `k == 0`, `G` is set to all zeros in the shape of (b, 128)
+    - else, we're not on the initial cluster:
+        - **!!! TODO [complete at k == 1 ]**
+2. `self.encode_unassigned()` is called.
+    - its input: `enc_data`, `ind_anchor`, `ind_unassigned`
+    - its output: `anch`, `data_unassigned`, `us_unassigned`
+    - within, it checks if we're using attention, which I'll assume we are, this I believe is the difference between CCP and ACP (one parameter controls this).
+    - `enc_all` is obtained by taking the representations of both the anchor point (via `ind_anchor`) and current candidate points (via `ind_unassigned`) through indexing into `enc_data`. 
+        - `enc_all` is (b, N, 128) at first cluster, presumably N is replaced by the actual number of unassigned points at `k` plus 1 for the anchor point.
+    - `self.ISAB1()` transforms `enc_all` into `HX`
+        - `HX` is perm-equivar, same shape as `enc_all`.
+    - `anch` is taken via indexing from `HX`
+        - it's the new, attention-based representation of the anchor point.
+        - it's (b, 128)
+    - `us_unassigned` is also obtained by indexing into `HX`
+        - takes everything from `HX` except the first element, which is `anch`
+        - it's (b, n_available, 128)
+    - `us_pma_input` is obtained via `self.MAB()`
+        - this MAB takes `HX` and `anch` as input.
+        - this is the **attention transformation that relates the anchor point to the available, unassigned elements.
+        - `us_pma_input` is (b, n_available + 1 for anchor, 128)
+    - `U` is obtained via PMA from `us_pma_input`.
+        - it is (b, 128)
+    - `data_unassigned` is assigned to `us_unassigned`
+    - `encode_unassigned()` returns `anch`, `data_unassigned`, `us_unassigned` and `U`.
+    - I believe `U` is the encoding of all unassigned points in one vector, and `us_unassigned` / `data_unassigned` are a representation of all available, unassigned points individually. `anch` is the representation of just the current cluster's anchor point.
+3. `self.get_pz()` is called.
+    - its input: `anch`, `U`, `G`
+    - its ouput: `pz_mu`, `pz_log_sigma`
+    - `self.pz_mu_log_sigma()` is called on a **concatenation of `anchor`, `U` and `G`**.
+        - the input concatenated vector is (b, 128*3)
+        - this is a neural net function consisting of a stack of Linear and PReLU, with a final Linear layer.
+        - it returns `mu_logstd`, which is (b, 256)
+        - I think this is meant as a representation of both assigned (G?) and unassigned points
+
+**LOOK AT !!! TODO markers and fill them out**
 
 
 Sources:
