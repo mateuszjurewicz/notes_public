@@ -109,6 +109,8 @@ informal US word for the jug that moonshine would come in. Also northern english
 (pronunciation: _haroł_ [brit]), it's both the farming implement not unlike a plow (po polsku _brona_), which has teeth and is dragged across the field to upturn it. Not literally, `to harrow` means "to cause distress". See `Harrowing of Hell` - which is the apocryphal story of Christ descending to Hell between crucifixion and resurrection, supposedly freeing some souls from eternal damnation, which would be quite an exception about the concept of hell. The idea that Christ harrows Hell is considered an early Church invention, with Byzantine art pioneering its depictions. Sometimes they distinguish that he descended into Sheol or Limbo, not true Hell. The doctrine that he descended is accepted in Catholicism, Lutheranism and the Orthodox church.
 - `hearse`
 A funeral car that carries the casket from the funeral house to the cemetery or crematorium.
+- `hector` (verb)
+To intimiidate or dominate in a blustering way, to bully, to force someone into some behavior. Blustering means loudly, arrogantly, refers to winds that bluster i.e. blow in loud, violent gusts.
 - `highfalutin`
 pompous, pretentious, needlessly haughty, especially of a manner of speaking or one's use of vocabulary. Putting on airs, affectedly `genteel` (belonging to polite / high society, well-bred & refined).
 - `hoi oligoi`
