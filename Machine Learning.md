@@ -26,7 +26,7 @@ The paper introduces both ACP and ACP-S. ACP-S uses a simpler, anchor-independen
         3. `all_unassigned` is the indices of unassigned points at each step `k`
         4. `last_assigned` is a list of the indices of all points in `k`-th cluster
 4. `loss` and `elbo` get set to 0, these are the only output of `forward_train()` (no predictions are returned).
-5. `MOG_Encoder` takes the data to embedd it, this is just a stack of Linear() and PReLU(), ending on a Linear().
+5. `MOG_Encoder` takes the data to embed it, this is just a stack of Linear() and PReLU(), ending on a Linear().
     - `enc_data` is returned and reshaped into (b, N, 128)
 6. `sorted_ind` is obtained by passing `labels` (currently still sorted) to torch.argsort(), which returns the indices that would sort the values from labels. But because many labels have the same value (same cluster assignment), the output of argsort has an **element of randomness** to it.
     - e.g. in our example of [0 x 10, 1 x 5], the sorted_ind first 10 elements could have the indices of 0-10 in any order, e.g. [9, 2, 7, ...]. Only the elements after the 10th index would be guaranteed to be above 10, with the values between 10-15 in random over in that second sector.
@@ -63,7 +63,11 @@ At this point we enter a big, main function that gets called at each iteration i
     - it return a new `G`
     - if `k == 0`, `G` is set to all zeros in the shape of (b, 128)
     - else, we're not on the initial cluster:
-        - **!!! TODO [complete at k == 1 ]**
+        - if we're not on the very first cluster, `self.h()` is used to embed all individual representations of the points from the previous cluster (identified via `ind_last_assigned`) taken from `enc_data`. 
+            - `self.h()` is a stack of Linear and PReLU, ending on Linear.
+        - `hs_last_cluster` is the per-element representation of the last cluster
+        - it gets passed to a PMA function and further to `self.g()`, resulting in a single vector representing the entire last cluster, of size (b, 128), which immediately gets added to `G` without forming an intermediate variable.
+        - `G` is returned, updated via summation with the representation of the previous cluster.
 2. `self.encode_unassigned()` is called.
     - its input: `enc_data`, `ind_anchor`, `ind_unassigned`
     - its output: `anch`, `data_unassigned`, `us_unassigned`
@@ -80,13 +84,13 @@ At this point we enter a big, main function that gets called at each iteration i
         - it's (b, n_available, 128)
     - `us_pma_input` is obtained via `self.MAB()`
         - this MAB takes `HX` and `anch` as input.
-        - this is the **attention transformation that relates the anchor point to the available, unassigned elements.
+        - this is the **attention transformation that relates the anchor point to the available, unassigned elements**.
         - `us_pma_input` is (b, n_available + 1 for anchor, 128)
     - `U` is obtained via PMA from `us_pma_input`.
         - it is (b, 128)
     - `data_unassigned` is assigned to `us_unassigned`
     - `encode_unassigned()` returns `anch`, `data_unassigned`, `us_unassigned` and `U`.
-    - I believe `U` is the encoding of all unassigned points in one vector, and `us_unassigned` / `data_unassigned` are a representation of all available, unassigned points individually. `anch` is the representation of just the current cluster's anchor point.
+    - I believe `U` is the encoding of all unassigned points in one vector, and `us_unassigned` / `data_unassigned` are a representation of all available, unassigned points individually. `anch` is the representation of just the current cluster's anchor point. Yes, and from the paper `G` is the encoding of already clustered points (into one vector, I believe).
 3. `self.get_pz()` is called.
     - its input: `anch`, `U`, `G`
     - its ouput: `pz_mu`, `pz_log_sigma`
@@ -94,7 +98,72 @@ At this point we enter a big, main function that gets called at each iteration i
         - the input concatenated vector is (b, 128*3)
         - this is a neural net function consisting of a stack of Linear and PReLU, with a final Linear layer.
         - it returns `mu_logstd`, which is (b, 256)
-        - I think this is meant as a representation of both assigned (G?) and unassigned points
+        - I think this is meant as a representation of both assigned (`G`) and unassigned points (`U`), as well as the anchor.
+    - `mu` and `log_sigma` (mean and log standard deviation) are obtained from `mu_logstd` by cutting it in half at z_dim = 128th index
+        - `mu` is (b, 128), first half of `mu_logstd`
+        - `log_sigma` is (b, 128), second half of `mu_logstd` via mu_logstd[:, self.z_dim:]
+4. Conditionally, if `targets` is None, we go into a short function that exists `forward_k()` by returning logits via `self.vae_likelihood()`
+    - **!!! TODO [check if this isn't what's used in the inference path, where targets aren't known... but all indices are?]**
+5. `self.conditional_posterior()` is used to obtain `qz_mu` and `qz_log_sigma`.
+    - its input: `us_unassigned`, `G`, `anch`, `targets`, `w`
+    - first, it obtains boolean as opposed to binary target vector, `t_in` from `targets`
+    - then it figures out the `reduced_shape` by taking the zeroth and second shape from `us_unassigned.shape`)
+        - at first `k`, `reduced_shape` is (b, 128)
+    - checks if `t_in` is all False
+        - if it is, sets `U_in` to an all zeros vector of `reduced_shape` size.
+        - else it obtain `U_in` via `self.pma_u_in()`
+            - `self.pma_u_in()` takes as input `us_unassigned[:, t_in, :]`, so it is also teacher-forced (boolean indexing!).
+            - it is a PMA module.
+            - it returns `U_in`, which is (b, 128) and I think it's a single vector representing all unassigned points.
+    - check if `t_in` is all True (a situation where all available points should be in current cluster according to the target?)
+        - if it is, `U_out` is set to all zeros, according to `reduced_shape` size.
+        - else it obtains `U_out` via `self.pma_u_out()`
+            - `self.pma_u_out()` takes as input `us_unassigned[:, ~t_in, :]`. Notice the negation (`~`) boolean indexing.
+            - I believe `U_in` represents the unassigned points that are meant to be in the current cluster in the target (as 1 vector) and that `U_out` represents the ones that are out-of-kth-cluster.
+        - both `U_in` and `U_out` are (b, 128)
+    - `self.get_qz()` is used to obtain `qz_mu` and `qz_log_sigma`
+        - its input is `anch`, `U_in`, `U_out` and `G`.
+            - these are the representations of the current (k-th) cluster's anchor point, the points that are meant to be in this cluster, the points meant to be out of this cluster and the already previously clustered points (`G`), each as a single vector, each of size (b, 128).
+        - inside `self.get_qz()`, another function is called much like with `self.get_pz()` we called `self.get_pz_mu_log_sigma()`.
+            - `self.qz_mu_log_sigma()` is called, taking a single concatenation of `anchor`, `U_in`, `U_out` and `G` (size b, 128*4=512)
+                - it s a stack of Linear and PReLU, ending on Linear
+            - it returns `mu_logstd`, which is indexed into at `z_dim`, splitting itself into two halves:
+                - `qz_mu` (`qz` version) is (b, 128)
+                - `qz_log_sigma` (`qz` version) is (b, 128)
+        - `torch.distributions` is used as `dist` to sample from the Normal distribution
+            - it is parameterized by the mean `qz_mu` and the exponentiatied `qz_log_sigma.exp()`
+            - this distribution is assigned to `qz_b`
+        - `qz_b` distribution is sampled from via `.rsample()`
+            - `rsample()` allows for pathwise derivatives, as opposed to sample(), relating to the reparametrization trick.
+            - `z` is thus obtained by this sampling
+    - `z` is (`w`, b, 128)
+    - `self.conditional_posterior()` returns:
+        1. `qz_mu` (b, 128)
+        2. `qz_log_sigma` (b, 128)
+        3. `z` (w, b, 128), so 40 (by default w=40) VAE samples.
+6. `self.vae_likelihood()` is called.
+    - its inputs: `z`, `U`, `G` , `anch`, `data_unassigned`
+    - its outputs: `logits`
+    - number of currently unassigned points (`Lk`) is extracted from `data_unassigned`, which is a per-elem embedding of unassigned elements.
+    - `expand_shape` is set to (-1, `Lk`, `w`, -1)
+    - `zz`, `dd`, `aa`, `UU`, `GG` get obtained from `z`, `data_unassigned`, `anch`, `U` and `G` respectively via reshaping to `expand_shape` dimensions.
+    - `ddzz` is obtained through concatenating the 5 new vectors above.
+        - `ddzz` is (b * `Lk` * `w`, 128 * 5 = 640)
+    - `logits` are obtained by calling `self.phi()` on `ddzz`.
+    - `self.phi()` is a stack of Linear and PReLU, with last Linear.
+    - `logits` is (b, num unassigned points, `w`), returned here.
+        - I think these are batched probabilities per each unassigned point, for each of the default 40 (`w`) VAE samples.
+7. `self.kl_loss()` is called to get loss and elbo.
+    - its inputs: `qz_mu`, `qz_log_sigma`, `pz_mu`, `pz_log_sigma`, `z`, `logits`, `targets`.
+    - its output: loss and elbo
+    - at this point `targets` is a 1-dim vector of size equal to the number of unassigned elements, matching `logits` along their middle dimension.
+    - within `self.kl_loss()`:
+        - a Bernoulli distribution object is instantiated based on the `logits`.
+        - `targets` get expanded to batch size and number of VAE samples (`w`)
+        - quite a bit of other operations happen using the `qz` and `pz` mean and stdev, and some clever juggling with no gradients.
+8. `forward_k()` returns loss, elbo, `G` for next cluster and `logits`, but that last object is ignored within `forward_train` (set to _)
+9. next cluster's loop within `forward_train()` begins, with an updated `G` representing previously clustered elements.
+
 
 **LOOK AT !!! TODO markers and fill them out**
 
