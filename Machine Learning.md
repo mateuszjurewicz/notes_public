@@ -230,7 +230,111 @@ Following `acp_cluster_smb.py`, from a graph-based model.
                 - `model.get_pz()` calls `model.pz_mu_log_sigma()` under the hood, which is a stack of Linear and PReLU, returning mu and log_sigma, from a single vector split in half.
                 - `Z` is mu, log_sigma is discarded (set to _)
             - `Z` is unsqueezed to (1, `S`, 128)
-            ! CONTINUE ON LINE 113
+        - `Ur` is obtained from `U` via viewing and expanding, to size (`S`, `N`, 128)
+        - `Ar` is obtained from `A` via viewing and expanding, to size (`S`, `N`, 128)
+        - `Zr` is obtained from `Z` via viewing and expanding, to size (`S`, `N`, 128)
+        - `Gr` is obtained from `G` for current `t` open threads, size (`S`, `N`, 128)
+        - `phi_arg` is obained by concatenating `Dr`, `Zr`, `Ar`, `Ur` and `Gr` and reshaping it into size (`t` * `N` , 128 * 5 = 640)
+        - `logits` are obtained from `phi_arg` via `self.model.phi()`, which is a stack of Linear and PReLU ending on a binary Linear (like regression), predicting a single float.
+            - `logits` are size (`t`, `N`)
+        - `prob_one` is obtained from the `logits` (which are real valued) into probabilities (0-1), via exponentiation and some more juggling.
+        - **this is big**: it seems there's a threshold of above 0.5 for `prob_one`, above which `inds` are set, which are a Boolean vector of size (`t`, `N`).
+            - unless sample_b is set to True, then it's more randomly sampled according to the probability in `prob_one`.
+            - it appears that `inds` can sometimes be all False, not sure if that's because the model is almost untrained here or if this ACP method allows unassigned... I think it's actually just that the single anchor point will be in this cluster.
+        - `sampled` is obtained by castin `inds` into Long type.
+        - `sampled_new` is obtained by multiplying the `mask` (but only indexed into via curretn `t` number of threads) with the `sampled`.
+            - at this point `mask` is all 1s with a single 0 at the index of the anchor point
+            - `sampled` is all 0s except for where the other chosen elements for this cluster would be.
+            - so it seems the model continues to predict even for points that were already assigned, but the mask prevents them from being actually sampled (put into?) the current cluster.
+        - `new_points` are initialized as a flat vector unpacking `sampled_new` into a size of (`t` * `N`). These are flattened indices of new points for cluster k. E.g. [667, 671 ...1671], because it's t times N, which is 10 * 222 at first.
+        - `cs` is updated to reflect these assignments.
+            - `cs` elements at `new_points` indices are set to equal `k`, the label of the current cluster.
+            - `cs` is size (`t`, `N`)
+        - `mask_update` is created as 1 - `sampled`. 
+            - it has 1 on the points that survived the last samping.
+        - `mask` is update with `mask_update` via multiplicaton, but only for the remaining `t` threads / samples.
+        - `new_cluster` is created from `cs` where its elements equal `k`. It seems like a binary vector.
+        - using attention, `new_Hs` is obtained via `self.model.pma_h()` from `big_hs[:t]` and the `new_cluster`.
+            - `new_Hs` is size (`t`, 128)
+        - the representation of previously completed clusters is updated with the `new_Hs` via:
+            - `self,model.g()` is used to transform `new_Hs` which is immediately added to `G[:t]`.
+        - `msum` is obtained by summing over `mask[:t]`, along the first dimension (`t`).
+            - `msum` is a tensor with `t` integer values, which represent the number of remaining unassigned elements for each sample / thread.
+        - `msum` is used to see if any of the samples / threads can already be closed (if any of the `t` values in `msum` is 0).
+        - if any thread can be closed:
+            - `msumfull` is obtained from `mask.sum()`, resulting in a vector of integers of size (`t`). I believe this shows which threads are closed, marked by 0 of available points to assign.
+            - `mask`, `cs`, `G` and `t` are adjusted based on how many remaining threads there are.
+            - **this is important** because `t` being adjusted and subtracted from is an end condition of the while loop!
+    - **loop over t ends**
+    - `cs` is relabelled, such that cluster labels are in order of appearance, according to the arbitrary order of points. E.g. from [3, 2, 1, 2] we'd go to [1, 2, 3, 2].
+    - this is done in a loop for each sample in `S`.
+    - duplicates are eliminated from `cs`, as it gets turned into a set() and into `lcs`
+        - `lcs` is a list of up to `S` tuples of `N` elements, containing cluster labels for each thread / sample.
+    - `Ss` is set to the length of `lcs`
+    - `ccs` is set to all zeros of size (`Ss`, `N`)
+    - `ccs` is fed from `lcs`, to take all of its values, ending up as of size (`Ss`, `N`)
+    - `ccs` is returned.
+7. We are back ub the call to `sample()` (within which `_sample()` was called to obtain `ccs`)
+8. `self._estimate_probs()` is called
+    - its inputs: 
+        - `ccs`, a numpy array of size (number of unique samples, `N`)
+        - `prob_nZ` = 1
+        - `prob_nA` = 10
+    - its ouptuts:
+        - `cs` and `probs`, the final outputs of the whole sampler. 
+9. within the call to `_estimate_probs()`:
+    - `S` is obtained from `cs`, it's the number of samples that were unique (10 in this case)
+    - `N` is the number of elements in the single example.
+    - `probs` are initialized to a numpy array of all 1s of size `S`
+    - **loop over s in S begins**
+        - `K` is set to the max value from the `s`-th sample in `cs` + 1. That's the total number of clusters predicted in that thread / sample (since cluster labels are zero-indexed).
+        - `G` is initialized to all 0s of size (128)
+        - `Ik` is arange() into array of size `N`, it's the available indices before sampling cluster k.
+        - **inner loop over k in K begins**
+            - `Sk` is set to `cs[s, :]] == k`, it holds all points that could be possible anchors for `k`-th cluster.
+            - `nk` is set to `len(Ik)`, which at this point equal `N`.
+            - `ind_in` and `ind_out` are vectors of indices of points in and out of current cluster according to `ccs` respectively.
+            - if `nA` is None or if the `Sk.sum() < nA`:
+                - `sk` is set to `Sk.sum()`
+                - `anchors` are set to `ind_in`
+            - else:
+                - `sk` is set to `nA`
+                - `anchors` are equal to randomly chosen `sk` number of elements from `ind_in`.
+            - since in our examples `nA` is set to 10, we only go into the if condition when the number of potential anchors is smaller than 10.
+            - `d1` is equal to arange of len `sk`. So [0, 1, 2 ... 9]
+            - if attention is used, we get `HX` from `self.model.ISAB1()`, which gets called on `self.enc_data[Ik, :]`.
+            - `bigHx` is obtained from `HX` via viewing and expanding
+            - `A` is obtained from `HX` via indexing through `[anchors, :]`
+            - `us_pma_input` is obtained via `self.model.MAB()` from `bigHx`
+            - `U` is obtained via `self.model.pma_u()` from `us_pma_input`
+            - `Dr` is set to `HX`
+            - `Ge` is obtained from `G` via viewing and expanding
+            - we get `Z` via `self._sample_Z()` from `A`, `U`, `Ge`, `nZ`
+            - we get `Ar`, `Dr`, `Ur`, `Gr`, `Zr` from their respective variables without the r, via viewing and expanding.
+            - `phi_arg` is obtained by concatenating `Dr`, `Zr`, `Ar`, `Ur` and `Gr`.
+            - `logits` and obtained via `self.model.phi()` from `phi_arg`.
+                - `logits` are also viewed to shape (`nZ`, `nk` , `sk`)
+            - `prob_one` is obtained from logits via spicy exponentiation (1 / (1 + torch.exp(-logits)))
+            - `prob_one[:, anchors, d1]` is set to 1. I think this is setting probs of anchor points belonging to current cluster to 1.
+            - `pp` is initialized to be equal to `prob_one[:, ind_in, :].prod(1)`. The prod(1) function on the tensor returns the product of its elements along the 1st axis.
+                - more operations are done on `pp`
+            - preparations for next iteration:
+                - `Hs` is created from `self.hs[Sk, :]`
+                - it is then transformed into itself by `self.model.pma_h(Hs)`
+                - `G` is += `self.model.g(Hs)`
+                - available indices are update (`Ik`)
+        - `inds` is set to indices of predictions in decreasing order of probability
+        - `probs` = `probs[inds]`
+        - `cs` is sorted according to the `inds`
+        - `cs` and `probs` are returned.
+            - `cs` is (`S` - nonunique, `N`), it's the final cluster labels.
+10. **ccs and cs are NOT the same** but seem close. Approximately 10-50% of elements got their cluster labels changed in a couple investigated examples. Sometimes the cluster label is different by 1, sometimes by up to 3.
+11. Outside of the sampler, `predicted` is set to `cs[np.argmax(probs)]`. 
+
+
+Open Questions:
+- How does ACP guarantee that every element will be assigned to a cluster if it uses a threshold value of 0.5?
+        
 
 Sources:
 - [Ari Pakman's github repo for ACP](https://github.com/aripakman/amortized_community_detection)
