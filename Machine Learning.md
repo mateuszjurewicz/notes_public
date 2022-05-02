@@ -103,7 +103,6 @@ At this point we enter a big, main function that gets called at each iteration i
         - `mu` is (b, 128), first half of `mu_logstd`
         - `log_sigma` is (b, 128), second half of `mu_logstd` via mu_logstd[:, self.z_dim:]
 4. Conditionally, if `targets` is None, we go into a short function that exists `forward_k()` by returning logits via `self.vae_likelihood()`
-    - **!!! TODO [check if this isn't what's used in the inference path, where targets aren't known... but all indices are?]**
 5. `self.conditional_posterior()` is used to obtain `qz_mu` and `qz_log_sigma`.
     - its input: `us_unassigned`, `G`, `anch`, `targets`, `w`
     - first, it obtains boolean as opposed to binary target vector, `t_in` from `targets`
@@ -164,9 +163,74 @@ At this point we enter a big, main function that gets called at each iteration i
 8. `forward_k()` returns loss, elbo, `G` for next cluster and `logits`, but that last object is ignored within `forward_train` (set to _)
 9. next cluster's loop within `forward_train()` begins, with an updated `G` representing previously clustered elements.
 
+**ACP_Model inference**
 
-**LOOK AT !!! TODO markers and fill them out**
+Following `acp_cluster_smb.py`, from a graph-based model.
 
+1. `SelectedSampler` class instance is created based on reloaded `model` and `data`
+    - `data` is a single example from `data_generator` via its `generate_single()` method, of size (1, N, N).
+    - it is the `ACP_Sampler()` class instance
+2. Within the `ACP_Sampler`:
+    - `self.enc_data` variable is set to be the result of the model's `model.encoder(data)` call.
+        - in the graph setting, this `model.encoder` is a GraphSageEncoder.
+        - `self.enc_data` is now (N, 128)
+    - `self.hs` is obtained by calling `model.h()` on the `enc_data`.
+        - `model.h()` is a sequence of Linear and PReLU
+        - `self.hs` is now (N, 128)
+        - however the two 128s above come from different params (e_dim and h_dim), set to the same value.
+    - if we weren't using attention, we would also obtain `self.us` here, from `enc_data`, via `model.u()`, but we don't.
+3. At this stage, we have an instantiated `SelectedSampler`, which is an `ACP_Sampler` with `self.enc_data` and `self.hs` corresponding to the single example of data used during its instantiation.
+    - **inference is per single example!**
+4. The sampler's `sample()` function is used.
+    - it outputs 
+        - `clusters`: (1, N)
+            - this is just a vector of class labels over N
+        - `probs`: (1)
+    - its inputs: 
+        - `args.S`, presumably the number of samples to generate, set to 10
+        - two variables set to False, called sample_Z and sample_B
+        - `args.prob_nZ`, set to 1
+        - `args.prob_nA`, set to 10
+5. `sample()` includes:
+    1. a call to `self._sample()` which only receives `S` equal to 10.
+        - returning `ccs`
+    2. followed by a call to `self._estimate_probs()` which takes `ccs` and returns `cs` and `probs`, which are the final output of the wrapping `sample()` call.
+6. `self._sample()` includes:
+    - obtainin current `N` from `self.enc_data`
+    - `G` is initialized to all zeros of size (`S`=10, 128)
+    - `cs` is initialized to be all -1s of size (`S`, `N`)
+    - if attention is used, we get `big_enc_data` from viewing `self.enc_data` into the shape of (`S`, `N`, 128)
+    - `big_hs` is obtained by viewing `self.hs` into size (`S`, `N`, 128)
+    - `mask` is initialized as all 1s of size (`S`, `N`), it will keep track of unassigned indices of elements in each of the `S` threads
+    - **loop begins** while `t` > 0, where `t` is initially equal to `S` (10), and it keeps track of how many threads have not completed their sampling yet (i.e. have available elements to cluster).
+        - `k` is set to -1 before the loop
+        - `k` is incremented by 1 to 0, first thing in the loop.
+        - `anch` is created from a call to `torch.multinomial()`, returning a distribution over some number of classes, adding to 1. In this case, the number of classes depends on the `mask[:t, :]`. 
+            - `anch` is of size (10, 1) at first.
+            - it contains 10 integers within the range 0 to `N`
+        - label `k` is assigned to the anchor elements
+            - this is done via `cs` and a call of the tensor `self.scatter_()` method, which writes the values from a given tensor, into the source (self) tensor, at given indices.
+            - in our case, `cs`'s values (originally all -1s) at the indices specified by the `anch`, is set to `k`. This is only done up to `t` dimension, only affecting still open threads (`cs[:t, :].scatter_(1, anchs, k)`).
+            - **the effect** of this is that `cs` now has a single 0 in each of its 10 vectors of length `N`. So we randomly choose a single (but different) element in each row of `cs` to be in the first, `k=0`th cluster.
+        - if we use attention:
+            - `HX` is obtained via `self.model.ISAB1` taking as input `big_enc_data` and `mask`, both indexed into via `t`.
+                - `HX` is (`S`, `N`, 128)
+            - `A` is obtained from `HX` by indexing into it using `t` and `anchs`. This is just a single vector that contains the embedded representations of each of the anchor points, whose indices are in `anchs`.
+                - `A` is (`S`, 128)
+            - `us_pma_input` is obtained via `self.model.MAB()` called on `HX` and `A`.
+                - `us_pma_input` is (`S`, `N`, 128), representing individual unassigned elements? But not excluding anchor points? Shouldn't this be `N-1`?
+            - `U` is obtained via `self.model.pma_u()` called on `us_pma_input` and `mask[:t, :]`. At the start this just means the entire `mask`.
+                - `U` is (`S`, 128), a single vector representing all unassigned points jointly.
+            - **selected anchors are removed from the mask**
+                - this is done by changing the value of elements in `mask` from 1 to 0 at the indices from the `anchs`, but only in still open threads, via `[:t, :]`.
+            - `Dr` is set to equal `HX`
+                - `Dr` is (`S`, `N`, 128), an encoding of all elements, stemming from `big_enc_data`.
+        - unless sample_Z is set to True, we use `self.model.get_pz()` called on `A` `U` and `G[:t, :]` to obtain `Z`.
+            - so we call this learned neural function on the single-vec representations of all anchors, all unassigned elements and all assigned elements, getting encoding `Z` of size (`S`, 128). 
+                - `model.get_pz()` calls `model.pz_mu_log_sigma()` under the hood, which is a stack of Linear and PReLU, returning mu and log_sigma, from a single vector split in half.
+                - `Z` is mu, log_sigma is discarded (set to _)
+            - `Z` is unsqueezed to (1, `S`, 128)
+            ! CONTINUE ON LINE 113
 
 Sources:
 - [Ari Pakman's github repo for ACP](https://github.com/aripakman/amortized_community_detection)
