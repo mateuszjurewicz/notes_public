@@ -26,6 +26,8 @@ It takes the form $\textrm{logit}(p) = \textrm{ln}(\frac{p}{1-p}) = \textrm{ln}(
 
 However, the term has a messy history within Deep Learning, where people refer to the **logits layer** as the one that feeds into a softmax activation, since the output of the softmax is interpreted as probabilities and the logit function is its inverse. Apparently some functions in e.g. tensorflow are named with the suffix like `tf.nn.softmax_crossentropy_with_logits` where it just means that input of this function is supposed to be output of the last neuron layer prior to the activation function. So it's messy.
 
+Don't confuse it with the **logistic function** which is another name for the **sigmoid**.
+
 Here's the graph:
 
 <img src="img/logit_plot.png" alt="Logarithm Plots" style="height: 400px; background-color: #FFFFFF"/>
