@@ -143,6 +143,8 @@ the main vein of ore in a region, often misspelled as "load".
 to wink or blink. Also seen as referring to eyelids that close horizontally. 
 - `obviate`
 to avoid or prevent sth undesirable, prevent a difficulty. E.g. having a parachute can ____ disaster. "Bad actions aren't ____ed by shame".
+- `pall mall`
+a lawn game, precursor to croquet (pron. "kroł-kej"), popular in the 16th nad 17th century. Also a cigarette brand.
 - `palmistry`
 palm reading, aka `chiromancy`
 - `panhandling`
