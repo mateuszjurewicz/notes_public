@@ -31,7 +31,7 @@ The paper introduces both ACP and ACP-S. ACP-S uses a simpler, anchor-independen
 6. `sorted_ind` is obtained by passing `labels` (currently still sorted) to torch.argsort(), which returns the indices that would sort the values from labels. But because many labels have the same value (same cluster assignment), the output of argsort has an **element of randomness** to it.
     - e.g. in our example of [0 x 10, 1 x 5], the sorted_ind first 10 elements could have the indices of 0-10 in any order, e.g. [9, 2, 7, ...]. Only the elements after the 10th index would be guaranteed to be above 10, with the values between 10-15 in random over in that second sector.
 7. `labels` are reordered according to the semi-shuffled, `sorted_ind`, not clear to me what this achieves.
-8. `enc_data` gets roereded according to `sorted_ind` too, not clear what this achieves either, except the order of elements within clusters gets shuffled.
+8. `enc_data` gets reordered according to `sorted_ind` too, not clear what this achieves either, except the order of elements within clusters gets shuffled.
 9. `G` is initialized to None.
 10. **loop over k in K begins**, where `self.forward_k()` gets repeatedly called returning:
     - new loss term, new elbo term, new `G`
@@ -102,6 +102,7 @@ At this point we enter a big, main function that gets called at each iteration i
     - `mu` and `log_sigma` (mean and log standard deviation) are obtained from `mu_logstd` by cutting it in half at z_dim = 128th index
         - `mu` is (b, 128), first half of `mu_logstd`
         - `log_sigma` is (b, 128), second half of `mu_logstd` via mu_logstd[:, self.z_dim:]
+        - both will only be used in the ca;culation of the loss (by then it's called `pz_mu`)
 4. Conditionally, if `targets` is None, we go into a short function that exists `forward_k()` by returning logits via `self.vae_likelihood()`
 5. `self.conditional_posterior()` is used to obtain `qz_mu` and `qz_log_sigma`.
     - its input: `us_unassigned`, `G`, `anch`, `targets`, `w`
@@ -242,7 +243,7 @@ Following `acp_cluster_smb.py`, from a graph-based model.
             - unless sample_b is set to True, then it's more randomly sampled according to the probability in `prob_one`.
             - it appears that `inds` can sometimes be all False, not sure if that's because the model is almost untrained here or if this ACP method allows unassigned... I think it's actually just that the single anchor point will be in this cluster.
         - `sampled` is obtained by castin `inds` into Long type.
-        - `sampled_new` is obtained by multiplying the `mask` (but only indexed into via curretn `t` number of threads) with the `sampled`.
+        - `sampled_new` is obtained by multiplying the `mask` (but only indexed into via current `t` number of threads) with the `sampled`.
             - at this point `mask` is all 1s with a single 0 at the index of the anchor point
             - `sampled` is all 0s except for where the other chosen elements for this cluster would be.
             - so it seems the model continues to predict even for points that were already assigned, but the mask prevents them from being actually sampled (put into?) the current cluster.
@@ -268,6 +269,7 @@ Following `acp_cluster_smb.py`, from a graph-based model.
     - **loop over t ends**
     - `cs` is relabelled, such that cluster labels are in order of appearance, according to the arbitrary order of points. E.g. from [3, 2, 1, 2] we'd go to [1, 2, 3, 2].
     - this is done in a loop for each sample in `S`.
+        - **I think this might be what prevents unassignment**, since -1 placeholder values will get turned to sth else.
     - duplicates are eliminated from `cs`, as it gets turned into a set() and into `lcs`
         - `lcs` is a list of up to `S` tuples of `N` elements, containing cluster labels for each thread / sample.
     - `Ss` is set to the length of `lcs`
