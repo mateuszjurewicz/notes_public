@@ -24,13 +24,17 @@ mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
 
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
 
-### Checking CUDA / GPU
+### CUDA / GPU Check for Tensors
 
 - `tensor.is_cuda` gives a Boolean value whether a tensor is on a GPU or not.
   - to move a tensor to the preferred device, use `a_tensor = a_tensor.to(torch.device('cuda:0'))`
 - `next(model.parameters()).is_cuda` is a quick way to check if the model is on the CUDA device
 - alternatively tou can ask explicit for which device a thing is on `next(network.parameters()).device`
   - `tensor.device` works as well.
+
+### CUDA / GPU Reload model onto CPU
+
+When reloading a model that was saved on a GPU via model.save(), you have to add the map: `model = torch.load(path, map_location=torch.device('cpu'))`
 
 ### Truncating Tensors
 

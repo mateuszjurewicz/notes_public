@@ -63,3 +63,4 @@ the long tilde is used to mean _equivalence_. **But** it's also used in Bayesian
 - $\lambda, \Lambda$ - lambda
 - $\beta, \Beta$ - beta. Note that lowercase beta is close to a German _scharfes s_ and kinda looks like an upper-case letter.
 - $\phi, \Phi$ - phi (pron "faj")
+- $\rho, \Rho$ - rho, sometimes the $\rho$ and $\phi$ are used to mean small neural networks (as functions).
