@@ -552,6 +552,15 @@ In Neural Clustering Processes refers to investing a lot of computational resour
 
 ## Prior and Posterior 
 
+**Update 2022 05 02**
+Very nicely explained in [Hal Daume's Chapter 9](http://ciml.info/):
+
+$p(\theta | D) = \frac{p(\theta) p(D | \theta)}{p(D)}$
+
+Here, $p(\theta | D)$ is the posterior $p(\theta)$ is the prior, $p(D | \theta)$ is the likelihood and $p(D)$ is called **evidence**. $D$ is our data, and $\theta$ is the parameter used to generate it.
+
+**End Update 2022 05 02**
+
 Are two probabilities, stemming from Bayesian statistics. The **posterior** is the conditional probability $P(A|B) = \frac{P(B|A)~P(A)}{P(B)}$. However, the term *posterior* is used informally to refer more specifically to the probability which we are inferring. To add to the confusion, in variational Bayesian methods this doesn't refer to the inference in the sense of making a prediction ($\hat{y}$) but to the inference of $\theta$ (the model parameters), i.e. the posterior is $P(\theta|X)$ (the probability of parameters given the evidence X). In contrast, **likelihood** function is the probability of evidence given the parametrs $P(X|\theta)$. The **prior** in that context is $p(\theta)$. However, in many papers, like in Ari Pakman's NCP paper, you will find that **posterior inference** refers to actually predicting $\hat{y}$.
 
 A related term is **conjugacy**, a **conjugate prior** is a prior such that both the prior and posterior are in the same probability distribution family (e.g Bernoulli, binomial, Poission or such). If the prior is conjugate, it affords certain algebraic convenience, in that it gives a closed-form expression for the posterior, otherwise requiring **numerical integration**.
