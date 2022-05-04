@@ -95,6 +95,8 @@ a uniform mixture of lean meat with fat made by grinding or sieving the ingredie
 non-identical twin, aka dizygotic, biovular twin. Identical twins are called monozygotic.
 - `fuselage` (pron. fjuselaż)
 The central body of an aircraft, to which the wings and tail assembly are attached and which accommodates the crew, passengers, and cargo.
+- `fusillade` (pron. fjuzelejd)
+a series of shots fired or missiles thrown all at the same time or in quick succession. Works as both a noun and a verb. "Marchers had to dodge a ________ of missiles". "the Mahdi's adherents _____ed his palace at Khartoum".
 - `germane` and `to germinate`
 relevant to a subject under consideration, pertinent. Stems from an old english word for "having the same parents". Reminds me of "___minating" (beginning to sprout or coming into existance).
 - `gingiva`
