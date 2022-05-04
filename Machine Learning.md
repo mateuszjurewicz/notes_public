@@ -94,6 +94,7 @@ At this point we enter a big, main function that gets called at each iteration i
 3. `self.get_pz()` is called.
     - its input: `anch`, `U`, `G`
     - its ouput: `pz_mu`, `pz_log_sigma`
+        - **mu and sigma are parameter vectors controlling the distribution of the k-th cluster, specifically the mean and covariance of the Gaussian Mixture Component** (paper page 2, blue comment)
     - `self.pz_mu_log_sigma()` is called on a **concatenation of `anchor`, `U` and `G`**.
         - the input concatenated vector is (b, 128*3)
         - this is a neural net function consisting of a stack of Linear and PReLU, with a final Linear layer.
