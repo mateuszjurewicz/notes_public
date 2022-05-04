@@ -52,6 +52,8 @@ symbol of _defined as_.
 - $\sim$
 the long tilde is used to mean _equivalence_. **But** it's also used in Bayesian Inference to mean sampling from, e.g. $\rho \sim \mathcal{N}(\mu, \sigma)$. Here rho is sampled from a Normal distribution, with given params (mean and stdev).
 
+- $\backslash$ in set theory means subtraction of elements of set on the right from the set on the left. This came up in NCP/CCP/ACP, where the anchor element is subtracted from the set of available elements for cluster assignment, e.g. $ X_a\backslash a_k$
+
 ### Greek alphabet
 - $\tau, \Tau$ - tau
 - $\theta, \Theta$ - theta, often denotes learnable parameters
@@ -60,3 +62,4 @@ the long tilde is used to mean _equivalence_. **But** it's also used in Bayesian
 - $\gamma, \Gamma$ - gamma
 - $\lambda, \Lambda$ - lambda
 - $\beta, \Beta$ - beta. Note that lowercase beta is close to a German _scharfes s_ and kinda looks like an upper-case letter.
+- $\phi, \Phi$ - phi (pron "faj")
