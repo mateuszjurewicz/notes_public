@@ -87,6 +87,8 @@ a medical term for a nosebleed.
 a large nest of an eagle or other bird of prey, built high in a tree or on a cliff. Figuratively a safe haven somewher hard to reach, e.g. a castle or fortress located in the mountains.
 - `expound`
 to explain, state in detail, elucidate. "The professor was _____ing **on** his favorite subject". Commonly confused with expand, which also refers to adding further detail.
+- `fair-weather friend` aka `sunday friend`
+someone who stops being supportive or loyal when you run into difficulties and need help.
 - `figment`
 Something invented, made up, or fabricated. From latin _fingere_ - to "form". 
 - `forcemeat`
