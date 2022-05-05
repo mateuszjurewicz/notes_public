@@ -3,6 +3,7 @@
 ### Planned
 
 - [ ] finish [bash script vid 3](https://www.youtube.com/watch?v=9aD59kA_P1M&list=PLTXMX1FE5Hj7QDc8R1GyaNucSI3aH-Sp5&index=3&ab_channel=JoeCollins)
+- [ ] bash [oneliners](https://github.com/onceupon/Bash-Oneliner)
 - [ ] read arjan's design code principles [here](https://www.arjancodes.com/designguide)
 - [ ] hydra for config management [here](https://youtu.be/tEsPyYnzt8s?t=543)
 - [ ] python rookie mistakes [vid](https://www.youtube.com/watch?v=qUeud6DvOWI) (for Python notes)
