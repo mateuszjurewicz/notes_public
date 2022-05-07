@@ -20,6 +20,7 @@
 - [ ] Bertsekas new RL material [here](http://web.mit.edu/dimitrib/www/RLbook.html)
 - [ ] read Hal Doume's [book](http://ciml.info/dl/v0_99/ciml-v0_99-all.pdf), great intro to ML
 - [ ] JAX as faster, cleaner alternative to PyTorch, from the same guy who co-created autograd, [vid intro here](https://www.youtube.com/watch?v=xFtctq75WaE&t=1s&ab_channel=FieldsInstitute)
+  - also faster and much more [reproducible results](https://www.youtube.com/watch?v=5eUSmJvK8WA)
 
 ### Completed
 
