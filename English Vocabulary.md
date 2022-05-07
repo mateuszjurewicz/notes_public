@@ -129,6 +129,8 @@ Either 1) something that illustrates that a certain situation is bad and deserve
 a qualified, competent craftsman or artisan. A step above an apprentice but possibly below a master, particularly within medieval guild systems.
 - `jowls`
 anatomically it's the lower part of a person or animal's cheeks, especially when it's fleshy and drooping.
+- `jury-rigged` (1) vs `jerry-built` (2) (and somewhat incorrect but widely used `jerry-rigged` (3))
+(1) Assembled for temporary, emergency use. (2) Built cheaply or poorly. Due to the way language evolves, (3) became synonymous with (1). In nautical terms (1)'s part before the hyphen means makeshift and temporary. From French, however, it means "to swear an oath", as in per____. Coś się trzyma na słowo honoru?
 - `kith`
 one's friends, acquaintances and relations as opposed to blood relative (which are the "kin" in "kith and kin")
 - `kompromat`
