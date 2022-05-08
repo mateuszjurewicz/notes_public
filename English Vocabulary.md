@@ -125,6 +125,8 @@ The few.
 from Greek, meaning the common people, in English mostly pejoratively "the masses".
 - `a hoot and a holler`
 a ton of fun, cool way of saying sth will be great.
+- `indelible` and `indelibly`
+Impossible to remove, erase, or wash away; permanent (____ ink). Memorable, unforgettable (_____ memory). 
 - `indictment`
 Either 1) something that illustrates that a certain situation is bad and deserves condemnation or 2) a formal accusation of a serious crime.
 - `journeyman`
