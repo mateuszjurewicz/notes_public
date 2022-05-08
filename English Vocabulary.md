@@ -53,6 +53,8 @@ kapusta & sałata
 a rule about meetings, according to which any information given during the meeting can be freely acted upon, but it can never be revealed who said what. Also a modern think tank.
 - `cinch`
 something sure or easy, a person or thing certain to fulfill an expectation. An easy task, a certainty.
+- `circumspect` (adj.)
+Heedful of circumstances and potential consequences; prudent, careful. From latin for taking heed, and *looking* *around* (in a circle).
 - `clarion (call)`
 loud and clear (as adjective), strongly expressed demand or request for action (with noun). Refers to a trumpet-like instrument.
 - `confectionery`
