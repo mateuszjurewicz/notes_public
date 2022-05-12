@@ -338,7 +338,7 @@ Following `acp_cluster_smb.py`, from a graph-based model.
 Open Questions:
 - How does ACP guarantee that every element will be assigned to a cluster if it uses a threshold value of 0.5? (during inference)
     - **Answer**: it has a while loop over `t` = `S`, which is the chosen number of samples. By default it's 10. At the start of every iteration, we choose 1 anchor point. So at worst, this loop will have `N` iterations. It is entirely possible for the neural functions to result in logits that result in per-element probabilities that don't go over the **0.5 threshold**, which would mean that no *other* element (other than the anchor) gets added to the current cluster (one cluster per while loop iteration). However, the anchor point still gets added and thus removed from the pool of available elements / points. So it can't get stuck in a forever while loop, nor can it result in unassigned elements (since one point will get added).
-        - it remains unclear how this would get solved in the ACP-S version that doesn't use anchor points.
+        - it remains unclear how this would get solved in the ACP-S version that doesn't use anchor points. There's `acps_model` in the `models` repo of the amortized community detection project!
         
 
 Sources:
