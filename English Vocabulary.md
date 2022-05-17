@@ -267,3 +267,6 @@ an idiom or saying, according to which if one person or situation should be trea
 - `whet sb's appetite`
 to increase sb's appetite, from the word for "to sharpen", as in a ----stone.
 
+`Created`
+- `hammer-taught` 
+Taught through forcing, punishment or without consideration for nuance or context.
