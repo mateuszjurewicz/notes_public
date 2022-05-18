@@ -169,6 +169,8 @@ anatomical term for the taint
 extreme poverty or being extremely frugal.
 - `pillory`
 dyby po angielsku (works as noun and verb).
+- `pinion`
+(noun) the outer part of a bird's wing, including the flight feathers. (verb) to restrain or immobilize someone by tying up their arms or legs, or by cutting off the _____ of a bird to prevent flight. Also a small, toothed gear engaging with a larger one. From latin word for feather. Birds have 2 ____s.
 - `play hooky` (inf. hookie)
 to skip school, work or other duties without permission or excuse. Truancy.
 - `plaque` (dental)
