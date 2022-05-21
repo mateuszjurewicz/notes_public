@@ -43,6 +43,8 @@ carefree and lighthearted, lacking due concern, casual. E.g. Fearne ____ly conti
 from French "good manners" or "good form / style", refers to the nobility and its society in the 19th century England. Comparable with `beau monde` (the beautiful world) meaning the fashionable society. Also `Upper Ten Thousand` referring to the wealthiest 10K new yorkers.
 - `Boston marriage`
 historically, the cohabitation of two wealthy women, independent of financial support from a man. The term is said to have been in use in New England in the late 19th/early 20th century, refers to Henry James novel. Some of these relationships were romantic in nature and might now be considered a lesbian relationship; others were not.
+- `bullpup`
+a gun in which the ammo cartridge chamber (`the breech`) is located closer to the chest than the firing grip, resulting in a longer barrel (e.g. AUG).
 - `bury the lede`
 to hide the more important piece of news among less important details. `Lede` is the introductory portion of a news story, commonly the first sentence.  Often confused with "lead", originates from print journalism, where "lead" also means the strip of metal separating lines of type.
 - `cassock` aka `soutane`
@@ -57,6 +59,8 @@ something sure or easy, a person or thing certain to fulfill an expectation. An 
 Heedful of circumstances and potential consequences; prudent, careful. From latin for taking heed, and *looking* *around* (in a circle).
 - `clarion (call)`
 loud and clear (as adjective), strongly expressed demand or request for action (with noun). Refers to a trumpet-like instrument.
+- `cod psychology`
+unscientific but popular beliefs about human psychology, amateur psychological diagnosis.
 - `confectionery`
 the art of making confections, which are food items that are rich in sugar and carbohydrates. Note the last 'e'.
 - `coniferous` & `conifers`
