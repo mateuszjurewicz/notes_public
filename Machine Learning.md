@@ -556,6 +556,7 @@ In Neural Clustering Processes refers to investing a lot of computational resour
 ## Prior and Posterior 
 
 **Update 2022 05 02**
+
 Very nicely explained in [Hal Daume's Chapter 9](http://ciml.info/):
 
 $p(\theta | D) = \frac{p(\theta) p(D | \theta)}{p(D)}$
@@ -635,11 +636,15 @@ Is an adaptive, unsupervised clustering algorithm, a step above K-means, because
 
 ## Normalizing Flows
 
-Normalizing flows are a representation learning technique, comparable to VAEs and GANs. In simple words, normalizing flows is a series of simple functions which are invertible, or the analytical inverse of the function can be calculated. For example, f(x) = x + 2 is a reversible function because for each input, a unique output exists and vice-versa whereas f(x) = x² is not a reversible function. Such functions are also known as bijective functions.
+Normalizing flows are a representation learning technique, comparable to VAEs and GANs. In simple words, normalizing flows is a series of simple functions which are invertible, or the analytical inverse of the function can be calculated. For example, f(x) = x + 2 is a reversible function because for each input, a unique output exists and vice-versa whereas f(x) = x² is not a reversible function. Such functions are also known as bijective functions. These series of functions are applied to some random variable $z$, which is e.g. sampled from some $\mathcal{N}(\mu, \sigma)$ (learned Normal distribution, parameterized by the 2 learned params), allowing for $z$ to have interesting shapes:
 
-Good explanation [here](https://towardsdatascience.com/introduction-to-normalizing-flows-d002af262a4b). 
+<img src="img/normalizing_flow.png" alt="Logarithm Plots" style="height: 400px; background-color: #FFFFFF"/>
+
+Image taken from [this presentation](https://youtu.be/-hcxTS5AXW0?t=2443).
 
 The normalizing flows transform a complex data point such as an MNIST Image to a simple Gaussian Distribution or vice-versa (and by distribution we mean it gets the $\mu$ and $\sigma$ of a $\mathcal{N}$ Normal distribution). Not clear to me how it's different from a VAE, but generally it is often presented side to side with GANs and VAEs that are capable of learning from unsupervised data.
+
+Good explanation [here](https://towardsdatascience.com/introduction-to-normalizing-flows-d002af262a4b).
 
 ## Chain Rule
 
