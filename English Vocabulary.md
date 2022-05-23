@@ -6,6 +6,8 @@ Meant to be an alphabetized list of interesting words or phrases to improve my a
 an accessory, additional item of equipment or dress.
 - `adage`
 a saying, proverb.
+- `adroit` pron. with accent on i and t (adroitly, adroitness)
+quick and skillful in body or mind, clever. "The billionaire's accountant was ____ at tax evasion".
 - `agog`
 eager, full of keen anticipation.
 - `anastole`
