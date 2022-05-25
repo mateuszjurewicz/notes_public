@@ -149,6 +149,8 @@ information that could cause harm to someone's reputation (compromising material
 formal legal term for theft of personal property (of a person or business though). Grand _____ has to exceed a specific amount of dollars.
 - `legerdemain`
 sleight of hand, artful trickery, deception.
+- `lèse-majesté` or `lese-majesty` (pron. "lez/liz madżesti")
+a French term meaning "to do wrong to majesty", is an offence against the dignity of a reigning sovereign or against a state. Such as mocking them.
 - `limerence`
 a state of mind resulting from romantic attraction, characterized by feelings of euphoria, the desire to have one's feelings reciprocated. Infatuation.
 - `matinée`
