@@ -24,6 +24,18 @@ mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
 
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
 
+### Count Model Parameters
+
+```
+def count_params(model, return_string=False):
+    params = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    params = '{:,}'.format(params)
+    if return_string:
+        return params, 'The model has {} trainable parameters'.format(params)
+    else:
+        print('The model has {} trainable parameters'.format(params))
+```
+
 ### CUDA / GPU Check for Tensors
 
 - `tensor.is_cuda` gives a Boolean value whether a tensor is on a GPU or not.
