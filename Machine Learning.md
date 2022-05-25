@@ -38,7 +38,7 @@ The paper introduces both ACP and ACP-S. ACP-S uses a simpler, anchor-independen
     - there's also a break condition if only 1 unassigned point remains to be clustered
     - `ind_anchor` is the index of the starting point (anchor) of current, `k`-th cluster, gotten from `all_anchors` at `[k]` index.
     - `ind_unassigned` is a list of indices of the points that are still unassigned, obtained from `all_unassinged` via `[k]` index.
-    - `ind_last_assigned` is a list containing the indices of points from previous cluster  via `all_last_assigned][k-1]`, but **only if we're not on `k == 0` (as there is no previous cluster then)
+    - `ind_last_assigned` is a list containing the indices of points from previous cluster  via `all_last_assigned][k-1]`, but **only if we're not on** `k == 0` (as there is no previous cluster then)
     - `targets`, a binary vector of 0s and 1s over the remaining available points is obtained from `all_targets` via `[k]` index.
     - from here, `self.forward_k()` gets called
 11. `forward_k()` is called within the `K` loop.
