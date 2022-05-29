@@ -10,6 +10,8 @@ a saying, proverb.
 quick and skillful in body or mind, clever. "The billionaire's accountant was ____ at tax evasion".
 - `agog`
 eager, full of keen anticipation.
+- `allay`
+to soften or assuage. To ____ someone's fears.
 - `anastole`
 a hairstyle popular in ancient Greece around Alexander the Great's time, characterized by being swept back from the forehead, with curls to the sides.
 - `anatine`
@@ -87,6 +89,8 @@ the part of the body a person sits on (the buttocks, the rear, the rump).
 (especially of fabric) light, delicate, and translucent. E.g. of a see-through dress.
 - `dotage`
 old age, a period when a person is old and weak. "In my -----".
+- `encomiastic` (`encomiast` and `encomium` = eulogy)
+praising or delivering a eulogy. 
 - `embossed`
 (of a surface or object) decorated with a design that stands out in relief. E.g. a notarized document, diploma or a business card.
 - `epistaxis`
@@ -135,6 +139,8 @@ a ton of fun, cool way of saying sth will be great.
 Impossible to remove, erase, or wash away; permanent (____ ink). Memorable, unforgettable (_____ memory). *"Perhaps somewhere your ends are written as ____ly as mine"*.
 - `indictment`
 Either 1) something that illustrates that a certain situation is bad and deserves condemnation or 2) a formal accusation of a serious crime.
+- `intestate` (pron "intestejt") and `intestacy` (pron intestasi)
+(adj) having made no legal will: an _______ parent.
 - `journeyman`
 a qualified, competent craftsman or artisan. A step above an apprentice but possibly below a master, particularly within medieval guild systems.
 - `jowls`
@@ -189,6 +195,8 @@ a highly intelligent, bookish person but often socially inept. It's not point. F
 domesticated fowl, such as chickens, turkeys, ducks or gees,raised for meat and eggs. Fowl refers to these species of bird.
 - `primrose path` (to lead somebody down the ___)
 Either a way of life devoted to hedonism or a course of action that is easy or tempting but hazardous in the end. Leisure and pleasure leading to disaster.
+- `probate` (pron "probejt")
+The legal process by which the validity of a will is established.
 - `procurer`
 a person who obtains something (a good or an effect). Another meaning is specifically about acquiring a prostitute or a sexual partner for sb else.
 - `protégé`
@@ -264,6 +272,8 @@ is a material where there are protruding loops of thread that can absorb a large
 a long, narrow, generally shallow receptacle for holding water or feed for animals. Also the gutter at the edge of a roof for carrying excess rainwater. In physics it's the minimum point in a wave. (koryto, rynna, niecka, żłób, rów)
 - `true-blue` (noun and adjective)
 extremely loyal, regardless of circumstances, unwavering in one's committment (positively so). Also real, genuine. As a noun refers to a person with these qualities. British specific: staunchly loyal supporter of the Conservative Party.
+- `tumulus`
+a barrow, a burial mound, a kurgan.
 - `unalome`
 a buddhist symbol for the journey towards enlightenment, in the form of a straight line turning into a zig-zag like pattern, ending in a spiral (variations exist).
 - `vociferous`
