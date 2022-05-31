@@ -115,6 +115,8 @@ a series of shots fired or missiles thrown all at the same time or in quick succ
 relevant to a subject under consideration, pertinent. Stems from an old english word for "having the same parents". Reminds me of "___minating" (beginning to sprout or coming into existance).
 - `gingiva`
 a technical medical term for gums (in the mouth). Pronounced either 'gíngiwa' or 'dżíndżiwa`.
+- `glad-hand` (to)
+greet or welcome warmly (especially of a politician). _"presidential hopefuls ____ing the factory workers." To extend a ____ ____.
 - `gloss over sth`
 to omit or minimize sth in an account or retelling, in order to diminish its importance.
 - `grouse (to)` (as verb)
