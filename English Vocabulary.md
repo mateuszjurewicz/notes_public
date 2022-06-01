@@ -8,6 +8,8 @@ an accessory, additional item of equipment or dress.
 a saying, proverb.
 - `adroit` pron. with accent on i and t (adroitly, adroitness)
 quick and skillful in body or mind, clever. "The billionaire's accountant was ____ at tax evasion".
+- `adze` (pron "ádz")
+a cutting tool that has a thin arched blade set at right angles to the handle and is used chiefly for shaping wood. 19 ____. Also as a verb: "cut away the surface of (a piece of wood) with an ____." Pol: "ciesak".
 - `agog`
 eager, full of keen anticipation.
 - `allay`
@@ -278,6 +280,8 @@ extremely loyal, regardless of circumstances, unwavering in one's committment (p
 a barrow, a burial mound, a kurgan.
 - `unalome`
 a buddhist symbol for the journey towards enlightenment, in the form of a straight line turning into a zig-zag like pattern, ending in a spiral (variations exist).
+- `vernier thrusters`
+A ______ _____ is a rocket engine used on a spacecraft for fine adjustments to the **attitude** (angular orientation) or velocity of a spacecraft. The name is derived from _______ **calipers** (suwmiarka), which are an instrument for measuring external or internal dimensions, having two hinged legs resembling a pair of compasses and in-turned or out-turned points (named after Pierre _______) which have a primary scale for gross measurements, and a secondary scale for fine measurements.
 - `vociferous`
 loud and forceful, characterized by vehement opinions (e.g. of support for something).
 - `voluptuary`
