@@ -2,11 +2,13 @@
 
 ### Planned
 
+- [ ] reoreder this list in a way that makes sense, possibly discard/archive some, **be mindful of end goal**
 - [ ] finish [bash script vid 3](https://www.youtube.com/watch?v=9aD59kA_P1M&list=PLTXMX1FE5Hj7QDc8R1GyaNucSI3aH-Sp5&index=3&ab_channel=JoeCollins)
 - [ ] bash [oneliners](https://github.com/onceupon/Bash-Oneliner)
 - [ ] read arjan's design code principles [here](https://www.arjancodes.com/designguide)
 - [ ] hydra for config management [here](https://youtu.be/tEsPyYnzt8s?t=543)
 - [ ] python rookie mistakes [vid](https://www.youtube.com/watch?v=qUeud6DvOWI) (for Python notes)
+- [ ] check out whylogs data logging for ML pipelines [here](https://github.com/whylabs/whylogs/blob/mainline/python/examples/basic/Getting_Started.ipynb)
 - [ ] 50 linux commands [here](https://www.youtube.com/watch?v=ZtqBQ68cfJc&ab_channel=freeCodeCamp.org)
 - [ ] Python [Async](https://www.youtube.com/watch?v=2IW-ZEui4h4)
 - [ ] Jacobian matrix
