@@ -81,6 +81,8 @@ in rowing, the person navigating the boat with a stern (doesn't actually row). I
 a funny person (informally in the US), but also a mental breakdown. RBG is famously a crack-up, according to Off Book.
 - `deciduous`
 of trees, having leafs and shedding them in autumn. Antonym of `evergreen`.
+- `declension` (pron dyklenszyn)
+(in the grammar of Latin, Greek, and certain other languages) the variation of the form of a noun, pronoun, or adjective, by which its grammatical case, number, and gender are identified. Case being the English word for _przypadek_. Also archaically the condition of decline or moral deterioration, e.g. "the declension of the next generation". By contrast, the inflectional change of verbs is called `conjugation`. `Inflection` being a process of word formation, in which a word is modified to express different grammatical categories like tense, case, person, gender etc.
 - `demerit`
 A mark made by a teacher or an authority figure against one's record for a fault or misconduct. When a student misbehaves they are given a ---. 
 - `demitasse`
