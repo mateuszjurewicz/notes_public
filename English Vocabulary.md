@@ -294,6 +294,8 @@ an arabic expression meaning "I swear by God" but also as a noun, from Hindi, it
 an idiom or saying, according to which if one person or situation should be treated in a specific way then another person or situation should too. E.g. if one child is allowed to stay out till 10, the other should too. A _____ is a male ____.
 - `whet sb's appetite`
 to increase sb's appetite, from the word for "to sharpen", as in a ----stone.
+- `yeoman` (pron. jołmen)
+1) An attendant, servant, or lesser official in a royal or noble household. 2) A petty officer performing chiefly clerical duties in the US Navy. 3) A farmer who cultivates his own land, especially a member of a former class of small freeholders in England. Might stem from _young_ man.
 
 `Created`
 - `hammer-taught` 
