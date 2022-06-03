@@ -256,6 +256,8 @@ an ancient musical instrument, often in the form of a ram's horn, used for ancie
 a tooth that is broken or not in alignment with the others
 - `sojourn (in/at)`
 a temporary stay, brief period of residence (as noun), or to stay somewhere temporarily.
+- `solecism` (pron sol(e/i)sizm)
+A nonstandard usage or grammatical construction. A violation of etiquette. An impropriety, mistake, or incongruity. From the name of an Athenian colony that developed a dialect regarded as substandard.
 - `soporific`
 inducing sleep or drowsiness (e.g. motions of a train or a rocking chair). As a noun it refers to a substance that induce sleep. Can also mean "sleepy" of a person or mood.
 - `sotto voce`
