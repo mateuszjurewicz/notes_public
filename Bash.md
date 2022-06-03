@@ -41,6 +41,7 @@ Can be forced via:
 * `pwd` tells you what your present working directory / folder is (same thing on unix).	
 * `ls -alh /some_dir` will print the contents of a specified directory, with all 3 flags.
 * `ls -Slh` will list sorting by size (from largest) (`-S`), human readable with all long details.
+* `ls -lt` sorts by modified date
 
 ### Navigating directories
 
