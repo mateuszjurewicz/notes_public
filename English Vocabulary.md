@@ -181,14 +181,16 @@ a lawn game, precursor to croquet (pron. "kroł-kej"), popular in the 16th nad 1
 palm reading, aka `chiromancy`
 - `panhandling`
 a synonym of begging. When preceded by the term "aggressive" it becomes an illegal form of begging. Begging can also be called `mendicancy`, and a beggar a `mendicant`, with religious connotation (e.g. alms for the poor).
+- `penury`
+extreme poverty or being extremely frugal.
 - `percursory` == `cursory`
 performed with haste and scant attention.
 - `perfunctory`
 performed without real interest, feeling or effort.
 - `perineum`
 anatomical term for the taint
-- `penury`
-extreme poverty or being extremely frugal.
+- `petrichor` (pron. pétrykor)
+earthy scent produced when rain fall on dry soil. From the Greek for stone + ethereal fluid / blood of the gods.
 - `pillory`
 dyby po angielsku (works as noun and verb).
 - `pinion`
