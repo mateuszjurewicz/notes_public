@@ -40,8 +40,8 @@ Can be forced via:
 * `ls -lh` shows more info in human readable format (combined flags)
 * `pwd` tells you what your present working directory / folder is (same thing on unix).	
 * `ls -alh /some_dir` will print the contents of a specified directory, with all 3 flags.
-* `ls -Slh` will list sorting by size (from largest) (`-S`), human readable with all long details.
-* `ls -lt` sorts by modified date
+* `ls -Slh` will list sorting by size (from largest) (`-S`), human readable with all long details. But doesn't figure out the size of the directories, juts files.
+* `ls -t` sorts by modified date (use `-lt` to see the long details including that date, to confirm)
 
 ### Navigating directories
 

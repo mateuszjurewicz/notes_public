@@ -99,6 +99,8 @@ praising or delivering a eulogy.
 (of a surface or object) decorated with a design that stands out in relief. E.g. a notarized document, diploma or a business card.
 - `epistaxis`
 a medical term for a nosebleed.
+- `ewe` (pron 'ju', like yew aka cis po polsku)
+a female sheep.
 - `eyrie` ("iyri") aka `aerie`
 a large nest of an eagle or other bird of prey, built high in a tree or on a cliff. Figuratively a safe haven somewher hard to reach, e.g. a castle or fortress located in the mountains.
 - `expound`
@@ -152,7 +154,7 @@ a qualified, competent craftsman or artisan. A step above an apprentice but poss
 - `jowls`
 anatomically it's the lower part of a person or animal's cheeks, especially when it's fleshy and drooping.
 - `jury-rigged` (1) vs `jerry-built` (2) (and somewhat incorrect but widely used `jerry-rigged` (3))
-(1) Assembled for temporary, emergency use. (2) Built cheaply or poorly, flimsily. Due to the way language evolves, (3) became synonymous with (1). In nautical terms (1)'s part before the hyphen means makeshift and temporary. From French, however, it means "to swear an oath", as in per____. Coś się trzyma na słowo honoru?
+(1) Assembled for temporary, emergency use. (2) Built cheaply or poorly, flimsily. Due to the way language evolves, (3) became synonymous with (1). In nautical terms (1)'s part before the hyphen means makeshift and temporary. From French, however, it means "to swear an oath", as in per____. Coś się trzyma na słowo honoru? `Jerry` is also a word for a chamber pot or, in skiing, a person who made a boneheaded move and risked other people's health. Jerries is also a word for Germans (pejorative, from WW2).
 - `kith`
 one's friends, acquaintances and relations as opposed to blood relative (which are the "kin" in "kith and kin")
 - `kompromat`
@@ -280,7 +282,7 @@ is a material where there are protruding loops of thread that can absorb a large
 a long, narrow, generally shallow receptacle for holding water or feed for animals. Also the gutter at the edge of a roof for carrying excess rainwater. In physics it's the minimum point in a wave. (koryto, rynna, niecka, żłób, rów)
 - `true-blue` (noun and adjective)
 extremely loyal, regardless of circumstances, unwavering in one's committment (positively so). Also real, genuine. As a noun refers to a person with these qualities. British specific: staunchly loyal supporter of the Conservative Party.
-- `tumulus`
+- `tumulus` (pron. tumjulus)
 a barrow, a burial mound, a kurgan.
 - `unalome`
 a buddhist symbol for the journey towards enlightenment, in the form of a straight line turning into a zig-zag like pattern, ending in a spiral (variations exist).
