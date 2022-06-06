@@ -53,6 +53,8 @@ historically, the cohabitation of two wealthy women, independent of financial su
 a gun in which the ammo cartridge chamber (`the breech`) is located closer to the chest than the firing grip, resulting in a longer barrel (e.g. AUG).
 - `bury the lede`
 to hide the more important piece of news among less important details. `Lede` is the introductory portion of a news story, commonly the first sentence.  Often confused with "lead", originates from print journalism, where "lead" also means the strip of metal separating lines of type.
+- `capstone` (noun and adj)
+the final stone in an arch of a doorway or a roof that makes the structure hold. Metaphorically as an adjective, it's used to mean "zwieńczenie", e.g. sth that marks the end / completion of a larger process.
 - `cassock` aka `soutane`
 the christian clerical clothing coat, worn primarily by Catholic priests (with the white clerical collar).
 - `cabbage vs lettuce`
