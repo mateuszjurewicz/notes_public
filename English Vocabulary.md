@@ -280,6 +280,8 @@ first type of glass is made stronger through controlled thermal or chemical trea
 a small specie of turtle, living in brackish or fresh water, common house pet.
 - `terrycloth` aka `towelling` or `terry cotton`
 is a material where there are protruding loops of thread that can absorb a large amount of water, perfect for fluffy towels and bathrobes.
+- `triplicate` (noun/adj pron. "tryplyket", verb pron. "tryplykejt")
+(adj) existing in three copies or examples. (noun) a thing which is part of a set of three copies or corresponding parts. (verb) make three copies of; multiply by three. Contrast with duplicate.
 - `trough` (pron "trof")
 a long, narrow, generally shallow receptacle for holding water or feed for animals. Also the gutter at the edge of a roof for carrying excess rainwater. In physics it's the minimum point in a wave. (koryto, rynna, niecka, żłób, rów)
 - `true-blue` (noun and adjective)
