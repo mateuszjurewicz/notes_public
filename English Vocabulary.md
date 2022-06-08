@@ -54,7 +54,7 @@ a gun in which the ammo cartridge chamber (`the breech`) is located closer to th
 - `bury the lede`
 to hide the more important piece of news among less important details. `Lede` is the introductory portion of a news story, commonly the first sentence.  Often confused with "lead", originates from print journalism, where "lead" also means the strip of metal separating lines of type.
 - `capstone` (noun and adj)
-the final stone in an arch of a doorway or a roof that makes the structure hold. Metaphorically as an adjective, it's used to mean "zwieńczenie", e.g. sth that marks the end / completion of a larger process.
+the final stone in an arch of a doorway or a roof that makes the structure hold. Metaphorically as an adjective, it's used to mean "zwieńczenie", e.g. sth that marks the end / completion of a larger process, e.g. a capstone project at the end of the semester.
 - `cassock` aka `soutane`
 the christian clerical clothing coat, worn primarily by Catholic priests (with the white clerical collar).
 - `cabbage vs lettuce`
@@ -272,6 +272,8 @@ in a quiet voice, as if to not be overheard. A ___ ___ remark. Under the breath,
 plausible but false, deceptively pleasing but based on false pretense.
 - `spoor`
 as a noun, it's the track or scent of a hunted animal. As a verb, to ____ an animal means to follow its track or scent. "Taking his spear, he set off to ____ his prey".
+- `stentorian`
+very loud (spoken in _____ tones). Named after a Greek herald famed for a clear, loud voice. Having marked deepness and body (of sound).
 - `supine`
 Either: 1) lying down, on one's back, facing up 2) failing to act or protest as a result of moral weakness or indolence, passive to the point of deserving blame.
 - `sybarite` / `sybaritic`
