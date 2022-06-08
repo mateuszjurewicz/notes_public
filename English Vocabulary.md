@@ -273,7 +273,7 @@ plausible but false, deceptively pleasing but based on false pretense.
 - `spoor`
 as a noun, it's the track or scent of a hunted animal. As a verb, to ____ an animal means to follow its track or scent. "Taking his spear, he set off to ____ his prey".
 - `stentorian`
-very loud (spoken in _____ tones). Named after a Greek herald famed for a clear, loud voice. Having marked deepness and body (of sound).
+very loud (spoken in _____ tones). Named after a Greek herald (first 7 letters) famed for a clear, loud voice. Having marked deepness and body (of sound).
 - `supine`
 Either: 1) lying down, on one's back, facing up 2) failing to act or protest as a result of moral weakness or indolence, passive to the point of deserving blame.
 - `sybarite` / `sybaritic`
