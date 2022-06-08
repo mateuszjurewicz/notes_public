@@ -203,6 +203,8 @@ to skip school, work or other duties without permission or excuse. Truancy.
 the built-up of calcified minerals around teeth, also known as `tartar` or, strangely, `calculus`.
 - `poindexter`
 a highly intelligent, bookish person but often socially inept. It's not point. From a 60s animated show Felix the Cat.
+- `pollywog` or `polliwog`
+1) a tadpole 2) a new sailor, especially one crossing the equator for the first time.
 - `poultry`
 domesticated fowl, such as chickens, turkeys, ducks or gees,raised for meat and eggs. Fowl refers to these species of bird.
 - `primrose path` (to lead somebody down the ___)
