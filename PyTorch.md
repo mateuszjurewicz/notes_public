@@ -24,6 +24,16 @@ mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
 
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
 
+### Find Indices in Tensor Based on Filter Condition
+You may want to get the indices of elements of a tensor that fulfill a certain condition. This is done through direct comparison and the `torch.Tensor.nonzero()` function.
+
+```
+# random tensor
+r = torch.rand((2, 10))
+above_point_five_indices = (r > 0.5).nonzero()
+```
+Note that in this case the indices are themselves pointing to both dimensions of the original matrix.
+
 ### Count Model Parameters
 
 ```
