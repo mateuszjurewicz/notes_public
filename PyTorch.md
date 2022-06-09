@@ -24,6 +24,22 @@ mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
 
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
 
+### Create a Tensor with Random Values in Range (uniformly)
+You sometimes want to have values in a different range than between 0 and 1, preventing you from using `torch.rand()` directly. You can use `torch.Tensor.uniform_()` instead:
+
+```
+# desired params
+shape = (1, 5)
+lower = 0
+upper = 10
+
+# generate
+r = torch.FloatTensor(*shape).uniform_(lower, upper)
+
+print(r)
+# tensor([[2.6093, 0.6849, 5.6221, 4.1591, 9.7290]])
+```
+
 ### Find Indices in Tensor Based on Filter Condition
 You may want to get the indices of elements of a tensor that fulfill a certain condition. This is done through direct comparison and the `torch.Tensor.nonzero()` function.
 
