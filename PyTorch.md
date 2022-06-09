@@ -14,6 +14,7 @@ mock_sigmoid_preds = mock_sigmoid_preds + (0.1**0.5)*torch.randn(mock_sigmoid_pr
 mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
 ```
 
+- `torch.Tensor.round()` will round the elements of the tensor to nearest integer.
 
 - `torch.Tensor.requires_grad` is the argument that specifies whether gradients are tracked for this tensor node. If requires_grad is True, then this tensor should also have a `grad_fn` attribute, which specifies the mathematical operator that created the variable (used in backwards pass). requires_grad is contagious, meaning that tensors that are transformations of the initial tensor will automatically also require and track gradients. `.detach()` is used to remove a tensor from the computation graph (gradients won't be tracked). Nicely explained [here](https://blog.paperspace.com/pytorch-101-understanding-graphs-and-automatic-differentiation/).
 
@@ -25,7 +26,7 @@ mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
 
 ### Create a Tensor with Random Values in Range (uniformly)
-You sometimes want to have values in a different range than between 0 and 1, preventing you from using `torch.rand()` directly. You can use `torch.Tensor.uniform_()` instead:
+You sometimes want to have floating point values in a different range than between 0 and 1, preventing you from using `torch.rand()` and `torch.randint()` directly. You can use `torch.Tensor.uniform_()` instead:
 
 ```
 # desired params
