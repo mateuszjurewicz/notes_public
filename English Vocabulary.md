@@ -101,6 +101,8 @@ praising or delivering a eulogy.
 (of a surface or object) decorated with a design that stands out in relief. E.g. a notarized document, diploma or a business card.
 - `epistaxis`
 a medical term for a nosebleed.
+- `eschar` (pron. éskar)
+a dry, dark scab or falling away of dead skin, typically caused by a burn, an insect bite, or infection. Google translate incorrectly suggested it along with the correct "scab" meaning łamistrajk.
 - `ewe` (pron 'ju', like yew aka cis po polsku)
 a female sheep.
 - `eyrie` ("iyri") aka `aerie`
