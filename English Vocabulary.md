@@ -133,6 +133,8 @@ a technical medical term for gums (in the mouth). Pronounced either 'gíngiwa' o
 greet or welcome warmly (especially of a politician). _"presidential hopefuls ____ing the factory workers." To extend a ____ ____.
 - `gloss over sth`
 to omit or minimize sth in an account or retelling, in order to diminish its importance.
+- `godhead`
+(or godhood) refers to the essence or substance (ousia) of the Christian God, especially as existing in three persons — the Father, Son, and Holy Spirit. Tt refers to the aspect or substratum of God that lies behind God's actions or properties (i.e., it is the essence of God), and its nature has been the subject of long debate in every major religion.
 - `grouse (to)` (as verb)
 to grumble, to persistently complain (gderac). Can refer to a person who often complains by adding an 'r' at the end. As a noun it refers to a type of bird.
 - `growler`
