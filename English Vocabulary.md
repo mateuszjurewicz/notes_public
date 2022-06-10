@@ -73,6 +73,8 @@ unscientific but popular beliefs about human psychology, amateur psychological d
 the art of making confections, which are food items that are rich in sugar and carbohydrates. Note the last 'e'.
 - `coniferous` & `conifers`
 (of trees) bearing cones, mostly evergreen and needle-leaved trees fall under this category. Translates into _iglaste_.
+- `crayfish` / `crawfish` / `crawdaddy`
+freshwater crustacean resembling a small lobster (rak).
 - `costermonger`
 A street seller of fruit and vegetables in British towns (from a smaller, portable cart). The term is derived from the words for a medieval variety of apple and seller, and later came to be used to describe hawkers in general. Very coloruful figures, distinctive, shouty / singy, at war with grocers and the police.
 - `coup de grâce`
@@ -181,6 +183,10 @@ the main vein of ore in a region, often misspelled as "load".
 to wink or blink. Also seen as referring to eyelids that close horizontally. 
 - `obviate`
 to avoid or prevent sth undesirable, prevent a difficulty. E.g. having a parachute can ____ disaster. "Bad actions aren't ____ed by shame".
+- `palate`
+1) the roof of the mouth separating the mouth from the nasal cavity. 2) metaphorically an intellectual taste or liking: "I heard a little too much preaching … and lost my ______ for it.". 3) the sense of taste: "serves Korean food adapted for the American ______". 
+- `palette`
+thin oval or rectangular board or tablet that a painter holds and mixes pigments on or the set of colours put on such a board. Metaphorically a comparable range, quality, or use of available elements: "a ___ of flavors / a ____ of vegetables on the tapas table".
 - `pall mall`
 a lawn game, precursor to croquet (pron. "kroł-kej"), popular in the 16th nad 17th century. Also a cigarette brand.
 - `palmistry`
