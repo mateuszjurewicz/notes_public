@@ -260,6 +260,8 @@ to walk in an ostentatious manner, often with exaggerated hip and shoulder movem
 severely critical of something, witheringly scornful. E.g. of an indictment or an attack.
 - `scurrilous`
 expressed in a vulgar or coarse manner. Sometimes also slanderous, defamatory.
+- `scuttle`
+1) (naval) to deliberately sink one's own ship (usually by making cuts in the hull). 2) To run or move with short hurried movements; scurry.
 - `scuttlebutt`
 Informal for gossip, rumors. But also in nautical terms: a cask on a ship used to hold the day's supply of drinking water.
 - `self-possessed`
