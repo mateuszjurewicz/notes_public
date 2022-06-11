@@ -54,7 +54,7 @@ a gun in which the ammo cartridge chamber (`the breech`) is located closer to th
 - `bury the lede`
 to hide the more important piece of news among less important details. `Lede` is the introductory portion of a news story, commonly the first sentence.  Often confused with "lead", originates from print journalism, where "lead" also means the strip of metal separating lines of type.
 - `capstone` (noun and adj)
-the final stone in an arch of a doorway or a roof that makes the structure hold. Metaphorically as an adjective, it's used to mean "zwieńczenie", e.g. sth that marks the end / completion of a larger process, e.g. a capstone project at the end of the semester.
+the final stone in an arch of a doorway or a roof that makes the structure hold. Metaphorically as an adjective, it's used to mean "zwieńczenie", e.g. sth that marks the end / completion of a larger process, e.g. a capstone project at the end of the semester. Contrast with `cornerstone` metaphorically meaning an indispensable and fundamental basis.
 - `cassock` aka `soutane`
 the christian clerical clothing coat, worn primarily by Catholic priests (with the white clerical collar).
 - `cabbage vs lettuce`
@@ -157,7 +157,7 @@ a ton of fun, cool way of saying sth will be great.
 Impossible to remove, erase, or wash away; permanent (____ ink). Memorable, unforgettable (_____ memory). *"Perhaps somewhere your ends are written as ____ly as mine"*.
 - `indictment`
 Either 1) something that illustrates that a certain situation is bad and deserves condemnation or 2) a formal accusation of a serious crime.
-- `intestate` (pron "intestejt") and `intestacy` (pron intestasi)
+- `intestate` (pron "intstejt") and `intestacy` (pron intestasi)
 (adj) having made no legal will: an _______ parent.
 - `jamoke`
 an ordinary, unimpressive, or inept person —typically used as a term of mild or joking disparagement for a man. "Some ____ screwed up the whole operation".
@@ -189,7 +189,7 @@ to wink or blink. Also seen as referring to eyelids that close horizontally.
 to avoid or prevent sth undesirable, prevent a difficulty. E.g. having a parachute can ____ disaster. "Bad actions aren't ____ed by shame".
 - `palate`
 1) the roof of the mouth separating the mouth from the nasal cavity. 2) metaphorically an intellectual taste or liking: "I heard a little too much preaching … and lost my ______ for it.". 3) the sense of taste: "serves Korean food adapted for the American ______". 
-- `palette`
+- `palette` (homophone of palate)
 thin oval or rectangular board or tablet that a painter holds and mixes pigments on or the set of colours put on such a board. Metaphorically a comparable range, quality, or use of available elements: "a ___ of flavors / a ____ of vegetables on the tapas table".
 - `pall mall`
 a lawn game, precursor to croquet (pron. "kroł-kej"), popular in the 16th nad 17th century. Also a cigarette brand.
