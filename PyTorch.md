@@ -2,7 +2,7 @@
 
 For useful things learned while using torch.
 
-### General
+## General
 
 - cuda version incompatible with torch after upgrading torch: I just run `sudo apt-get -y install cuda` on a 64bit Ubuntu 16.04 and rebooted, worked after.
   - checked via `torch.cuda.is_available()`
@@ -25,7 +25,7 @@ mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
 
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
 
-### Create a Tensor with Random Values in Range (uniformly)
+## Create a Tensor with Random Values in Range (uniformly)
 You sometimes want to have floating point values in a different range than between 0 and 1, preventing you from using `torch.rand()` and `torch.randint()` directly. You can use `torch.Tensor.uniform_()` instead:
 
 ```
@@ -41,7 +41,7 @@ print(r)
 # tensor([[2.6093, 0.6849, 5.6221, 4.1591, 9.7290]])
 ```
 
-### Find Indices in Tensor Based on Filter Condition
+## Find Indices in Tensor Based on Filter Condition
 You may want to get the indices of elements of a tensor that fulfill a certain condition. This is done through direct comparison and the `torch.Tensor.nonzero()` function.
 
 ```
@@ -51,7 +51,7 @@ above_point_five_indices = (r > 0.5).nonzero()
 ```
 Note that in this case the indices are themselves pointing to both dimensions of the original matrix.
 
-### Count Model Parameters
+## Count Model Parameters
 
 ```
 def count_params(model, return_string=False):
@@ -63,7 +63,7 @@ def count_params(model, return_string=False):
         print('The model has {} trainable parameters'.format(params))
 ```
 
-### CUDA / GPU Check for Tensors
+## CUDA / GPU Check for Tensors
 
 - `tensor.is_cuda` gives a Boolean value whether a tensor is on a GPU or not.
   - to move a tensor to the preferred device, use `a_tensor = a_tensor.to(torch.device('cuda:0'))`
@@ -71,11 +71,11 @@ def count_params(model, return_string=False):
 - alternatively tou can ask explicit for which device a thing is on `next(network.parameters()).device`
   - `tensor.device` works as well.
 
-### CUDA / GPU Reload model onto CPU
+## CUDA / GPU Reload model onto CPU
 
 When reloading a model that was saved on a GPU via model.save(), you have to add the map: `model = torch.load(path, map_location=torch.device('cpu'))`
 
-### Truncating Tensors
+## Truncating Tensors
 
 If you know that you want your tensor to be truncated to a certain size, along each dimension, you can use numpy-like indexing to do it:
 
@@ -94,7 +94,7 @@ print(y_hat.size())
 
 These **upper limits are INCLUSIVE, unlike in Python lists**. You can also use torch's `torch.narrow()` to limit one dimension at a time, explained [here](https://pytorch.org/docs/stable/generated/torch.narrow.html), in the docs.
 
-### Stack or Concatenate
+## Stack or Concatenate
 
 Often when creating sythetic training examples (`x` and `y`) I end up having to create them one by one in a loop and then put them together into a tensor of size batch or dataset length. 
 
@@ -112,7 +112,7 @@ stacked = torch.stack([a, b], dim=0)  # (2, 3, 4)
 
 So it depends if you created individual examples already unsqueezed or not. 
 
-### Custom Loss Functions
+## Custom Loss Functions
 
 Are easy to make, it's just that everything has to be in tensors, e.g. here's a dummy nn.MSELoss reimplementation:
 
@@ -122,7 +122,7 @@ def my_loss(output, target):
     return loss
 ```
 
-### Freezing Layers
+## Freezing Layers
 
 E.g. in a sentence ordering model, if I need to freeze the BERT layers (to avoid having to adjust an insane amount of params), I can make those layers' parameters not require gradient and also tell the optimizer to only touch the parameters that require grads:
 
