@@ -181,6 +181,8 @@ a French term meaning "to do wrong to majesty", is an offence against the dignit
 a state of mind resulting from romantic attraction, characterized by feelings of euphoria, the desire to have one's feelings reciprocated. Infatuation.
 - `matinée`
 an entertainment, such as a play, presented during the day, usually in the early afternoon (from the French, meaning morning).
+- `menarche` (pron. menárki)
+the initial onset of menstruation.
 - `mother lode`
 the main vein of ore in a region, often misspelled as "load".
 - `nictate` (to)
