@@ -25,6 +25,12 @@
 - [ ] read Hal Doume's [book](http://ciml.info/dl/v0_99/ciml-v0_99-all.pdf), great intro to ML
 - [ ] JAX as faster, cleaner alternative to PyTorch, from the same guy who co-created autograd, [vid intro here](https://www.youtube.com/watch?v=xFtctq75WaE&t=1s&ab_channel=FieldsInstitute)
   - also faster and much more [reproducible results](https://www.youtube.com/watch?v=5eUSmJvK8WA)
+- [ ] Google's ML course:
+	- https://developers.google.com/machine-learning/crash-course
+- [ ]Read and take notes from an article of choice from Colah's blog:
+	- http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/
+- [ ] Watch more Deep Learning for coders:
+	- https://www.youtube.com/watch?v=5L3Ao5KuCC4
 
 ### Completed
 
