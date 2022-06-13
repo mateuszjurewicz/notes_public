@@ -233,6 +233,8 @@ The legal process by which the validity of a will is established.
 a person who obtains something (a good or an effect). Another meaning is specifically about acquiring a prostitute or a sexual partner for sb else.
 - `protégé`
 a student and _mentee_, someone under protection and tutelage of sb established.
+- `prurient` (pron. prúrient)
+characterized by an inordinate interest in sex: _____ thoughts. Arousing or appealing to an inordinate interest in sex: _____ literature. Inordinately interested in matters of sex; lascivious.
 - `pugnacious`
 eager or quick to argue, quarrel or fight. Connect with `pugilist` (a boxer).
 - `puissant` (read pjuisant) (noun: `puissance`)
