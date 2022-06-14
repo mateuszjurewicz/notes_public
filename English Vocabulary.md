@@ -175,6 +175,8 @@ anatomically it's the lower part of a person or animal's cheeks, especially when
 one's friends, acquaintances and relations as opposed to blood relative (which are the "kin" in "kith and kin")
 - `kompromat`
 information that could cause harm to someone's reputation (compromising material, from Russian). Relates to the Pegasus spyware.
+- `labile` (pron. léjbajl)
+flexible, readily open to change: "a ____ face, her scenes rock with emotion". Or readily or continually undergoing chemical, physical, or biological change or breakdown (a ____ mineral) 
 - `larceny`
 formal legal term for theft of personal property (of a person or business though). Grand _____ has to exceed a specific amount of dollars.
 - `legerdemain`
