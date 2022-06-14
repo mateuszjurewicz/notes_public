@@ -177,6 +177,8 @@ one's friends, acquaintances and relations as opposed to blood relative (which a
 information that could cause harm to someone's reputation (compromising material, from Russian). Relates to the Pegasus spyware.
 - `labile` (pron. léjbajl)
 flexible, readily open to change: "a ____ face, her scenes rock with emotion". Or readily or continually undergoing chemical, physical, or biological change or breakdown (a ____ mineral) 
+- `lanyard` (lenjyrd)
+a cord or strap to hold something (such as a knife or a whistle) and usually worn around the neck (smycz na identyfikator). Also in naval terms a piece of rope or line for fastening something in a ship.
 - `larceny`
 formal legal term for theft of personal property (of a person or business though). Grand _____ has to exceed a specific amount of dollars.
 - `legerdemain`
