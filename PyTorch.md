@@ -25,6 +25,24 @@ mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
 
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
 
+## Repeate / Tile a tensor into new dimensions
+If you e.g. have a set representation that you want to concatenate to each end every set element's representation, you'll need to essentially copy it as many times as there are elements (the set's cardinality). You can do this using `torch.tile()`
+
+```
+cardinality = 20
+elements = torch.rand(64, cardinality, 128)
+set = torch.rand(64, 1, 128)
+
+# repeate the set as many times as there are elements
+# the second argument to tile is the number of repetitions per dimension
+set_repeated = torch.tile(set, (1, cardinality, 1))
+
+# now we can concat
+es = torch.cat([elements, set_repeated], dim=2)
+
+# es is now (64, 20, 128 + 128 = 256)
+```
+
 ## Create a Tensor with Random Values in Range (uniformly)
 You sometimes want to have floating point values in a different range than between 0 and 1, preventing you from using `torch.rand()` and `torch.randint()` directly. You can use `torch.Tensor.uniform_()` instead:
 
