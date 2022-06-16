@@ -5,6 +5,7 @@
 - [ ] reoreder this list in a way that makes sense, possibly discard/archive some, **be mindful of end goal**
 - [ ] BigQuery refresh for SQL-ish notes, go through [this](https://codingisforlosers.com/learn-bigquery-sql/)
 - [ ] briefly look into VertexAI as a tool
+- [ ] check out [PyWhy](https://github.com/py-why/), Microsoft-supported causal inference library.
 - [ ] finish [bash script vid 3](https://www.youtube.com/watch?v=9aD59kA_P1M&list=PLTXMX1FE5Hj7QDc8R1GyaNucSI3aH-Sp5&index=3&ab_channel=JoeCollins)
 - [ ] bash [oneliners](https://github.com/onceupon/Bash-Oneliner)
   - [ ] also [this](https://www.youtube.com/watch?v=7qd5sqazD7k&ab_channel=NetworkChuck)

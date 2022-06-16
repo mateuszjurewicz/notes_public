@@ -77,6 +77,8 @@ unscientific but popular beliefs about human psychology, amateur psychological d
 the art of making confections, which are food items that are rich in sugar and carbohydrates. Note the last 'e'.
 - `coniferous` & `conifers`
 (of trees) bearing cones, mostly evergreen and needle-leaved trees fall under this category. Translates into _iglaste_.
+- `corollary` (pron kóroleri) [both adj and noun]
+something that naturally follows (e.g. a proposition after another, already proven proposition), a natural consequence or effect; a resultor.Something that incidentally or naturally accompanies or parallels. "love was a stormy passion and jealousy its normal ______." or "A ______ to the problem of the number of vessels to be built was that of the types of vessels to be constructed." (pol następstwo). As adjective a synonym is `resultant`.
 - `crayfish` / `crawfish` / `crawdaddy`
 freshwater crustacean resembling a small lobster (rak).
 - `costermonger`
@@ -139,6 +141,8 @@ greet or welcome warmly (especially of a politician). _"presidential hopefuls __
 to omit or minimize sth in an account or retelling, in order to diminish its importance.
 - `godhead`
 (or godhood) refers to the essence or substance (ousia) of the Christian God, especially as existing in three persons — the Father, Son, and Holy Spirit. Tt refers to the aspect or substratum of God that lies behind God's actions or properties (i.e., it is the essence of God), and its nature has been the subject of long debate in every major religion.
+- `green gown` (to give sb a green gown)
+old-timey way of saying to have sex, e.g. fish/grope for trout in peculiar river, make the beast of two backs, turn belly-to-belly, play at couch quail (Elizabethan) or `join giblets`. Giblet is the liver, heart, gizzard, and neck of a chicken or other fowl, usually removed before the bird is cooked, and often used to make gravy, stuffing, or soup.
 - `grouse (to)` (as verb)
 to grumble, to persistently complain (gderac). Can refer to a person who often complains by adding an 'r' at the end. As a noun it refers to a type of bird.
 - `growler`
@@ -312,6 +316,8 @@ as noun: an additional charge or payment. As verb: to exact an additional charge
 A person devoted to pleasure and luxury; a voluptuary. Often used to describe born-rich wastrels. Originally Greek, refering to the rich inhabitants of Sybaris.
 - `tempered and annealed glass`
 first type of glass is made stronger through controlled thermal or chemical treatment, resulting in the glass shattering into small granular chunks as oppossed to sharp shards, making it safer. The second type is obtained through slow, controlled cooling and is more durable, but doesn't have the safe-when-cracked property. Improperly a____ed glass can shatter due to very little or even no stress at all, possibly also a small shift in temperature.
+- `tenebrism`
+a style of painting developed by Caravaggio and other 17th-century Spanish and Italian artists, characterized by predominantly dark tones and shadows with dramatically contrasting effects of light. Includes the use of `chiaroscuro` (an Italian term which literally means 'light-dark'. In paintings the description refers to clear tonal contrasts which are often used to suggest the volume and modelling of the subjects depicted).
 - `terrapin`
 a small specie of turtle, living in brackish or fresh water, common house pet.
 - `terrycloth` aka `towelling` or `terry cotton`
