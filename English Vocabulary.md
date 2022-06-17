@@ -268,6 +268,8 @@ strongly reminiscent or suggestive of sth, also "fragrant or sweet-smelling" (pe
 either to transmit (a sum of money) in payment, or to cancel, or to pardon or forgive (e.g. sins). Many other meanings, mostly to pay or to diminish sth (sins, tolls, taxes). But also to restore something to its former position. Word of many meanings. From Latin "to send back".
 - `rugose`
 Having a rough, ridged, or wrinkled surface. Corrugated (word used more commonly to refer to materials, e.g. corrugated cardboard is wrinkled with parallel edges). Marked by `rugae` (wrinkles, anatomical terms, also in internal organs).
+- `rutabaga`
+a root vegetable, very similar to a turnip. Also called a Swedish turnip or a _neep_ (in Scotland, in scottish), but the term ____ is used primarily in north america.
 - `sagacious` & `sagacity`
 having or showing keen mental discernment and good judgement, far-sighted, shrewd, wise. Note the difference in pronunciation between adjective and noun.
 - `sashay`
