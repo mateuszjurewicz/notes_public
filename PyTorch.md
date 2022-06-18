@@ -34,7 +34,7 @@ elements = torch.rand(64, cardinality, 128)
 set = torch.rand(64, 1, 128)
 
 # repeate the set as many times as there are elements
-# the second argument to tile is the number of repetitions per dimension
+# the 2nd argument is the number of repetitions per dimension
 set_repeated = torch.tile(set, (1, cardinality, 1))
 
 # now we can concat
