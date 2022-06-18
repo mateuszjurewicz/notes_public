@@ -15,7 +15,7 @@ Another example would come from modelling the distribution of words in text docu
 
 The Chinese Restaurant Process is a metaphor used to exemplify a Dirichlet Process. It also shows a "rich-get-richer" pattern, where whether a person sits at the currently occupied tables is dependent on how many people are already sitting there (positively). There's an analogous "stick-break" process, where we break a stick into smaller and smaller pieces.
 
-The Dirichlet distribution is the extension of the Beta distribution (which outputs 0-1).
+The Dirichlet distribution is the extension of the Beta distribution (which outputs continuous values in range 0-1 and is parameterized by only two parameters $\alpha$ aand $\beta$).
 
 Btw, it's named after Dirichlet (a German mathematician) but was invented by Thomas Ferguson in 1973.
 

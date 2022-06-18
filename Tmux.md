@@ -3,8 +3,15 @@
 https://gist.github.com/MohamedAlaa/2961058
 
 ### Move panes
-- `ctrl + b + }` move the current pane right (or left with `{`). Effectively swaps the placement of panes.
-- `ctrl + b + [` allows for scrolling in the window (no shift needed for `[`, as opposed to `{`), `ctrl + c` to exit scrolling mode. 
+- `ctrl + b + }` 
+
+move the current pane right (or left with `{`). Effectively swaps the placement of panes.
+
+### Scroll in pane
+
+- `ctrl + b + [` 
+
+allows for scrolling in the window (no shift needed for `[`, as opposed to `{`), `ctrl + c` to exit scrolling mode. 
 
 
 ### General

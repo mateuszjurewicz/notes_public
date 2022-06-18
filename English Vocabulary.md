@@ -165,7 +165,7 @@ a ton of fun, cool way of saying sth will be great.
 Impossible to remove, erase, or wash away; permanent (____ ink). Memorable, unforgettable (_____ memory). *"Perhaps somewhere your ends are written as ____ly as mine"*.
 - `indictment`
 Either 1) something that illustrates that a certain situation is bad and deserves condemnation or 2) a formal accusation of a serious crime.
-- `intestate` (pron "intstejt") and `intestacy` (pron intestasi)
+- `intestate` (pron "intéstejt") and `intestacy` (pron intestasi)
 (adj) having made no legal will: an _______ parent.
 - `jamoke`
 an ordinary, unimpressive, or inept person —typically used as a term of mild or joking disparagement for a man. "Some ____ screwed up the whole operation".
