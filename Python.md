@@ -31,6 +31,20 @@ print(f'{a:<10.2f} | {b:<10} | {c:<10}')
 
 In the first `'{0:<10.2f}'.format(a)` the `0` specifies that of all arguments passed to format(), we're now dealing with the zeroth one, the `:<10` means it will be left-aligned, leaving 10 characters empty if they're not filled by `a`, and finally `.2f` means we'll print 2 decimal points. The order matters.
 
+Here's a **cheatsheet about proper order**:
+
+```
+format_spec     ::=  [[fill]align][sign][#][0][width][grouping_option][.precision][type]
+fill            ::=  <any character>
+align           ::=  "<" | ">" | "=" | "^"
+sign            ::=  "+" | "-" | " "
+width           ::=  digit+
+grouping_option ::=  "_" | ","
+precision       ::=  digit+
+type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" | "o" | "s" | "x" | "X" | "%"
+```
+Source for the above is [here in the docs](https://docs.python.org/3/library/string.html#formatspec)
+
 ## Pyplot and garbage collection
 
 Apparently opened plots can sometimes not get properly garbarge collected (memory leak?). Got this warning on GPU: 
