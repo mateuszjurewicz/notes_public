@@ -1,6 +1,36 @@
 # Python
 
 
+## Printing with alignment and decimals
+Sometimes we want to combine multiple formatting rules, e.g. only show up to a specific decimal point but also left-align, filling with 10 spaces etc. We can do this but the syntax is tricky, so here's an easily reusable example:
+
+```
+As = [10, 2, 333, 4.044]
+Bs = ['first', 'second', 'third', 'fourth']
+Cs = [True, False, True, False]
+
+text = 4.2
+for i, a in enumerate(As):
+    b = Bs[i]
+    c = Cs[i]
+    print('{0:<10.2f} | {1:<10} | {2:<10}'.format(a, b, c))
+```
+
+ This will print:
+ ```
+10.00      | first      | 1         
+2.00       | second     | 0         
+333.00     | third      | 1         
+4.04       | fourth     | 0
+```
+
+Alternatively we could use:
+```
+print(f'{a:<10.2f} | {b:<10} | {c:<10}')
+```
+
+In the first `'{0:<10.2f}'.format(a)` the `0` specifies that of all arguments passed to format(), we're now dealing with the zeroth one, the `:<10` means it will be left-aligned, leaving 10 characters empty if they're not filled by `a`, and finally `.2f` means we'll print 2 decimal points. The order matters.
+
 ## Pyplot and garbage collection
 
 Apparently opened plots can sometimes not get properly garbarge collected (memory leak?). Got this warning on GPU: 
