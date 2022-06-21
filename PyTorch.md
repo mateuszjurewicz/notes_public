@@ -25,7 +25,25 @@ mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
 
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
 
-## Repeate / Tile a tensor into new dimensions
+## Flatten Specific Dimensions
+Let's say you have a data input tensor, which is a batch of sets of elements with some embedded dimensions, e.g. `data = torch.Tensor(batch=64, set_cardinality=100, elem_embed=2)`. but you want to flatter the batch and cardinality to get a tensor of size (64 * 100 = 6400, 2). You can use the `tensor.flatten()` function for this:
+
+```
+import torch
+
+b = 64
+c = 100
+e = 2
+
+input = torch.rand([b, c, e])
+print(input.size())  # [64, 100, 2]
+
+# flatten choosing the starting and end dimensions (to be flattened into a single one)
+flattened = input.flatten(0, 1)
+print(flattened.size())  # [6400, 2]
+```
+
+## Repeat / Tile a tensor into new dimensions
 If you e.g. have a set representation that you want to concatenate to each end every set element's representation, you'll need to essentially copy it as many times as there are elements (the set's cardinality). You can do this using `torch.tile()`
 
 ```
