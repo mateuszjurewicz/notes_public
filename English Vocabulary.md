@@ -187,6 +187,8 @@ flexible, readily open to change: "a ____ face, her scenes rock with emotion". O
 a cord or strap to hold something (such as a knife or a whistle) and usually worn around the neck (smycz na identyfikator). Also in naval terms a piece of rope or line for fastening something in a ship.
 - `larceny`
 formal legal term for theft of personal property (of a person or business though). Grand _____ has to exceed a specific amount of dollars.
+- `lathe`(lejf)
+a machine tool that rotates a workpiece about an axis to perform various operations such as cutting, sanding or drilling. It rotates whatever you're working on around its axis, such that you can e.g. hold sand paper or sth shapr to it and it will make an even, uniform groove. Tokarka.
 - `legerdemain`
 sleight of hand, artful trickery, deception.
 - `lèse-majesté` or `lese-majesty` (pron. "lez/liz madżesti")
@@ -336,6 +338,8 @@ extremely loyal, regardless of circumstances, unwavering in one's committment (p
 a barrow, a burial mound, a kurgan.
 - `unalome`
 a buddhist symbol for the journey towards enlightenment, in the form of a straight line turning into a zig-zag like pattern, ending in a spiral (variations exist).
+- `vise` (wájs, like vice)
+a clamp for holding metal or wood in place, usually mounted on a workbench with adjustable screws for different-sized objects. Po polsku imadło. Harry Dresden's favourite metaphor for where his family jewels are.
 - `vernier thrusters`
 A ______ _____ is a rocket engine used on a spacecraft for fine adjustments to the **attitude** (angular orientation) or velocity of a spacecraft. The name is derived from _______ **calipers** (suwmiarka), which are an instrument for measuring external or internal dimensions, having two hinged legs resembling a pair of compasses and in-turned or out-turned points (named after Pierre _______) which have a primary scale for gross measurements, and a secondary scale for fine measurements.
 - `vociferous`
