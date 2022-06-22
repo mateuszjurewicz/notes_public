@@ -1,5 +1,9 @@
 ## Virutalenv
-Can be easily use to set up virtual environments for python installations and specific packages, whenever conda fails etc.
+Can be easily use to set up virtual environments for python installations and specific packages, whenever conda fails.
+
+To create a new virtual environment:
+
+`python3 -m venv /path/to/new/virtual/environment`
 
 ## Installing a specific version of a package
 
