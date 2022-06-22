@@ -110,6 +110,12 @@ python3 -m pip install torch==1.10.0  # upgrades to specified version
 python3 -m pip install --upgrade torch  # upgrade to latest version
 ```
 
+## Uninstalling a specific package with pip
+
+```
+python3 -m pip uninstall <package_name>
+```
+
 ## `ast` library
 
 for converting nested lists stored as strings in a csv file back into lists:
