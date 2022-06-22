@@ -1,5 +1,18 @@
-# Python
+## Virutalenv
+Can be easily use to set up virtual environments for python installations and specific packages, whenever conda fails etc.
 
+## Installing a specific version of a package
+
+```
+python3 -m pip install torch==1.10.0  # upgrades to specified version
+python3 -m pip install --upgrade torch  # upgrade to latest version
+```
+
+## Uninstalling a specific package with pip
+
+```
+python3 -m pip uninstall <package_name>
+```
 
 ## Printing with alignment and decimals
 Sometimes we want to combine multiple formatting rules, e.g. only show up to a specific decimal point but also left-align, filling with 10 spaces etc. We can do this but the syntax is tricky, so here's an easily reusable example:
@@ -102,19 +115,6 @@ print(r2)
 ```
 
 Here `.__ne__` refers to the _not_equal_ function of the element we want to remove. We could have also used a lambda. The `filter()` function removes all the elements for whom the not-equal will return `True`.
-
-## Installing a specific version of a package
-
-```
-python3 -m pip install torch==1.10.0  # upgrades to specified version
-python3 -m pip install --upgrade torch  # upgrade to latest version
-```
-
-## Uninstalling a specific package with pip
-
-```
-python3 -m pip uninstall <package_name>
-```
 
 ## `ast` library
 

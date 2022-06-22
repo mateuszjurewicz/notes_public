@@ -225,6 +225,8 @@ performed without real interest, feeling or effort.
 anatomical term for the taint
 - `petrichor` (pron. pétrykor)
 earthy scent produced when rain fall on dry soil. From the Greek for stone + ethereal fluid / blood of the gods.
+- `phthalo green` (pron t(h)aloł)
+a shade of deep emerald green or blue, refers to _____cyanine, a crystal compound of the same colour.
 - `pillory`
 dyby po angielsku (works as noun and verb).
 - `pinion`

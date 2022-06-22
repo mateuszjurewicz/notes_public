@@ -2,6 +2,16 @@
 
 https://gist.github.com/MohamedAlaa/2961058
 
+## Kill a detached session
+
+First, to find it's identifier:
+
+`tmux ls`
+
+Then, to kill it:
+
+`tmux kill-session -t your_session_number`
+
 ### Move panes
 - `ctrl + b + }` 
 
