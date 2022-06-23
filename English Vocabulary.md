@@ -57,12 +57,14 @@ A warrant officer or petty officer in charge of a ship's rigging, anchors, cable
 a gun in which the ammo cartridge chamber (`the breech`) is located closer to the chest than the firing grip, resulting in a longer barrel (e.g. AUG).
 - `bury the lede`
 to hide the more important piece of news among less important details. `Lede` is the introductory portion of a news story, commonly the first sentence.  Often confused with "lead", originates from print journalism, where "lead" also means the strip of metal separating lines of type.
+- `cabbage vs lettuce`
+kapusta & sałata
 - `capstone` (noun and adj)
 the final stone in an arch of a doorway or a roof that makes the structure hold. Metaphorically as an adjective, it's used to mean "zwieńczenie", e.g. sth that marks the end / completion of a larger process, e.g. a capstone project at the end of the semester. Contrast with `cornerstone` metaphorically meaning an indispensable and fundamental basis.
 - `cassock` aka `soutane`
 the christian clerical clothing coat, worn primarily by Catholic priests (with the white clerical collar).
-- `cabbage vs lettuce`
-kapusta & sałata
+- `caveat emptor` (latin phrase)
+Latin phrase meaning "buyer beware". It means that if you buy e.g. a coffee mug that you later learn has a leak, you are not owed your money back, instead you should've inspected it properly prior to the purchase. In modern law it's a contract law principle that applies mostly to real estate.
 - `Chatham House Rule`
 a rule about meetings, according to which any information given during the meeting can be freely acted upon, but it can never be revealed who said what. Also a modern think tank.
 - `cinch`
