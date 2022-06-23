@@ -64,7 +64,7 @@ the final stone in an arch of a doorway or a roof that makes the structure hold.
 - `cassock` aka `soutane`
 the christian clerical clothing coat, worn primarily by Catholic priests (with the white clerical collar).
 - `caveat emptor` (latin phrase)
-Latin phrase meaning "buyer beware". It means that if you buy e.g. a coffee mug that you later learn has a leak, you are not owed your money back, instead you should've inspected it properly prior to the purchase. In modern law it's a contract law principle that applies mostly to real estate.
+Latin phrase meaning "buyer beware". It means that if you buy e.g. a coffee mug that you later learn has a leak, you are not owed your money back, instead you should've inspected it properly prior to the purchase. In modern law it's a contract law principle that applies mostly to real estate. _____t just means "may they beware", contrast with its meaning on its own.
 - `Chatham House Rule`
 a rule about meetings, according to which any information given during the meeting can be freely acted upon, but it can never be revealed who said what. Also a modern think tank.
 - `cinch`
