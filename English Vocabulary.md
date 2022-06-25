@@ -190,7 +190,7 @@ a cord or strap to hold something (such as a knife or a whistle) and usually wor
 - `larceny`
 formal legal term for theft of personal property (of a person or business though). Grand _____ has to exceed a specific amount of dollars.
 - `lathe`(lejf)
-a machine tool that rotates a workpiece about an axis to perform various operations such as cutting, sanding or drilling. It rotates whatever you're working on around its axis, such that you can e.g. hold sand paper or sth shapr to it and it will make an even, uniform groove. Tokarka.
+a machine tool that rotates a workpiece about an axis to perform various operations such as cutting, sanding or drilling. It rotates whatever you're working on around its axis, such that you can e.g. hold sand paper or sth sharp to it and it will make an even, uniform groove. Tokarka.
 - `legerdemain`
 sleight of hand, artful trickery, deception.
 - `lèse-majesté` or `lese-majesty` (pron. "lez/liz madżesti")
@@ -252,7 +252,7 @@ a person who obtains something (a good or an effect). Another meaning is specifi
 - `protégé`
 a student and _mentee_, someone under protection and tutelage of sb established.
 - `prurient` (pron. prúrient)
-characterized by an inordinate interest in sex: _____ thoughts. Arousing or appealing to an inordinate interest in sex: _____ literature. Inordinately interested in matters of sex; lascivious.
+characterized by an inordinate interest in sex: _____ thoughts. Arousing or appealing to an inordinate interest in sex: _____ literature. Inordinately interested in matters of sex; lascivious. From latin for itch.
 - `pugnacious`
 eager or quick to argue, quarrel or fight. Connect with `pugilist` (a boxer).
 - `puissant` (read pjuisant) (noun: `puissance`)
