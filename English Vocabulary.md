@@ -334,6 +334,10 @@ a small specie of turtle, living in brackish or fresh water, common house pet.
 is a material where there are protruding loops of thread that can absorb a large amount of water, perfect for fluffy towels and bathrobes.
 - `thresher` (pron (t)fresher)
 a person or machine that separates grain from corn or other crops by beating. (młocarnia). Also a type of shark (hunting close to the surface, using its tail to lash the water and herd fish into tightly packed shoal)
+- `throes`
+intense or violent pain and struggle, especially accompanying birth, death, or great change. "he convulsed in his death _____"
+- `toboggan`
+a simple sled traditionally used by children. It is also a traditional form of transport used by the Innu and Cree of northern Canada.
 - `triplicate` (noun/adj pron. "tryplyket", verb pron. "tryplykejt")
 (adj) existing in three copies or examples. (noun) a thing which is part of a set of three copies or corresponding parts. (verb) make three copies of; multiply by three. Contrast with duplicate.
 - `trough` (pron "trof")
