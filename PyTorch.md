@@ -25,6 +25,35 @@ mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
 
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
 
+## Padding Tensors
+The basic way to pad tensors is to use the `torch.nn.functional.pad()` function. However, this requires knowing by how much you want to pad (as opposed to "to what target size"). The way you construct padding instructions also differes depending on how many dimensions of the input tensor you want to pad. Here's an example for padding along 1 dimension (the second of two):
+
+```
+import torch
+import torch.nn.functional as F
+
+# input is (2, 3)
+input = torch.Tensor(
+    [
+        [1, 1, 1],
+        [2, 2, 2]
+    ]
+)
+
+# we want our output to be (2, 5)
+padding_left = 0
+padding_right = 2
+padding_token = -999
+
+# if only 2 elements in padding instructions, they mean how much to pad on the left ad right
+padding_instructions = (padding_left, padding_right)
+
+out = F.pad(input, padding_instructions, "constant", padding_token)
+
+print(out.size())  # (2, 3 + 2)
+print(out)  # e.g. [1, 1, 1, -999, -999] ...
+```
+
 ## Flatten Specific Dimensions
 Let's say you have a data input tensor, which is a batch of sets of elements with some embedded dimensions, e.g. `data = torch.Tensor(batch=64, set_cardinality=100, elem_embed=2)`. but you want to flatter the batch and cardinality to get a tensor of size (64 * 100 = 6400, 2). You can use the `tensor.flatten()` function for this:
 
