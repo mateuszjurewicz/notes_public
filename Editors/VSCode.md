@@ -7,3 +7,5 @@
 - `cmd + shift + e` refocus the side panel to be a file explorer (when mistakenly using it for search.)
 - `cmd + shift + f` search in side panel
 - `cmd + ctrl + f` toggle full screen
+- `cmd + shift + 2` toggle zen mode (custom)
+- `alt up/down` move current line up or down
