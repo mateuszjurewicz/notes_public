@@ -1,3 +1,24 @@
+## Flatten a list of lists
+Sometimes you have a a list of lists and instead want a flat, 1-dimensional list. This can be achieved by a list comprehension, but not quite like you'd think:
+
+```
+nested = [[1, 2, 3], [4, 5, 6], [7, 8]]
+flat = [elem for sublist in nested for elem in sublist]
+print(flat)  # [1, 2, 3, 4, 5, 6, 7, 8]
+```
+
+You can also use `itertools.chain()`, but the above is cleaner. 
+
+```
+import itertools
+
+nested = [[1, 2, 3], [4, 5, 6], [7, 8]]
+flat = list(itertools.chain(*nested))
+print(flat)  # [1, 2, 3, 4, 5, 6, 7, 8]
+```
+
+**Note that this won't work with deeper and inconsistent nesting levels**.
+
 ## Virutalenv
 Can be easily use to set up virtual environments for python installations and specific packages, whenever conda fails.
 
