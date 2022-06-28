@@ -45,6 +45,8 @@ Also something delicate, elegant, or highly prized. From Breton / French for jew
 as in "to be sold a (false) bill of goods, means to be made a false promise. Bill of goods is just a list of items, negative connotation comes from paying for a list of items but never actually receiving the items. In RDR2 Arthur responds to being threatened with _eternity_ with "I hope it's hot and terrible, otherwise I'll feel I've been sold a false bill of goods".
 - `blithe` (adj) and `blithely`
 carefree and lighthearted, lacking due concern, casual. E.g. Fearne ____ly continues to steal things despite her lack of sleight of hand.
+- `blotto`
+extremely drunk, intoxicated, unconscious through drunkenness.
 - `blue falcon` (military slang)
 a supposed comrade whose actions harm his friends, often but not always, for his own benefit. From the same initial letters as "buddy-fucker."
 - `Bon ton` aka `the ton`
