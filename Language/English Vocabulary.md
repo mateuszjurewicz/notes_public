@@ -326,6 +326,8 @@ very loud (spoken in _____ tones). Named after a Greek herald (first 7 letters) 
 Either: 1) lying down, on one's back, facing up 2) failing to act or protest as a result of moral weakness or indolence, passive to the point of deserving blame.
 - `surcharge`
 as noun: an additional charge or payment. As verb: to exact an additional charge or payment from. Also a mark on a postage stamp changing its value.
+- `svelte`
+slender or graceful in figure or outline; slim. From Italian meaning stretching out.
 - `sybarite` / `sybaritic`
 A person devoted to pleasure and luxury; a voluptuary. Often used to describe born-rich wastrels. Originally Greek, refering to the rich inhabitants of Sybaris.
 - `syzygy` (pron syzydżi)
