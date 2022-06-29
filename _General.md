@@ -3,6 +3,8 @@
 ### Planned
 
 - [ ] reoreder this list in a way that makes sense, possibly discard/archive some, **be mindful of end goal**
+- [ ] [AI Safety fundamentals course](https://www.eacambridge.org/agi-safety-fundamentals) recommended by Redwood
+- [ ] [AI Safety resources](https://www.aisafetysupport.org/resources/lots-of-links), check out, maybe track AI safety notes in its own md file
 - [ ] BigQuery refresh for SQL-ish notes, go through [this](https://codingisforlosers.com/learn-bigquery-sql/)
 - [ ] briefly look into VertexAI as a tool
 - [ ] concurrrency vs parallelism [here](https://www.youtube.com/watch?v=l_9PchV6PIc)
