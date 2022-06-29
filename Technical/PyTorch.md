@@ -135,6 +135,13 @@ print(bool_mask)
 ```
 **We can then use the mask via `bool_mask.nonzero()` to get the indices!**
 
+```
+(...)
+elements_that_meet_the_condition = torch.masked_select(inp, bool_mask)
+
+print(elements_that_meet_the_condition)
+# tensor([5., 6., 7., 8., 9.])
+```
 
 ## Count Model Parameters
 
