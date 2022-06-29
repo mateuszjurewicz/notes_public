@@ -298,6 +298,8 @@ calm and having a self-assured command of one's faculties, feelings and behavior
 strongly influential to later developments (of a work of art).
 - `septum`
 the middle barrier between nostrils. Not be confused with `philtrum`, which is cleft above lips.
+- `seven bells` (to knock/beat seven bells out of sb)
+a severe beating.
 - `shamisen` (Japanese instrument)
 a traditional Japanese instrument, resembling a guitar. It's name means "3 strings", it's originally Chinese, and is fretless. The resonance chamber isn't made entirely from wood, instead the front is covered with a stretched cured cat-skin (traditionally), much like a drum or a banjo. The player uses a large pick with handle, called _bachi_. A more generic term for picks is a `plectrum`, a tool used for plucking or strumming stringed instruments. The plectrum has a handle cause it is used to simultaneously strum and drum.
 - `shoehorn` (verb and noun)
