@@ -116,6 +116,26 @@ above_point_five_indices = (r > 0.5).nonzero()
 ```
 Note that in this case the indices are themselves pointing to both dimensions of the original matrix.
 
+## Filter to get Boolean Mask
+You can also use a tensor's built-in `torch.Tensor.ge()` function, which will return a boolean tensor of the same shape as the original tensor, with True of False at indices whose elements meet or break the condition:
+
+```
+inp = torch.Tensor([
+    [1, 2, 3], 
+    [4, 5, 6], 
+    [7, 8, 9]
+])
+
+bool_mask = inp.ge(5)
+print(bool_mask)
+
+# tensor([[False, False, False],
+#         [False,  True,  True],
+#         [ True,  True,  True]])
+```
+**We can then use the mask via `bool_mask.nonzero()` to get the indices!**
+
+
 ## Count Model Parameters
 
 ```
