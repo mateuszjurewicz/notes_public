@@ -90,6 +90,45 @@ es = torch.cat([elements, set_repeated], dim=2)
 # es is now (64, 20, 128 + 128 = 256)
 ```
 
+## Repeat / Tile a boolean tensor into a new dimension
+I run into a situation where I needed a boolean mask tensor to be of the same size as my batched, encoded data (b, n_elem, emb_dim), so that I can elementwise-multiply the batch by the mask to zero out the elements I needed to have no influence on later calculations.
+
+So I had `mask.size() = (b, n_elem)` and `enc_data.size() = (b, n_elem, emb_dim)`. I needed the mask to repeat its boolean value at the `n_elem` dimension into the new dimension, taken by the `emb_dim`.
+
+```
+anchors = torch.Tensor([
+    [1, 0, 0, 0],
+    [0, 1, 0, 0]
+]).bool()
+
+# we have 4 elements, batch of 2
+n_elem = 4
+b = 2
+emb_dim = 5
+
+# first, we need to create the new dimension for the mask's emb_dim
+anchors = anchors.unsqueeze(2)
+
+# then we use tile() to repeat the corresponding bool value into that entire dimension, per element
+anchors = torch.tile(anchors, (1, 1, emb_dim))
+
+# confirm
+print(anchors.size())  # torch.Size([2, 4, 5])
+print(anchors)
+
+# tensor([[[ True,  True,  True,  True,  True],
+#          [False, False, False, False, False],
+#          [False, False, False, False, False],
+#          [False, False, False, False, False]],
+# 
+#         [[False, False, False, False, False],
+#          [ True,  True,  True,  True,  True],
+#          [False, False, False, False, False],
+#          [False, False, False, False, False]]])
+
+```
+
+
 ## Create a Tensor with Random Values in Range (uniformly)
 You sometimes want to have floating point values in a different range than between 0 and 1, preventing you from using `torch.rand()` and `torch.randint()` directly. You can use `torch.Tensor.uniform_()` instead:
 
@@ -134,6 +173,8 @@ print(bool_mask)
 #         [ True,  True,  True]])
 ```
 **We can then use the mask via `bool_mask.nonzero()` to get the indices!**
+
+And select those elements that meet the condition via `torch.masked_select()`:
 
 ```
 (...)
