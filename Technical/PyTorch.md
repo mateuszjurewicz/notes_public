@@ -25,6 +25,30 @@ mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
 
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
 
+## Index Select vs [:, inds.long(), :]
+You may have a tensor and a list of indices along one of its dimension, that you want to grab. To do this, use `torch.index_select()`. Contrast it with masked_select, which uses a boolean tensor for the same task. **However, a quicker way is to use numpy-style indexing**. However, the former requires an int() type, the latter a long() type.
+
+```
+b = 10
+n = 5
+e = 4
+
+data = torch.rand(b, n, e)
+
+example_indices = torch.Tensor(
+    [3, 5, 6, 7, 9]
+).int()
+
+r = torch.index_select(data, dim=0, index=example_indices)
+
+# version via index_select()
+print(r.size())
+print(r)
+
+# version via indexing:
+print(data[example_indices.long(), :, :])
+```
+
 ## Padding Tensors
 The basic way to pad tensors is to use the `torch.nn.functional.pad()` function. However, this requires knowing by how much you want to pad (as opposed to "to what target size"). The way you construct padding instructions also differes depending on how many dimensions of the input tensor you want to pad. Here's an example for padding along 1 dimension (the second of two):
 
