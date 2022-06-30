@@ -184,6 +184,73 @@ print(elements_that_meet_the_condition)
 # tensor([5., 6., 7., 8., 9.])
 ```
 
+## Filter an encoded batch via boolean mask
+I run into a situation where I needed a boolean mask tensor (b, n) to be of the same size as my batched, encoded data (b, n, e), so that I can get only the examples from the batch for which the boolean mask was True (b, n_True, e).
+
+ One approach was to use loops over the matrix in a list comprehension and pass it to torch.stack(), but flattening turned out much more simple. **The one requirement was that in for each example, the boolean mask has the same amount of True values**, thus guaranteeing that the final reshape is possible (wouldn't result in a jagged array). So n_True same for each example in batch.
+
+### Setup
+```
+# boolean mask (b, n) over elements of each example
+# same amount of True in each is a HARD REQUIREMENT
+unassigned = torch.Tensor([
+    [True, True, False],
+    [True, False, True]
+]).bool()
+
+# the above requires the batch size to be 2, and the n of elems to be 3
+b = unassigned.size(0)  # 2
+n = unassigned.size(1)  # 3
+e = 5  # embedding size, per element
+
+# mock data
+enc_data = torch.rand((b, n, e))
+```
+
+### Loop approach:
+
+```
+# 1. LOOP APPROACH
+
+# this gives us a (b, n_True) tensor, where n_True is the number of True in boolean mask's row
+unassigned_indices = torch.stack([r.nonzero().flatten(0, 1) for r in unassigned], dim=0)
+
+# use indices to grab elements for each row in the data
+unassigned_encoded_data = torch.stack([enc_data[i][inds] for i, inds in enumerate(unassigned_indices)])
+
+# show & confirm
+print(enc_data)
+print(unassigned_encoded_data.size())  # should be (b, n_True, e)
+print(unassigned_encoded_data)
+```
+
+### Flatten approach:
+
+```
+# 2. FLATTEN APPROACH
+
+# first we'll need the mask extended into the new dimension
+unassigned_mask = unassigned.unsqueeze(2)  # (b, n, 1)
+unassigned_mask = torch.tile(unassigned_mask, (1, 1, e))  # (b, n, e)
+
+# flatten mask
+unassigned_mask = torch.flatten(unassigned_mask, 0, 2)  # (b * n * e)
+
+# flatten data
+flat_data = torch.flatten(enc_data, 0, 2)  # (b * n * e)
+
+# masked select
+unassigned_flat_data = torch.masked_select(flat_data, unassigned_mask)  # (b * n_True * e)
+
+# reshape
+unassigned_enc_data = torch.reshape(unassigned_flat_data, (b, n_True, e)) # (b, n_True, e)
+
+# confirm
+print(enc_data)
+print(unassigned_enc_data.size())
+print(unassigned_enc_data)
+```
+
 ## Count Model Parameters
 
 ```
