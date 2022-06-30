@@ -199,6 +199,8 @@ sleight of hand, artful trickery, deception.
 a French term meaning "to do wrong to majesty", is an offence against the dignity of a reigning sovereign or against a state. Such as mocking them.
 - `limerence`
 a state of mind resulting from romantic attraction, characterized by feelings of euphoria, the desire to have one's feelings reciprocated. Infatuation.
+- `manumission`
+the act of freeing enslaved people by their enslaver. 
 - `matinée`
 an entertainment, such as a play, presented during the day, usually in the early afternoon (from the French, meaning morning).
 - `menarche` (pron. menárki)
