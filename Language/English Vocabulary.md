@@ -109,6 +109,8 @@ the part of the body a person sits on (the buttocks, the rear, the rump).
  (from the Koinē Greek: δοκεῖν/δόκησις ---- "to seem", ____ "apparition, phantom") is the heterodox doctrine that the phenomenon of Jesus, his historical and bodily existence, and above all the human form of Jesus, was mere semblance without any true reality. Broadly it is taken as the belief that Jesus only seemed to be human, and that his human form was an illusion.
 - `dotage`
 old age, a period when a person is old and weak. "In my -----".
+- `doughty` (pron dáłti)
+marked by stouthearted courage, brave, valiant, stalwart. "____ heroes of old"
 - `encomiastic` (`encomiast` and `encomium` = eulogy)
 praising or delivering a eulogy. 
 - `embossed`
