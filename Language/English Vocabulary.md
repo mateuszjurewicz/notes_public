@@ -78,7 +78,7 @@ loud and clear (as adjective), strongly expressed demand or request for action (
 - `cod psychology`
 unscientific but popular beliefs about human psychology, amateur psychological diagnosis.
 - `confectionery`
-the art of making confections, which are food items that are rich in sugar and carbohydrates. Note the last 'e'.
+the art of making confections, which are food items that are rich in sugar and thus carbohydrates. Note the last 'e'. Pol "cukiernictwo/cukiernik'.
 - `coniferous` & `conifers`
 (of trees) bearing cones, mostly evergreen and needle-leaved trees fall under this category. Translates into _iglaste_.
 - `corollary` (pron kóroleri) [both adj and noun]
@@ -268,7 +268,7 @@ someone who sells or deals in particular goods.
 - `quilted`
 in polish "pikowana", e.g. of leather or a jacket. Refers to joining layers of fabric, usually by stitching, forming all kinds but usually a criss-cross pattern.
 - `rakish` and `rakishly good-looking` (pronounced "rejkisz")
-dashingly or carelessly unconventional, `debonair`, slightly disreputable, rogueish. Alternatively having a trim or streamlined appearance suggestive of speed (when referring to a ship).
+dashingly or carelessly unconventional, `debonair`, slightly disreputable, rogueish. Alternatively having a trim or streamlined appearance suggestive of speed (when referring to a ship). Compare with rake being a Georgian term for a fuckboy.
 - `rapt`
 completely fascinated or absorbed by what one is seeing or hearing.
 "a _____ teenage audience". Archaically to be transported to heaven, e.g. ""he was _____ on high".
