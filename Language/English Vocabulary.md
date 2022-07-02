@@ -43,6 +43,8 @@ a small dainty usually ornamental piece of delicate workmanship (a jewel).
 Also something delicate, elegant, or highly prized. From Breton / French for jewelled ring, originally from the word for finger (biz).
 - `(false) bill of goods`
 as in "to be sold a (false) bill of goods, means to be made a false promise. Bill of goods is just a list of items, negative connotation comes from paying for a list of items but never actually receiving the items. In RDR2 Arthur responds to being threatened with _eternity_ with "I hope it's hot and terrible, otherwise I'll feel I've been sold a false bill of goods".
+- `bindle`
+A ____ is the bag, sack, or carrying device stereotypically used by the American sub-culture of hobos. A "_____stiff" was another name for a hobo who carried a ______. The ______ is colloquially known as the "blanket stick".
 - `blithe` (adj) and `blithely`
 carefree and lighthearted, lacking due concern, casual. E.g. Fearne ____ly continues to steal things despite her lack of sleight of hand.
 - `blotto`
