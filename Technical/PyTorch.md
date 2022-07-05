@@ -25,6 +25,20 @@ mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
 
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
 
+## Get the value of a tensor | `tensor.item()` 
+To grab the actual value of a single-element tensor element as a python number, use the `item()` function.
+
+```
+a = torch.tensor([0.1, 2, 3.0])
+print(a)  # tensor([0.1000, 2.0000, 3.0000])
+
+for e in a:
+    print(e.item())
+# 0.10000000149011612
+# 2.0
+# 3.0
+```
+
 ## Index Select vs [:, inds.long(), :]
 You may have a tensor and a list of indices along one of its dimension, that you want to grab. To do this, use `torch.index_select()`. Contrast it with masked_select, which uses a boolean tensor for the same task. **However, a quicker way is to use numpy-style indexing**. However, the former requires an int() type, the latter a long() type.
 
