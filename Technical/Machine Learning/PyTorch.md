@@ -27,6 +27,10 @@ mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
 
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
 
+## Tensor as list via `Tensor.tolist()`
+To get a tensor as a list of Python objects, call `tolist()` on it. There's no underscore.
+
+
 ## Get the value of a tensor | `tensor.item()` 
 To grab the actual value of a single-element tensor element as a python number, use the `item()` function.
 
