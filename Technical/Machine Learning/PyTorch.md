@@ -4,6 +4,8 @@ For useful things learned while using torch.
 
 ## General
 
+- had an error stemming from the call to `loss.backward()`, due to the combined loss being calculated at one step from an int32 target. Casting it to float via `target = target.float()` solved the gradient problem.
+
 - cuda version incompatible with torch after upgrading torch: I just run `sudo apt-get -y install cuda` on a 64bit Ubuntu 16.04 and rebooted, worked after.
   - checked via `torch.cuda.is_available()`
 
