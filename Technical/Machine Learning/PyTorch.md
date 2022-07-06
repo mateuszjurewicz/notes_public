@@ -27,6 +27,8 @@ mock_sigmoid_preds = mock_sigmoid_preds.clamp(0.0, 1.0)
 
 - `tensor.requires_grad = False` makes the tensor (e.g. weights of a layer) frozen, not be trained.
 
+- Tensor as `numpy.ndarray` via `Tensor.numpy()`. Tensor from numpy via `torch.from_numpy()`
+
 ## Tensor as list via `Tensor.tolist()`
 To get a tensor as a list of Python objects, call `tolist()` on it. There's no underscore.
 
