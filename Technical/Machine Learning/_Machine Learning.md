@@ -2,8 +2,21 @@
 
 Definitions of concepts, practical tips, possibly notes on select papers. Goal is to solidify understanding by writing things down / explaining them to myself.
 
+# Multiple Losses
+Sometimes you want a model to fulfill multiple objectives at the same time. These can be represented as multiple loss functions. Sometimes, these functions are in conflict with each other, such as in the case of image compression. You want the compressed image to be small, but you want it to be recoverable in high quality.
 
-## Dirichlet Process
+In such cases, Alexey Dovitskiy from Google proposed `Loss-Conditional Training`, where you can specify a number of loss functions, and then you randomly sample a multiplication factor/coefficient for each of them during training. These coefficients are then passed to the main model as extra parameters, on which it can condition its output, thus potentially enabling the model to learn to balance these losses. 
+
+**An additional nice property** of this setup, is that you can then feed a specific set of coefficients to the model during inference, depending on whether you want this particular prediction to favour one loss over another (e.g. degree of compression over image quality).
+
+This has also been used for style transfer.
+
+<img src="./img/loss_conditional.png" alt="Logarithm Plots" style="height: 400px; background-color: #FFFFFF"/>
+
+Sources: [ai.googleblog article](https://ai.googleblog.com/2020/04/optimizing-multiple-loss-functions-with.html)
+
+
+# Dirichlet Process
 
 "_Distribution over distributions_"
 
@@ -24,7 +37,7 @@ Sources:
 - [video on nonparametric clustering using DP](https://youtu.be/UTW530-QVxo?t=119)
 - [long lecture specfically on DP](https://www.youtube.com/watch?v=bNbdsq8xlds&ab_channel=10-708PGM)
 
-## Neural Structured Learning
+# Neural Structured Learning
 Is a learning paradigm that came from Google's Tensorflow team around 2020, it leverages additional knowledge about some of the examples in the training set, such as their neighboring examples in some knowledge graph, and uses that knowledge to regularize during e.g. a classification of that sample, making models more robust.
 
 For example imagine you're trying to classify an image of a dog. You might also have some data about other pictures of similar dogs, such that the current example picture is connected to its neighbors in a graph. The model is then fed the pictures of the neighbors along with the example, and then its loss is increased if the learned representation of the example and the neighbors is different.
@@ -32,15 +45,15 @@ For example imagine you're trying to classify an image of a dog. You might also 
 Sources:
 - [Google tensorflow NSL intro vid](https://www.youtube.com/watch?v=N_IS3x5wFNI)
 
-## Latent Variables
+# Latent Variables
 
 The things that are not directly observed, which we are trying to infer from observed data. Can refer to both the parameters of the network $\theta$ or more commonly to the actual predictions of interest $\hat{y}$.
 
-## Amortization
+# Amortization
 
 In Neural Clustering Processes refers to investing a lot of computational resources during training of the model, to then be able to make very fast predictions (which they call posterior inference, here referring to predicting $\hat{y}$).
 
-## Prior and Posterior 
+# Prior and Posterior 
 
 **Update 2022 05 02**
 
@@ -60,7 +73,7 @@ In turn, a **closed-form expression** means that a mathematical expression uses 
 
 So numerical integration means calculating integrals. Interestingly numerical quadrature is for area under the surface and numerical cubature for the 3rd dimension.
 
-## Ordinal Regression
+# Ordinal Regression
 
 Is a type of regression analysis used for predicting an ordinal variable (i.e. a variable for which we only know that class B is above class A and below class C, not specifically by how much). It's applicable to ordered category prediction, when the distances between categories aren't known (they exist on an ordinal scale, but not an interval or ratio one).
 
@@ -84,7 +97,7 @@ We would need Multiple-Instance Ordinal Regression, for which there is a 2018 [p
 
 This is also connected to learning to rank, where our main problem was that we don't have a query (we'd have to use a learned representation of the entire set) and that order between elements within clusters doesn't matter in our case, but it does in ranking.
 
-## Hierarchical Clustering
+# Hierarchical Clustering
 
 Is an **unsupervised** method to cluster data points based on their distance matrix. The hierarchy comes from doing it in steps, either starting with each point forming its own cluster (agglomerative) or all points being in a single cluster (divisive, much rarer).
 
@@ -100,28 +113,27 @@ Some answers are here on [vidyaanalytics](https://www.analyticsvidhya.com/blog/2
 
 Finally, here's an actual [paper using supervised hierarchical clustering](http://proceedings.mlr.press/v97/yadav19a/yadav19a.pdf), from 2019. Notice the switch to using supervision.
 
-## Autoregressive Models
+# Autoregressive Models
 
 Autoregressive means predicting the future behavior based on past behavior. In ML world it refers to seq2seq models that predict the next token based on previously predicted tokens (I believe).
 
-## Graph Convolutional Networks (GCNs)
+# Graph Convolutional Networks (GCNs)
 
 Very nice intro in [this article](https://towardsdatascience.com/understanding-graph-convolutional-networks-for-node-classification-a2bfdb7aba7b) by Inneke Mayachita. Inspired by Rylee Thompson's comments. The GCN's simplest version needs both an adjacency matrix $\mathcal{A}^{~n \times n}$ and a matrix of node features $\mathcal{R}^{~n \times d}$, which we then take the dot product of to get some new representation of the nodes as $\mathcal{H}^{~n \times d}$.
 
 It's a generalization of the 2D convolution operation, looking at immediately (1-step away) connected neighbor nodes, in this simplest version.
 
-
-## Skip-Connections 
+# Skip-Connections 
 
 Aka `Shortcut Connections` are a way to prevent very deep models from being hard to optimize. There are cases where a shallower model, with fewer layers, will perform better (even on the training set) than a deeper one, even if only identity layers were added. The problem of optimization can become harder for a deeper model.
 
 Skip-connections solve this by either adding the output of an earlier layer directly to the output of later layers (skipping some layers) like in ResNet (residual connections) or by concatenating it, like in DenseNet. Whilst batch normalization and proper weights initialization by themselves should prevent the vanishing / exploding gradient problem, in practice these skip connections appear helpful too.
 
-## Affinity Propagation
+# Affinity Propagation
 
 Is an adaptive, unsupervised clustering algorithm, a step above K-means, because it automatically chooses the optimal number of clusters (so it's adaptive). However, it still depends on so called "prototypes", i.e. it tries to learn what the prototype point for each cluster would be, and assigns points based on the distance from it. Thus it skews towards clusters in the shape of filled circles (discs). This leads to incorrect assignments when the data consists of e.g. two crescents latching onto each other. An example of such a case can be seen [here](https://youtu.be/5O4aPDpRHpA?t=667). The step above this is DBSCAN, which solves for different cluster shapes (not just dispersions) - but DBSCAN doesn't guarantee that it will assign every element to a cluster (that depends on chosen parameters).
 
-## Normalizing Flows
+# Normalizing Flows
 
 Normalizing flows are a representation learning technique, comparable to VAEs and GANs. In simple words, normalizing flows is a series of simple functions which are invertible, or the analytical inverse of the function can be calculated. For example, f(x) = x + 2 is an invertible function because for each input, a unique output exists and vice-versa whereas f(x) = x² is not an invertible function. Such functions are also known as bijective functions. These series of functions are applied to some random variable $z$, which is e.g. sampled from some $\mathcal{N}(\mu, \sigma)$ (learned Normal distribution, parameterized by the 2 learned params), allowing for $z$ to have interesting shapes:
 
@@ -133,7 +145,7 @@ The normalizing flows transform a complex data point such as an MNIST Image to a
 
 Good explanation [here](https://towardsdatascience.com/introduction-to-normalizing-flows-d002af262a4b).
 
-## Chain Rule
+# Chain Rule
 
 In calculus the chain rule is a formula for calculating the derivative of the composition $f(g(x)) = (f \circ g)(x)$ of two differentiable functions $f$ and $g$.
 Specifically, the chain rule is: $\frac{df}{dx} = \frac{df}{dg} \times \frac{dg}{dx}$
@@ -146,7 +158,7 @@ The Leibniz notation of $\frac{df}{dx}$ can be read as _the direction and rate o
 
 Chain Rule is often used e.g. in RNNs and RL, as at each time step we go back to some past time step to calculate current loss function. We're looking for the derivative of the parameters with respect to the value of the loss function $\frac{d \theta}{d L}$.
 
-## PonderNet
+# PonderNet
 
 Is a more recent improvement of the Alex Graves' ACT (adaptive computation time). It's a way for the model to adjust the number of computation steps to the input.
 
@@ -158,7 +170,7 @@ A good code implementation via github:
   - from https://github.com/labmlai/annotated_deep_learning_paper_implementations
 - https://github.com/lucidrains/ponder-transformer
 
-## Reparametrization trick
+# Reparametrization trick
 
 Is about being able to backpropagate the gradients back through a **variational** autoencoder (as opposed to just a normal autoencoder which generates a latent vector representation of the input and not a sequence of means and standard deviations per latent component). We can't backpropagate through a sampling operation, which is what happens when the VAE obtains an actual latent vector representation from the learned distribution of latent components.
 
@@ -172,7 +184,7 @@ https://youtu.be/EeMhj0sPrhE?t=1178
 And very simple VAE in code:
 https://github.com/pytorch/examples/blob/master/vae/main.py 
 
-## Activation functions
+# Activation functions
 
 Nonlinear functions often applied as the last tranformation in a neural network layer, giving them greater representation power than just a linear transform. In terms of biological inspiration, they are supposed to mimic the action potential of neurons (i.e. fire or don't fire, past a threshold). They usually have to be differentiable to allow for gradient-based learning.
 
@@ -194,7 +206,7 @@ $\textrm{Sigmoid}(x) = x~/~(1.0 + e^{-x}) = x * \textrm{Sigmoid}(x)$
 
 - `PReLU` - is a parameterized version of ReLU, proposed in [this paper](https://arxiv.org/pdf/1502.01852.pdf). It is similar to `LeakyReLU`, in that the left-of-y-axis part is not a flat y=0, like `ReLU`, instead it's a slightly rising slope. Difference is that in leakyReLU the parameter that controls the slope is set, in PReLU it is learned. Supposedly helps deeper models!
 
-## Ablation study
+# Ablation study
 
 In AI, `ablation` is the removal of a component of an AI system, to see how the absence of that component impacts overall performance. In this way, we are able to somewhat judge its contribution to the overall results of the entire model. For neural nets this is an analogy to ablative brain surgery, where we tried to figure out what part of the brain does what by removing parts and asking animals to perform different tasks.
 
