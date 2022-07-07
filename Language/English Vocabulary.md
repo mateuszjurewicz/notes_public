@@ -338,6 +338,8 @@ slender or graceful in figure or outline; slim. From Italian meaning stretching 
 A person devoted to pleasure and luxury; a voluptuary. Often used to describe born-rich wastrels. Originally Greek, refering to the rich inhabitants of Sybaris.
 - `syzygy` (pron syzydżi)
 (astronomical) the nearly straight-line configuration of three celestial bodies (such as the sun, moon, and earth during a solar or lunar eclipse) in a gravitational system
+- `tchotchke`
+a small bric-à-brac or miscellaneous item. The word has long been used by Jewish-Americans and in the regional speech of New York City and elsewhere. It is borrowed from Yiddish and is ultimately Slavic in origin. Small, tacky trinkets.
 - `tempered and annealed glass`
 first type of glass is made stronger through controlled thermal or chemical treatment, resulting in the glass shattering into small granular chunks as oppossed to sharp shards, making it safer. The second type is obtained through slow, controlled cooling and is more durable, but doesn't have the safe-when-cracked property. Improperly a____ed glass can shatter due to very little or even no stress at all, possibly also a small shift in temperature.
 - `tenebrism`
