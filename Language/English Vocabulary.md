@@ -191,7 +191,7 @@ one's friends, acquaintances and relations as opposed to blood relative (which a
 information that could cause harm to someone's reputation (compromising material, from Russian). Relates to the Pegasus spyware.
 - `labile` (pron. léjbajl)
 flexible, readily open to change: "a ____ face, her scenes rock with emotion". Or readily or continually undergoing chemical, physical, or biological change or breakdown (a ____ mineral) 
-- `lagan` (pron lágan)
+- `lagan` (pron lágyn)
 (in legal contexts) goods or wreckage lying on the bed of the sea, but possibly retrievable (unlike derelict). Archaic naval term.
 - `lanyard` (lenjyrd)
 a cord or strap to hold something (such as a knife or a whistle) and usually worn around the neck (smycz na identyfikator). Also in naval terms a piece of rope or line for fastening something in a ship.
